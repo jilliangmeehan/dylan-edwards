@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }}</title>
+    <meta description={{ page.description }}>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include social.html %}
+  <!--  {% include favicon.html %} -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="/scroll.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>

@@ -1,0 +1,22 @@
+body { font-family: sans-serif; scroll-behavior: smooth; display: grid; grid-template-columns: min-content 1fr; margin: 0; }
+
+header { position: fixed; top: 2%; right: 2%; }
+
+nav { white-space: nowrap; margin: 0; padding: 0; }
+nav ul { list-style: none; position: sticky; top: 50%; z-index: 100; margin: 0; padding: 0; }
+nav ul li a { font-size: 48px; font-weight: bold; color: black; display: block; padding: 1.5rem 2rem; text-decoration: none; margin: 0; transform-style: flat; transition-delay: 0x; transition-duration: 0.4s; transition-property: color; transition-timing-function: ease-in-out; }
+nav ul li a.current { background: black; color: white; }
+
+main { padding-bottom: 40rem; }
+main section { padding: 2rem; margin: 0 0 2rem 0; visibility: hidden; animation-duration: 0.5s; animation-delay: 0s; transition: all 0.2s linear; }
+main section.visible { visibility: visible; }
+main section div { height: 500px; width: 500px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; }
+main section#project-1 div { background-color: lightpink; }
+main section#project-2 div { background-color: moccasin; }
+main section#project-3 div { background-color: paleturquoise; }
+main section#project-4 div { background-color: peachpuff; }
+main section#project-5 div { background-color: thistle; }
+main section#project-6 div { background-color: khaki; }
+main section#project-7 div { background-color: mistyrose; }
+main section#project-8 div { background-color: powderblue; }
+main section#project-9 div { background-color: navajowhite; }
