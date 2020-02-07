@@ -1,4 +1,4 @@
-body { font-family: sans-serif; scroll-behavior: smooth; display: grid; grid-template-columns: min-content 1fr; margin: 0; }
+body { font-family: sans-serif; overflow-x: hidden; overflow-y: scroll; scroll-behavior: smooth; display: grid; grid-template-columns: min-content 1fr; margin: 0; }
 
 header { position: fixed; top: 2%; right: 2%; }
 
