@@ -1,8 +1,7 @@
 body {
   font-family: $sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
 	scroll-behavior: smooth;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: min-content 1fr;
   margin: 0;
@@ -22,10 +21,11 @@ nav {
   ul {
     list-style: none;
     position: sticky;
-    top: 50%;
+    top: 50vh;
     z-index: 100;
     margin: 0;
     padding: 0;
+    margin-bottom: 50vh;
 
     li a {
       font-size: $large;
@@ -36,8 +36,8 @@ nav {
       text-decoration: none;
       margin: 0;
       transform-style: flat;
-      transition-delay: 0x;
-      transition-duration: 0.4s;
+      transition-delay: 0s;
+      transition-duration: 0.2s;
       transition-property: color;
       transition-timing-function: ease-in-out;
 
@@ -50,11 +50,13 @@ nav {
 }
 
 main {
-  padding-bottom: 40rem;
+  padding-bottom: 100vh;
+  overflow: hidden;
 
   section {
-    padding: 2rem;
-    margin: 0 0 2rem 0;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
     visibility: hidden;
     animation-duration: 0.5s;
     animation-delay: 0s;
