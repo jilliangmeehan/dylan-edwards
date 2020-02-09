@@ -13,7 +13,7 @@ nav ul li a.current { opacity: 1.0; }
 nav ul li a:hover { cursor: default; }
 
 .categories { position: fixed; top: 0; left: 0; z-index: 200; margin: 2rem; }
-.categories button { margin: .3rem; border: none; background-color: black; color: white; font-size: 1rem; display: block; font-family: serif; }
+.categories button { margin: .3rem; border: none; background-color: black; color: white; font-size: 1rem; display: block; font-family: monospace; }
 .categories button:hover { cursor: pointer; font-style: italic; }
 
 main { padding-bottom: 100vh; overflow: hidden; }
