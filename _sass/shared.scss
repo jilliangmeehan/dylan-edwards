@@ -5,12 +5,16 @@ body {
   display: grid;
   grid-template-columns: min-content 1fr;
   margin: 0;
+  background-color: black;
 }
 
 header {
+  font-family: $title-font;
+  text-transform: uppercase;
   position: fixed;
   top: 2%;
   right: 2%;
+  color: white;
 }
 
 nav {
@@ -32,22 +36,25 @@ nav {
         &.show { display: block; }
 
         a {
-          font-size: $large;
-          font-weight: bold;
-          color: black;
+          font-family: $project-font;
+          font-size: $extra-large;
+          text-transform: lowercase;
+          color: white;
+          opacity: 0.1;
           display: block;
-          padding: 1.5rem 2rem;
+          padding: 1rem 2rem;
           text-decoration: none;
           margin: 0;
           transform-style: flat;
           transition-delay: 0s;
-          transition-duration: 0.2s;
-          transition-property: color;
+          transition-duration: 0.3s;
+          transition-property: all;
           transition-timing-function: ease-in-out;
 
           &.current {
-            background: black;
-            color: white;
+            opacity: 1.0;
+            //background: white;
+            //color: black;
           }
         }
       }
@@ -79,7 +86,7 @@ main {
   overflow: hidden;
 
   section {
-    height: 20vh;
+    height: 15vh;
     padding: 0;
     margin: 0;
     visibility: hidden;
