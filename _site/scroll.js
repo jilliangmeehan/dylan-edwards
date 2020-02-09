@@ -1,3 +1,4 @@
+// Nav scrolling
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
