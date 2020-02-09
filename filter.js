@@ -32,7 +32,7 @@ function w3RemoveClass(element, name) {
   //element.classList.add('animated', 'zoomIn')
 }
 
-var btnContainer = document.getElementById("myBtnContainer");
+var btnContainer = document.getElementById("categories-btns");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
