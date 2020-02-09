@@ -10,8 +10,8 @@
   src: url('/assets/fonts/AgrandirGrandBlack.woff2') format('woff2'), url('/assets/fonts/AgrandirGrandBlack.woff') format('woff'), url('/assets/fonts/AgrandirGrandBlack.otf') format('otf');
 }
 
-$title-font: 'Agrandir Grand Black';
-$project-font: 'Agrandir Grand Bold';
+$title-font: 'Agrandir Grand Black', monospace;
+$project-font: 'Agrandir Grand Bold', monospace;
 $sans-serif: sans-serif;
 $serif: serif;
 

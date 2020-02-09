@@ -2,13 +2,13 @@
 @font-face { font-family: 'Agrandir Grand Black'; src: url("/assets/fonts/AgrandirGrandBlack.woff2") format("woff2"), url("/assets/fonts/AgrandirGrandBlack.woff") format("woff"), url("/assets/fonts/AgrandirGrandBlack.otf") format("otf"); }
 body { font-family: monospace; scroll-behavior: smooth; overflow-y: scroll; display: grid; grid-template-columns: min-content 1fr; margin: 0; background-color: black; }
 
-header { font-family: "Agrandir Grand Black"; text-transform: uppercase; position: fixed; top: 2%; right: 2%; color: white; }
+header { font-family: "Agrandir Grand Black", monospace; text-transform: uppercase; position: fixed; top: 2%; right: 2%; color: white; }
 
 nav { white-space: nowrap; margin: 0; padding: 0; }
 nav ul { list-style: none; position: sticky; top: 50vh; z-index: 100; margin: 0; padding: 0; margin-bottom: 50vh; }
 nav ul li.category { display: none; }
 nav ul li.show { display: block; }
-nav ul li a { font-family: "Agrandir Grand Bold"; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transform-style: flat; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out; }
+nav ul li a { font-family: "Agrandir Grand Bold", monospace; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transform-style: flat; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out; }
 nav ul li a.current { opacity: 1.0; }
 nav ul li a:hover { cursor: default; }
 
