@@ -1,5 +1,5 @@
-@font-face { font-family: 'Agrandir Grand Bold'; src: url("../assets/fonts/AgrandirGrandBold.woff2") format("woff2"), url("../assets/fonts/AgrandirGrandBold.woff") format("woff"), url("../assets/fonts/AgrandirGrandBold.otf") format("otf"); }
-@font-face { font-family: 'Agrandir Grand Black'; src: url("../assets/fonts/AgrandirGrandBlack.woff2") format("woff2"), url("../assets/fonts/AgrandirGrandBlack.woff") format("woff"), url("../assets/fonts/AgrandirGrandBlack.otf") format("otf"); }
+@font-face { font-family: 'Agrandir Grand Bold'; src: url("/assets/fonts/AgrandirGrandBold.woff2") format("woff2"), url("/assets/fonts/AgrandirGrandBold.woff") format("woff"), url("/assets/fonts/AgrandirGrandBold.otf") format("otf"); }
+@font-face { font-family: 'Agrandir Grand Black'; src: url("/assets/fonts/AgrandirGrandBlack.woff2") format("woff2"), url("/assets/fonts/AgrandirGrandBlack.woff") format("woff"), url("/assets/fonts/AgrandirGrandBlack.otf") format("otf"); }
 body { font-family: monospace; scroll-behavior: smooth; overflow-y: scroll; display: grid; grid-template-columns: min-content 1fr; margin: 0; background-color: black; }
 
 header { font-family: "Agrandir Grand Black", monospace; text-transform: uppercase; position: fixed; top: 2%; right: 2%; color: white; }
