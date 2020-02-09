@@ -4,12 +4,20 @@ header { position: fixed; top: 2%; right: 2%; }
 
 nav { white-space: nowrap; margin: 0; padding: 0; }
 nav ul { list-style: none; position: sticky; top: 50vh; z-index: 100; margin: 0; padding: 0; margin-bottom: 50vh; }
+nav ul li.category { display: none; }
+nav ul li.show { display: block; }
 nav ul li a { font-size: 48px; font-weight: bold; color: black; display: block; padding: 1.5rem 2rem; text-decoration: none; margin: 0; transform-style: flat; transition-delay: 0s; transition-duration: 0.2s; transition-property: color; transition-timing-function: ease-in-out; }
 nav ul li a.current { background: black; color: white; }
+
+.categories { position: fixed; top: 0; left: 0; z-index: 200; margin: 2rem; }
+.categories button { margin: .3rem; border: none; background-color: black; color: white; font-size: 1rem; display: block; }
+.categories button:hover { cursor: pointer; }
 
 main { padding-bottom: 100vh; overflow: hidden; }
 main section { height: 20vh; padding: 0; margin: 0; visibility: hidden; animation-duration: 0.5s; animation-delay: 0s; transition: all 0.2s linear; }
 main section.visible { visibility: visible; }
+main section.category { display: none; }
+main section.show { display: block; }
 main section div { height: 500px; width: 500px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; }
 main section#project-1 div { background-color: lightpink; }
 main section#project-2 div { background-color: moccasin; }
