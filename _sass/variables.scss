@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Agrandir Grand Bold';
-  src: url('/assets/fonts/AgrandirGrandBold.woff2') format('woff2'), url('/assets/fonts/AgrandirGrandBold.woff') format('woff'), url('/assets/fonts/AgrandirGrandBold.otf') format('otf');
+  src: url('../assets/fonts/AgrandirGrandBold.woff2') format('woff2'), url('../assets/fonts/AgrandirGrandBold.woff') format('woff'), url('../assets/fonts/AgrandirGrandBold.otf') format('otf');
 }
 
 @font-face {
   font-family: 'Agrandir Grand Black';
-  src: url('/assets/fonts/AgrandirGrandBlack.woff2') format('woff2'), url('/assets/fonts/AgrandirGrandBlack.woff') format('woff'), url('/assets/fonts/AgrandirGrandBlack.otf') format('otf');
+  src: url('../assets/fonts/AgrandirGrandBlack.woff2') format('woff2'), url('../assets/fonts/AgrandirGrandBlack.woff') format('woff'), url('../assets/fonts/AgrandirGrandBlack.otf') format('otf');
 }
 
 $title-font: 'Agrandir Grand Black', monospace;
