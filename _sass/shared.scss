@@ -1,17 +1,20 @@
 body {
-  font-family: $sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  font-family: monospace;
 	scroll-behavior: smooth;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: min-content 1fr;
   margin: 0;
+  background-color: black;
 }
 
 header {
+  font-family: $title-font;
+  text-transform: uppercase;
   position: fixed;
   top: 2%;
   right: 2%;
+  color: white;
 }
 
 nav {
@@ -22,53 +25,92 @@ nav {
   ul {
     list-style: none;
     position: sticky;
-    top: 50%;
+    top: 50vh;
     z-index: 100;
     margin: 0;
     padding: 0;
+    margin-bottom: 50vh;
 
-    li a {
-      font-size: $large;
-      font-weight: bold;
-      color: black;
-      display: block;
-      padding: 1.5rem 2rem;
-      text-decoration: none;
-      margin: 0;
-      transform-style: flat;
-      transition-delay: 0x;
-      transition-duration: 0.4s;
-      transition-property: color;
-      transition-timing-function: ease-in-out;
+      li {
+        &.category { display: none; }
+        &.show { display: block; }
 
-      &.current {
-        background: black;
-        color: white;
+        a {
+          font-family: $project-font;
+          font-size: $extra-large;
+          text-transform: lowercase;
+          color: white;
+          opacity: 0.1;
+          display: block;
+          padding: 1rem 2rem;
+          text-decoration: none;
+          margin: 0;
+          transform-style: flat;
+          transition-delay: 0s;
+          transition-duration: 0.3s;
+          transition-property: all;
+          transition-timing-function: ease-in-out;
+
+          &.current {
+            opacity: 1.0;
+            //background: white;
+            //color: black;
+          }
+
+          &:hover { cursor: default; }
+        }
       }
     }
   }
-}
+
+  .categories {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    margin: 2rem;
+
+    button {
+      margin: .3rem;
+      border: none;
+      background-color: black;
+      color: white;
+      font-size: 1rem;
+      display: block;
+      font-family: monospace;
+
+      &:hover {
+        cursor: pointer;
+        font-style: italic;
+      }
+    }
+  }
 
 main {
-  padding-bottom: 40rem;
+  padding-bottom: 100vh;
+  overflow: hidden;
 
   section {
-    padding: 2rem;
-    margin: 0 0 2rem 0;
+    height: 15vh;
+    padding: 0;
+    margin: 0;
     visibility: hidden;
     animation-duration: 0.5s;
     animation-delay: 0s;
     transition: all 0.2s linear;
     &.visible { visibility: visible; }
+    &.category { display: none; }
+    &.show { display: block; }
 
     div {
       height: 500px;
-      width: 500px;
+      width: 800px;
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
+      opacity: 0.5;
     }
 
     &#project-1 div { background-color: lightpink; }

@@ -1,16 +1,27 @@
-body { font-family: sans-serif; overflow-x: hidden; overflow-y: scroll; scroll-behavior: smooth; display: grid; grid-template-columns: min-content 1fr; margin: 0; }
+@font-face { font-family: 'Agrandir Grand Bold'; src: url("../fonts/AgrandirGrandBold.woff2") format("woff2"), url("../fonts/AgrandirGrandBold.woff") format("woff"), url("../fonts/AgrandirGrandBold.otf") format("otf"); }
+@font-face { font-family: 'Agrandir Grand Black'; src: url("../fonts/AgrandirGrandBlack.woff2") format("woff2"), url("../fonts/AgrandirGrandBlack.woff") format("woff"), url("../fonts/AgrandirGrandBlack.otf") format("otf"); }
+body { font-family: monospace; scroll-behavior: smooth; overflow-y: scroll; display: grid; grid-template-columns: min-content 1fr; margin: 0; background-color: black; }
 
-header { position: fixed; top: 2%; right: 2%; }
+header { font-family: "Agrandir Grand Black", monospace; text-transform: uppercase; position: fixed; top: 2%; right: 2%; color: white; }
 
 nav { white-space: nowrap; margin: 0; padding: 0; }
-nav ul { list-style: none; position: sticky; top: 50%; z-index: 100; margin: 0; padding: 0; }
-nav ul li a { font-size: 48px; font-weight: bold; color: black; display: block; padding: 1.5rem 2rem; text-decoration: none; margin: 0; transform-style: flat; transition-delay: 0x; transition-duration: 0.4s; transition-property: color; transition-timing-function: ease-in-out; }
-nav ul li a.current { background: black; color: white; }
+nav ul { list-style: none; position: sticky; top: 50vh; z-index: 100; margin: 0; padding: 0; margin-bottom: 50vh; }
+nav ul li.category { display: none; }
+nav ul li.show { display: block; }
+nav ul li a { font-family: "Agrandir Grand Bold", monospace; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transform-style: flat; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out; }
+nav ul li a.current { opacity: 1.0; }
+nav ul li a:hover { cursor: default; }
 
-main { padding-bottom: 40rem; }
-main section { padding: 2rem; margin: 0 0 2rem 0; visibility: hidden; animation-duration: 0.5s; animation-delay: 0s; transition: all 0.2s linear; }
+.categories { position: fixed; top: 0; left: 0; z-index: 200; margin: 2rem; }
+.categories button { margin: .3rem; border: none; background-color: black; color: white; font-size: 1rem; display: block; font-family: monospace; }
+.categories button:hover { cursor: pointer; font-style: italic; }
+
+main { padding-bottom: 100vh; overflow: hidden; }
+main section { height: 15vh; padding: 0; margin: 0; visibility: hidden; animation-duration: 0.5s; animation-delay: 0s; transition: all 0.2s linear; }
 main section.visible { visibility: visible; }
-main section div { height: 500px; width: 500px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; }
+main section.category { display: none; }
+main section.show { display: block; }
+main section div { height: 500px; width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; opacity: 0.5; }
 main section#project-1 div { background-color: lightpink; }
 main section#project-2 div { background-color: moccasin; }
 main section#project-3 div { background-color: paleturquoise; }

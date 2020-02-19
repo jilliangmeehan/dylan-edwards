@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: dylan edwards
 ---
 
@@ -8,45 +8,52 @@ title: dylan edwards
 </header>
 
     <nav>
+      <div class="categories" id="categories-btns">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('one')">Category One</button>
+        <button class="btn" onclick="filterSelection('two')">Category Two</button>
+        <button class="btn" onclick="filterSelection('three')">Category Three</button>
+      </div>
+
       <ul>
-        <li><a href="#project-1">Project 1</a></li>
-        <li><a href="#project-2">Project 2</a></li>
-        <li><a href="#project-3">Project 3</a></li>
-        <li><a href="#project-4">Project 4</a></li>
-        <li><a href="#project-5">Project 5</a></li>
-        <li><a href="#project-6">Project 6</a></li>
-        <li><a href="#project-7">Project 7</a></li>
-        <li><a href="#project-8">Project 8</a></li>
-        <li><a href="#project-9">Project 9</a></li>
+        <li class="category one"><a href="#project-1">Project one</a></li>
+        <li class="category two"><a href="#project-2">Project two</a></li>
+        <li class="category three"><a href="#project-3">Project three</a></li>
+        <li class="category one"><a href="#project-4">Project four</a></li>
+        <li class="category two"><a href="#project-5">Project five</a></li>
+        <li class="category three"><a href="#project-6">Project six</a></li>
+        <li class="category one"><a href="#project-7">Project seven</a></li>
+        <li class="category two"><a href="#project-8">Project eight</a></li>
+        <li class="category three"><a href="#project-9">Project nine</a></li>
       </ul>
     </nav>
 
   <main>
-    <section id="project-1">
+    <section id="project-1" class="category one">
+      <a data-fancybox href="https://vimeo.com/314050880"><div></div></a>
+    </section>
+    <section id="project-2" class="category two">
       <div></div>
     </section>
-    <section id="project-2">
+    <section id="project-3" class="category three">
       <div></div>
     </section>
-    <section id="project-3">
+    <section id="project-4" class="category one">
       <div></div>
     </section>
-    <section id="project-4">
+    <section id="project-5" class="category two">
       <div></div>
     </section>
-    <section id="project-5">
+    <section id="project-6" class="category three">
       <div></div>
     </section>
-    <section id="project-6">
+    <section id="project-7" class="category one">
       <div></div>
     </section>
-    <section id="project-7">
+    <section id="project-8" class="category two">
       <div></div>
     </section>
-    <section id="project-8">
-      <div></div>
-    </section>
-    <section id="project-9">
+    <section id="project-9" class="category three">
       <div></div>
     </section>
   </main>

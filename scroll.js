@@ -1,24 +1,25 @@
-  let mainNavLinks = document.querySelectorAll("nav ul li a");
-  let mainSections = document.querySelectorAll("main section");
+// Nav scrolling
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainSections = document.querySelectorAll("main section");
 
-  let lastId;
-  let cur = [];
+let lastId;
+let cur = [];
 
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
 
-    mainNavLinks.forEach(link => {
-      let section = document.querySelector(link.hash);
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
 
-      if (
-        section.offsetTop <= fromTop &&
-        section.offsetTop + section.offsetHeight > fromTop
-      ) {
-        link.classList.add("current");
-        section.classList.add("visible", "animated", "fadeIn");
-      } else {
-        link.classList.remove("current");
-        section.classList.remove("visible", "animated", "fadeIn");
-      }
-    });
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+      section.classList.add("visible");
+    } else {
+      link.classList.remove("current");
+      section.classList.remove("visible");
+    }
   });
+});
