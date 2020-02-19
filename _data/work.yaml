@@ -1,6 +1,6 @@
 - title: When Rivers Rise
   subtitle: Google
-  categories: [Narrative, Commercial]
+  categories: ["Narrative", "Commercial"]
   thumbnail: assets/images/thumbnails/whenriversrise_main.jpg
   video: https://vimeo.com/314050880
   credits: Directed by Tucker Bliss
@@ -12,14 +12,14 @@
   video: https://vimeo.com/375281295
   credits: Directed and Cinematography by Jeremy Snell
   additional: Vimeo Staff Pick / The Atlantic Selects
-  
+
 - title: Insect
   subtitle: Isaac Dunbar
   categories: ["Music Video"]
   thumbnail: assets/images/thumbnails/insect_main.png
   video: https://vimeo.com/375281295
   credits: Directed by Brendan Vaughan
-  
+
 - title: Beethoven
   subtitle: Boehringer Ingelheim
   categories: ["Commercial"]
@@ -34,28 +34,28 @@
   thumbnail: assets/images/thumbnails/paco_main.jpg
   video: https://vimeo.com/342753487
   credits: Directed by Matvey Fiks
-  
+
 - title: Dead Celebrities
   subtitle: Easy Life
   categories: ["Music Video"]
   thumbnail: assets/images/thumbnails/deadcelebs_main.tif
   video: https://vimeo.com/385136654
   credits: Directed by Matthew Dillon Cohen
-  
+
 - title: Get Action
   subtitle: Rapala
   categories: ["Commercial"]
   thumbnail: assets/images/thumbnails/rapala_main.jpg
   video: https://vimeo.com/318273319
   credits: Directed by John Merizadle
-  
+
 - title: Memories in Shanghai
   subtitle: Louis Vuitton
   categories: ["Commercial"]
   thumbnail: assets/images/thumbnails/lv_main.png
   video: https://vimeo.com/368307636
   credits: Directed by Matvey Fiks
-  
+
 - title: New House
   subtitle: Toro y Moi
   categories: ["Music Video"]
