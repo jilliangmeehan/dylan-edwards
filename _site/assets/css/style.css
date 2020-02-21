@@ -3,12 +3,17 @@
 body { font-family: monospace; scroll-behavior: smooth; overflow-y: scroll; display: grid; grid-template-columns: min-content 1fr; margin: 0; background-color: black; }
 
 header { font-family: "Agrandir Grand Black", monospace; text-transform: uppercase; position: fixed; top: 2%; right: 2%; color: white; }
+header h1 { font-size: 24px; font-size: 5vw; }
+@media (max-width: 480px) { header h1 { font-size: 24px; } }
+@media (min-width: 960px) { header h1 { font-size: 48px; } }
 
-nav { white-space: nowrap; margin: 0; padding: 0; }
-nav ul { list-style: none; position: sticky; top: 50vh; z-index: 100; margin: 0; padding: 0; margin-bottom: 50vh; }
+nav { white-space: nowrap; margin: 0; padding: 0; pointer-events: none; }
+nav ul { list-style: none; position: sticky; top: 50vh; z-index: 100; margin: 0; padding: 0; margin-bottom: 50vh; scroll-behavior: smooth; }
 nav ul li.category { display: none; }
 nav ul li.show { display: block; }
-nav ul li a { font-family: "Agrandir Grand Bold", monospace; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transform-style: flat; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out; }
+nav ul li a { font-family: "Agrandir Grand Bold", monospace; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transform-style: flat; transition-delay: 0s; transition-duration: 0.3s; transition-property: all; transition-timing-function: ease-in-out; font-size: 48px; font-size: 3.8vw; }
+@media (max-width: 473.6842105263px) { nav ul li a { font-size: 18px; } }
+@media (min-width: 1894.7368421053px) { nav ul li a { font-size: 72px; } }
 nav ul li a.current { opacity: 1.0; }
 nav ul li a:hover { cursor: default; }
 
@@ -21,4 +26,4 @@ main section { height: 15vh; padding: 0; margin: 0; visibility: hidden; animatio
 main section.visible { visibility: visible; }
 main section.category { display: none; }
 main section.show { display: block; }
-main section img { max-width: 1000px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; opacity: 0.5; }
+main section img { max-width: 70vw; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; opacity: 0.5; }

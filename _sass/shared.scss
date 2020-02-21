@@ -15,12 +15,14 @@ header {
   top: 2%;
   right: 2%;
   color: white;
+  h1 { @include responsive-font(5vw, $medium, $large, $medium); }
 }
 
 nav {
   white-space: nowrap;
   margin: 0;
   padding: 0;
+  pointer-events: none;
 
   ul {
     list-style: none;
@@ -30,6 +32,7 @@ nav {
     margin: 0;
     padding: 0;
     margin-bottom: 50vh;
+    scroll-behavior: smooth;
 
       li {
         &.category { display: none; }
@@ -50,6 +53,7 @@ nav {
           transition-duration: 0.3s;
           transition-property: all;
           transition-timing-function: ease-in-out;
+          @include responsive-font(3.8vw, $regular, $extra-large, $large);
 
           &.current {
             opacity: 1.0;
@@ -103,7 +107,7 @@ main {
     &.show { display: block; }
 
     img {
-      max-width: 1000px;
+      max-width: 70vw;
       position: fixed;
       top: 50%;
       left: 50%;
@@ -113,3 +117,5 @@ main {
     }
   }
 }
+
+@media screen and (min-width: 750px) {  }

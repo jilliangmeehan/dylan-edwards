@@ -15,7 +15,7 @@
 
 - title: Insect
   subtitle: Isaac Dunbar
-  categories: ["Music Video"]
+  categories: ["MV"]
   thumbnail: assets/images/thumbnails/insect_main.png
   video: https://vimeo.com/375281295
   credits: Directed by Brendan Vaughan
@@ -37,7 +37,7 @@
 
 - title: Dead Celebrities
   subtitle: Easy Life
-  categories: ["Music Video"]
+  categories: ["MV"]
   thumbnail: assets/images/thumbnails/deadcelebs_main.tif
   video: https://vimeo.com/385136654
   credits: Directed by Matthew Dillon Cohen
@@ -58,7 +58,7 @@
 
 - title: New House
   subtitle: Toro y Moi
-  categories: ["Music Video"]
+  categories: ["MV"]
   thumbnail: assets/images/thumbnails/newhouse_main.png
   video: https://vimeo.com/383568410
   credits: Directed by India Sleem
@@ -86,7 +86,7 @@
 
 - title: Kickback
   subtitle: Omar Apollo
-  categories: ["Music Video"]
+  categories: ["MV"]
   thumbnail: assets/images/thumbnails/kickback_main.jpg
   video: https://vimeo.com/382687713
   credits: Directed by Matthew Dillon Cohen
@@ -169,7 +169,7 @@
 
 - title: Cycles
   subtitle: Worn-Tin
-  categories: ["Music Video"]
+  categories: ["MV"]
   thumbnail: assets/images/thumbnails/worntin_main.png
   video: https://vimeo.com/252799230
   credits: Directed and Cinematography by Patrick Golan
@@ -182,7 +182,7 @@
 
 - title: Bambi
   subtitle: Hippo Campus
-  categories: ["Music Video"]
+  categories: ["MV"]
   thumbnail: assets/images/thumbnails/bambi_main.png
   video: https://vimeo.com/288094705
   credits: Directed by Kyle Sauer
@@ -197,6 +197,6 @@
 - title: Paddle People
   subtitle: Nissan
   categories: ["Commercial"]
-  thumbnail: assets/images/thumbnails/newhouse_main.png
+  thumbnail: assets/images/thumbnails/nissan_main.png
   video: https://vimeo.com/267479556
   credits: Directed by Marcus Tortorici

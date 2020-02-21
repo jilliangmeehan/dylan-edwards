@@ -8,12 +8,13 @@ title: dylan edwards
 </header>
 
     <nav>
+      <!--
       <div class="categories" id="categories-btns">
         <button class="btn active" onclick="filterSelection('all')">All</button>
-        <button class="btn" onclick="filterSelection('one')">Category One</button>
-        <button class="btn" onclick="filterSelection('two')">Category Two</button>
-        <button class="btn" onclick="filterSelection('three')">Category Three</button>
-      </div>
+        <button class="btn" onclick="filterSelection('narrative')">Narrative</button>
+        <button class="btn" onclick="filterSelection('commercial')">Commercial</button>
+        <button class="btn" onclick="filterSelection('mv')">Music Video</button>
+      </div> -->
 
       <ul>
         {% for item in site.data.work %}
@@ -24,11 +25,8 @@ title: dylan edwards
 
   <main>
     {% for item in site.data.work %}
-      <section id="{{ item.title | slugify }}">
+      <section id="{{ item.title | slugify }}" class="category {{ item.categories | downcase }}">
         <a data-fancybox href="{{ item.video }}"><img src="{{ item.thumbnail }}"></a>
       </section>
     {% endfor %}
-    <!-- <section id="project-1" class="category one">
-      <a data-fancybox href="https://vimeo.com/314050880"><div></div></a>
-    </section> -->
   </main>
