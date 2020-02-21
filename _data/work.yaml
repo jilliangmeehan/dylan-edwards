@@ -163,34 +163,34 @@
 
 - title: Itadakimasu
   categories: ["Narrative"]
-  thumbnail: assets/images/thumbnails/newhouse_main.png
+  thumbnail: assets/images/thumbnails/sushi_main.jpg
   video: https://vimeo.com/357913708
   credits: Directed by Brendan Vaughan
 
 - title: Cycles
   subtitle: Worn-Tin
   categories: ["Music Video"]
-  thumbnail: assets/images/thumbnails/newhouse_main.png
+  thumbnail: assets/images/thumbnails/worntin_main.png
   video: https://vimeo.com/252799230
   credits: Directed and Cinematography by Patrick Golan
 
 - title: HepConnect
   categories: ["Commercial"]
-  thumbnail: assets/images/thumbnails/newhouse_main.png
+  thumbnail: assets/images/thumbnails/hepconnect_main.png
   video: https://vimeo.com/334958619
   credits: Directed by Brendan Hall
 
 - title: Bambi
   subtitle: Hippo Campus
   categories: ["Music Video"]
-  thumbnail: assets/images/thumbnails/newhouse_main.png
+  thumbnail: assets/images/thumbnails/bambi_main.png
   video: https://vimeo.com/288094705
   credits: Directed by Kyle Sauer
 
 - title: Moving Day
   subtitle: Amazon Ring
   categories: ["Commercial"]
-  thumbnail: assets/images/thumbnails/newhouse_main.png
+  thumbnail: assets/images/thumbnails/amazonring_main.jpg
   video: https://vimeo.com/329691417
   credits: Directed by Tucker Bliss
 
