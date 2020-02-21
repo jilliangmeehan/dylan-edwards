@@ -1,5 +1,4 @@
 // Fonts
-
 @font-face {
   font-family: 'Agrandir Grand Bold';
   src: url('../fonts/AgrandirGrandBold.woff2') format('woff2'), url('../fonts/AgrandirGrandBold.woff') format('woff'), url('../fonts/AgrandirGrandBold.otf') format('otf');
@@ -23,6 +22,7 @@ $medium: 24px;
 $regular: 18px;
 $small: 14px;
 
+// Responsive text mixin
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
   $responsive-unitless: $responsive / ($responsive - $responsive + 1);
   $dimension: if(unit($responsive) == 'vh', 'height', 'width');
