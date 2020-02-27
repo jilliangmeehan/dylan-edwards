@@ -1,13 +1,13 @@
 - title: When Rivers Rise
   subtitle: Google
-  categories: ["Narrative", "Commercial"]
+  categories: Narrative Commercial
   thumbnail: assets/images/thumbnails/whenriversrise_main.jpg
   video: https://vimeo.com/314050880
   credits: Directed by Tucker Bliss
   additional: Vimeo Staff Pick
 
 - title: Pilgrims
-  categories: ["Narrative"]
+  categories: Narrative
   thumbnail: assets/images/thumbnails/pilgrims_main.png
   video: https://vimeo.com/375281295
   credits: Directed and Cinematography by Jeremy Snell
@@ -15,14 +15,14 @@
 
 - title: Insect
   subtitle: Isaac Dunbar
-  categories: ["MV"]
+  categories: MV
   thumbnail: assets/images/thumbnails/insect_main.png
   video: https://vimeo.com/375281295
   credits: Directed by Brendan Vaughan
 
 - title: Beethoven
   subtitle: Boehringer Ingelheim
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/beethoven_main.png
   video: https://vimeo.com/375281295
   credits: Directed by Tucker Bliss
@@ -30,55 +30,55 @@
 
 - title: Million x Pacman
   subtitle: Paco Rabanne
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/paco_main.jpg
   video: https://vimeo.com/342753487
   credits: Directed by Matvey Fiks
 
 - title: Dead Celebrities
   subtitle: Easy Life
-  categories: ["MV"]
+  categories: MV
   thumbnail: assets/images/thumbnails/deadcelebs_main.tif
   video: https://vimeo.com/385136654
   credits: Directed by Matthew Dillon Cohen
 
 - title: Get Action
   subtitle: Rapala
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/rapala_main.jpg
   video: https://vimeo.com/318273319
   credits: Directed by John Merizalde
 
 - title: Memories in Shanghai
   subtitle: Louis Vuitton
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/lv_main.png
   video: https://vimeo.com/368307636
   credits: Directed by Matvey Fiks
 
 - title: New House
   subtitle: Toro y Moi
-  categories: ["MV"]
+  categories: MV
   thumbnail: assets/images/thumbnails/newhouse_main.png
   video: https://vimeo.com/383568410
   credits: Directed by India Sleem
 
 - title: Forever Ferg
-  categories: ["Narrative", "Commercial"]
+  categories: Narrative Commercial
   thumbnail: assets/images/thumbnails/foreverferg_main.png
   video: https://vimeo.com/276967332
   credits: Directed by Alfred Marroquin
 
 - title: Go
   subtitle: LA Kings
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/lakings_main.jpg
   video: https://vimeo.com/366290137
   credits: Directed by John Merizalde
 
 - title: Run the Show
   subtitle: New Amsterdam Vodka
-  categories: ["Narrative", "Commercial"]
+  categories: Narrative Commercial
   thumbnail: assets/images/thumbnails/nav_main.png
   video: https://vimeo.com/295081160
   video2: https://vimeo.com/310667191
@@ -86,20 +86,20 @@
 
 - title: Kickback
   subtitle: Omar Apollo
-  categories: ["MV"]
+  categories: MV
   thumbnail: assets/images/thumbnails/kickback_main.jpg
   video: https://vimeo.com/382687713
   credits: Directed by Matthew Dillon Cohen
 
 - title: Chaz Bear
   subtitle: GQ
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/chaz_main.png
   video: https://vimeo.com/353221482
   credits: Directed by India Sleem
 
 - title: Days After Your Departure
-  categories: ["Narrative"]
+  categories: Narrative
   thumbnail: assets/images/thumbnails/dayd_main.png
   video: https://vimeo.com/270229028
   credits: Directed by Sam Sneed
@@ -107,47 +107,47 @@
 
 - title: Reimagine Your World
   subtitle: Vodafone
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/vodafone_main.jpg
   video: https://vimeo.com/353798323
   credits: Directed by Tobias Nathan
 
 - title: Always Running
   subtitle: Adidas
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/adidas_main.png
   video: https://vimeo.com/363959707
   credits: Directed by John Merizalde
 
 - title: Homegrown
-  categories: ["Narrativel"]
+  categories: Narrative
   thumbnail: assets/images/thumbnails/homegrown_main.png
   video: https://vimeo.com/310676918
   credits: Directed by Scott Perry
 
 - title: Heist
   subtitle: Pantene
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/pantene_main.png
   video: https://vimeo.com/310676918
   credits: Directed by Jochaim Zunke
 
 - title: Academy Sports
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/academy_main.jpg
   video: https://player.vimeo.com/video/329682424
   video2: https://player.vimeo.com/video/329684938
   credits: Directed by Tucker Bliss
 
 - title: What You Need
-  categories: ["Narrative", "Commercial"]
+  categories: Narrative Commercial
   thumbnail: assets/images/thumbnails/whatyouneed_main.png
   video: https://vimeo.com/372632186
   credits: Directed by Alfred Marroquin
 
 - title: Denim Secrets
   subtitle: Vogue
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/denimsecrets_main.jpg
   video: https://vimeo.com/269559198
   video2: https://vimeo.com/269559620
@@ -156,47 +156,47 @@
 
 - title: Forwards
   subtitle: Invisalign
-  categories: ["Narrative", "Commercial"]
+  categories: Narrative Commercial
   thumbnail: assets/images/thumbnails/forwards_main.png
   video: https://vimeo.com/315297981
   credits: Directed by John Merizalde
 
 - title: Itadakimasu
-  categories: ["Narrative"]
+  categories: Narrative
   thumbnail: assets/images/thumbnails/sushi_main.jpg
   video: https://vimeo.com/357913708
   credits: Directed by Brendan Vaughan
 
 - title: Cycles
   subtitle: Worn-Tin
-  categories: ["MV"]
+  categories: MV
   thumbnail: assets/images/thumbnails/worntin_main.png
   video: https://vimeo.com/252799230
   credits: Directed and Cinematography by Patrick Golan
 
 - title: HepConnect
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/hepconnect_main.png
   video: https://vimeo.com/334958619
   credits: Directed by Brendan Hall
 
 - title: Bambi
   subtitle: Hippo Campus
-  categories: ["MV"]
+  categories: MV
   thumbnail: assets/images/thumbnails/bambi_main.png
   video: https://vimeo.com/288094705
   credits: Directed by Kyle Sauer
 
 - title: Moving Day
   subtitle: Amazon Ring
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/amazonring_main.jpg
   video: https://vimeo.com/329691417
   credits: Directed by Tucker Bliss
 
 - title: Paddle People
   subtitle: Nissan
-  categories: ["Commercial"]
+  categories: Commercial
   thumbnail: assets/images/thumbnails/nissan_main.png
   video: https://vimeo.com/267479556
   credits: Directed by Marcus Tortorici

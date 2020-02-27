@@ -16,7 +16,7 @@ function w3AddClass(element, name) {
   for (i = 0; i < arr2.length; i++) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
-  //element.classList.add('animated', 'zoomIn')
+  //element.classList.add('animated', 'fadeInUp')
 }
 
 function w3RemoveClass(element, name) {
@@ -29,7 +29,7 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
-  //element.classList.add('animated', 'zoomIn')
+  //element.classList.add('animated', 'fadeInUp')
 }
 
 var btnContainer = document.getElementById("categories-btns");

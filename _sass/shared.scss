@@ -68,16 +68,17 @@ nav {
     left: 0;
     z-index: 200;
     margin: 2rem;
+    pointer-events: all;
 
     button {
       margin: .3rem;
       border: none;
       background-color: black;
       color: white;
-      font-size: 1rem;
+      font-size: 0.8rem;
       display: block;
-      font-family: monospace;
-
+      font-family: $sans-serif;
+      &.active { font-style: italic; }
       &:hover {
         cursor: pointer;
         font-style: italic;
