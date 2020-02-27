@@ -26,7 +26,7 @@ title: dylan edwards
   <main>
     {% for item in site.data.work %}
       <section id="{{ item.title | slugify }}" class="category {{ item.categories | downcase }}">
-        <a data-fancybox href="{{ item.video }}"><img src="{{ item.thumbnail }}"></a>
+        <a data-fancybox href="{{ item.video }}"><img class="animated" src="{{ item.thumbnail }}"></a>
       </section>
     {% endfor %}
   </main>

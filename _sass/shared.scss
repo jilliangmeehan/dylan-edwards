@@ -1,11 +1,13 @@
 body {
   font-family: monospace;
 	scroll-behavior: smooth;
+  overflow-x: hidden;
   overflow-y: scroll;
   display: grid;
   grid-template-columns: min-content 1fr;
   margin: 0;
   background-color: black;
+  &::-webkit-scrollbar { display: none; }
 }
 
 header {
@@ -51,7 +53,7 @@ nav {
           margin: 0;
           transform-style: flat;
           transition-delay: 0s;
-          transition-duration: 0.3s;
+          transition-duration: 0.8s;
           transition-property: all;
           transition-timing-function: ease-in-out;
           @include responsive-font(3.8vw, $regular, $extra-large, $large);
@@ -99,11 +101,6 @@ main {
     height: 6vh;
     padding: 0;
     margin: 0;
-    visibility: hidden;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    transition: all 0.2s linear;
-    &.visible { visibility: visible; }
     &.category { display: none; }
     &.show { display: block; }
 
@@ -114,7 +111,14 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
-      opacity: 0.5;
+      transition: opacity 1s ease;
+      opacity: 0;
+      &.visible { opacity: 1; }
+    }
+
+    a {
+      pointer-events: none;
+      &.visible { pointer-events: all; }
     }
   }
 }

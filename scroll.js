@@ -10,16 +10,20 @@ window.addEventListener("scroll", event => {
 
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
+    let video = section.querySelector("a");
+    let animatedImage = section.querySelector("img");
 
     if (
       section.offsetTop <= fromTop &&
       section.offsetTop + section.offsetHeight > fromTop
     ) {
       link.classList.add("current");
-      section.classList.add("visible");
+      animatedImage.classList.add("visible");
+      video.classList.add("visible");
     } else {
       link.classList.remove("current");
-      section.classList.remove("visible");
+      animatedImage.classList.remove("visible");
+      video.classList.remove("visible");
     }
   });
 });
