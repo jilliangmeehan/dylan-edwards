@@ -7,7 +7,7 @@ window.addEventListener("scroll", event => {
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
     let video = section.querySelector("a");
-    let animatedImage = section.querySelector("img");
+    let animatedImage = section.querySelector("img, iframe");
 
     if (
       section.offsetTop <= fromTop &&

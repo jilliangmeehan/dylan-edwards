@@ -25,7 +25,12 @@ title: dylan edwards
   <main>
     {% for item in site.data.work %}
       <section id="{{ item.title | slugify }}" class="category {{ item.categories | downcase }}">
-        <a data-fancybox href="{{ item.video }}"><img class="animated" src="{{ item.thumbnail }}"></a>
+        {% if item.gif %}
+          <a class="ifGif" data-fancybox href="{{ item.video }}"></a>
+          <iframe src="{{ item.gif }}?background=1" width="640" height="268" frameborder="0"></iframe>
+        {% else %}
+          <a data-fancybox href="{{ item.video }}"><img class="animated" src="{{ item.thumbnail }}"></a>
+        {% endif %}
       </section>
     {% endfor %}
   </main>
