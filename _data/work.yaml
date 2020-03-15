@@ -21,6 +21,7 @@
   thumbnail: assets/images/thumbnails/insect_main.png
   video: https://vimeo.com/375281295
   credits: Directed by Brendan Vaughan
+  gif: https://player.vimeo.com/video/397823587
 
 - title: Beethoven
   subtitle: Boehringer Ingelheim
@@ -29,6 +30,7 @@
   video: https://vimeo.com/375281295
   credits: Directed by Tucker Bliss
   additional: Cannes Lion Shortlist
+  gif: https://player.vimeo.com/video/397833753
 
 - title: Million x Pacman
   subtitle: Paco Rabanne
@@ -36,6 +38,7 @@
   thumbnail: assets/images/thumbnails/paco_main.jpg
   video: https://vimeo.com/342753487
   credits: Directed by Matvey Fiks
+  gif: https://player.vimeo.com/video/397823813
 
 - title: Dead Celebrities
   subtitle: Easy Life
@@ -43,6 +46,7 @@
   thumbnail: assets/images/thumbnails/deadcelebs_main.tif
   video: https://vimeo.com/385136654
   credits: Directed by Matthew Dillon Cohen
+  gif: https://player.vimeo.com/video/397833723
 
 - title: Get Action
   subtitle: Rapala
@@ -50,6 +54,7 @@
   thumbnail: assets/images/thumbnails/rapala_main.jpg
   video: https://vimeo.com/318273319
   credits: Directed by John Merizalde
+  gif: https://player.vimeo.com/video/397823877
 
 - title: Memories in Shanghai
   subtitle: Louis Vuitton
@@ -57,6 +62,7 @@
   thumbnail: assets/images/thumbnails/lv_main.png
   video: https://vimeo.com/368307636
   credits: Directed by Matvey Fiks
+  gif: https://player.vimeo.com/video/397823698
 
 - title: New House
   subtitle: Toro y Moi
@@ -64,12 +70,14 @@
   thumbnail: assets/images/thumbnails/newhouse_main.png
   video: https://vimeo.com/383568410
   credits: Directed by India Sleem
+  gif: https://player.vimeo.com/video/397827362
 
 - title: Forever Ferg
   categories: Some Narrative Commercial
   thumbnail: assets/images/thumbnails/foreverferg_main.png
   video: https://vimeo.com/276967332
   credits: Directed by Alfred Marroquin
+  gif: https://player.vimeo.com/video/397823469
 
 - title: Go
   subtitle: LA Kings
@@ -77,6 +85,7 @@
   thumbnail: assets/images/thumbnails/lakings_main.jpg
   video: https://vimeo.com/366290137
   credits: Directed by John Merizalde
+  gif: https://player.vimeo.com/video/397827330
 
 - title: Run the Show
   subtitle: New Amsterdam Vodka
@@ -85,6 +94,7 @@
   video: https://vimeo.com/295081160
   video2: https://vimeo.com/310667191
   credits: Directed by Alfred Marroquin
+  gif: https://player.vimeo.com/video/397827344
 
 - title: Kickback
   subtitle: Omar Apollo
@@ -92,6 +102,7 @@
   thumbnail: assets/images/thumbnails/kickback_main.jpg
   video: https://vimeo.com/382687713
   credits: Directed by Matthew Dillon Cohen
+  gif: https://player.vimeo.com/video/397833681
 
 - title: Chaz Bear
   subtitle: GQ
@@ -99,6 +110,7 @@
   thumbnail: assets/images/thumbnails/chaz_main.png
   video: https://vimeo.com/353221482
   credits: Directed by India Sleem
+  gif: https://player.vimeo.com/video/397827299
 
 - title: Days After Your Departure
   categories: Narrative
@@ -106,6 +118,7 @@
   video: https://vimeo.com/270229028
   credits: Directed by Sam Sneed
   additional: Featured on HBO
+  gif: https://player.vimeo.com/video/397833736
 
 - title: Reimagine Your World
   subtitle: Vodafone
@@ -113,6 +126,7 @@
   thumbnail: assets/images/thumbnails/vodafone_main.jpg
   video: https://vimeo.com/353798323
   credits: Directed by Tobias Nathan
+  gif: https://player.vimeo.com/video/397827375
 
 - title: Always Running
   subtitle: Adidas
@@ -120,12 +134,14 @@
   thumbnail: assets/images/thumbnails/adidas_main.png
   video: https://vimeo.com/363959707
   credits: Directed by John Merizalde
+  gif: https://player.vimeo.com/video/397827284
 
 - title: Homegrown
   categories: Narrative
   thumbnail: assets/images/thumbnails/homegrown_main.png
   video: https://vimeo.com/310676918
   credits: Directed by Scott Perry
+  gif: https://player.vimeo.com/video/397827323
 
 - title: Heist
   subtitle: Pantene
@@ -133,6 +149,7 @@
   thumbnail: assets/images/thumbnails/pantene_main.png
   video: https://vimeo.com/310676918
   credits: Directed by Jochaim Zunke
+  gif: https://player.vimeo.com/video/397827349
 
 - title: Academy Sports
   categories: Commercial
@@ -140,12 +157,14 @@
   video: https://player.vimeo.com/video/329682424
   video2: https://player.vimeo.com/video/329684938
   credits: Directed by Tucker Bliss
+  gif: https://player.vimeo.com/video/397827264
 
 - title: What You Need
   categories: Narrative Commercial
   thumbnail: assets/images/thumbnails/whatyouneed_main.png
   video: https://vimeo.com/372632186
   credits: Directed by Alfred Marroquin
+  gif: https://player.vimeo.com/video/397827384
 
 - title: Denim Secrets
   subtitle: Vogue
@@ -155,6 +174,7 @@
   video2: https://vimeo.com/269559620
   video3: https://vimeo.com/269560170
   credits: Directed by Matvey Fiks
+  gif: https://player.vimeo.com/video/397833708
 
 - title: Forwards
   subtitle: Invisalign
@@ -162,12 +182,14 @@
   thumbnail: assets/images/thumbnails/forwards_main.png
   video: https://vimeo.com/315297981
   credits: Directed by John Merizalde
+  gif: https://player.vimeo.com/video/397827316
 
 - title: Itadakimasu
   categories: Narrative
   thumbnail: assets/images/thumbnails/sushi_main.jpg
   video: https://vimeo.com/357913708
   credits: Directed by Brendan Vaughan
+  gif: https://player.vimeo.com/video/397833660
 
 - title: Cycles
   subtitle: Worn-Tin
@@ -175,12 +197,14 @@
   thumbnail: assets/images/thumbnails/worntin_main.png
   video: https://vimeo.com/252799230
   credits: Directed and Cinematography by Patrick Golan
+  gif: https://player.vimeo.com/video/397833644
 
 - title: HepConnect
   categories: Commercial
   thumbnail: assets/images/thumbnails/hepconnect_main.png
   video: https://vimeo.com/334958619
   credits: Directed by Brendan Hall
+  gif: https://player.vimeo.com/video/397833697
 
 - title: Bambi
   subtitle: Hippo Campus
@@ -188,6 +212,7 @@
   thumbnail: assets/images/thumbnails/bambi_main.png
   video: https://vimeo.com/288094705
   credits: Directed by Kyle Sauer
+  gif: https://player.vimeo.com/video/397833773
 
 - title: Moving Day
   subtitle: Amazon Ring
@@ -195,6 +220,7 @@
   thumbnail: assets/images/thumbnails/amazonring_main.jpg
   video: https://vimeo.com/329691417
   credits: Directed by Tucker Bliss
+  gif: https://player.vimeo.com/video/397833785
 
 - title: Paddle People
   subtitle: Nissan
@@ -202,3 +228,4 @@
   thumbnail: assets/images/thumbnails/nissan_main.png
   video: https://vimeo.com/267479556
   credits: Directed by Marcus Tortorici
+  gif: https://player.vimeo.com/video/397833671

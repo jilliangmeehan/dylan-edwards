@@ -37,7 +37,7 @@ header {
       border: none;
       background-color: rgba(0,0,0,0);
       color: white;
-      @include responsive-font(2vw, $small, $regular, $small);
+      @include responsive-font(5vw, $small, $regular, $small);
       display: inline-block;
       font-family: 'Inter';
       &.active { font-style: italic; }
@@ -83,7 +83,7 @@ nav {
           text-decoration: none;
           margin: 0;
           transition: all 0.2s linear;
-          @include responsive-font(4.2vw, $regular, $extra-large, $large);
+          @include responsive-font(5vw, $regular, $extra-large, $large);
           &.current { opacity: 1.0; }
           &:hover { cursor: default; }
           .subtitle {
