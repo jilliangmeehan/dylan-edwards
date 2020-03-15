@@ -14,10 +14,38 @@ header {
   font-family: $title-font;
   text-transform: uppercase;
   position: fixed;
-  top: 2%;
-  right: 2%;
+  top: 0;
+  right: 0;
   color: white;
-  h1 { @include responsive-font(5vw, $medium, $large, $medium); }
+  z-index: 200;
+  width: 100%;
+  padding: 4%;
+  h1 {
+    @include responsive-font(5vw, $medium, $large, $medium);
+    margin: 0;
+    text-align: right;
+  }
+
+  .categories {
+    pointer-events: all;
+    float: right;
+
+    button {
+      margin: .3rem;
+      border: none;
+      background-color: rgba(0,0,0,0);
+      color: white;
+      font-size: 1rem;
+      display: inline-block;
+      font-family: 'Inter';
+      text-align: right;
+      &.active { font-style: italic; }
+      &:hover {
+        cursor: pointer;
+        font-style: italic;
+      }
+    }
+  }
 }
 
 nav {
@@ -62,30 +90,6 @@ nav {
             @include responsive-font(3vw, $small, $large, $regular);
           }
         }
-      }
-    }
-  }
-
-  .categories {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 200;
-    margin: 2rem;
-    pointer-events: all;
-
-    button {
-      margin: .3rem;
-      border: none;
-      background-color: rgba(0,0,0,0);
-      color: white;
-      font-size: 0.8rem;
-      display: block;
-      font-family: 'Inter';
-      &.active { font-style: italic; }
-      &:hover {
-        cursor: pointer;
-        font-style: italic;
       }
     }
   }
