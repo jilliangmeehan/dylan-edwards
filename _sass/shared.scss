@@ -31,15 +31,15 @@ header {
     float: right;
 
     button {
+      float: right;
+      clear: both;
       margin: .3rem;
       border: none;
       background-color: rgba(0,0,0,0);
       color: white;
       @include responsive-font(2vw, $small, $regular, $small);
-      display: block;
+      display: inline-block;
       font-family: 'Inter';
-      text-align: right;
-      float: right;
       &.active { font-style: italic; }
       &:hover {
         cursor: pointer;
@@ -137,6 +137,10 @@ main {
 
 @media screen and (min-width: 1080px) {
   main section { height: 8vh; }
+  header .categories button {
+    float: none;
+    clear: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {

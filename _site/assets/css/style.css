@@ -8,7 +8,7 @@ header h1 { font-size: 24px; font-size: 5vw; margin: 0; text-align: right; }
 @media (max-width: 480px) { header h1 { font-size: 24px; } }
 @media (min-width: 960px) { header h1 { font-size: 48px; } }
 header .categories { pointer-events: all; float: right; }
-header .categories button { margin: .3rem; border: none; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 2vw; display: block; font-family: 'Inter'; text-align: right; float: right; }
+header .categories button { float: right; clear: both; margin: .3rem; border: none; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 2vw; display: inline-block; font-family: 'Inter'; }
 @media (max-width: 700px) { header .categories button { font-size: 14px; } }
 @media (min-width: 900px) { header .categories button { font-size: 18px; } }
 header .categories button.active { font-style: italic; }
@@ -39,5 +39,6 @@ main section img { z-index: 1; }
 main section iframe { z-index: 0; }
 main section .ifGif { display: block; position: absolute; width: 100%; height: 50%; z-index: 1; }
 
-@media screen and (min-width: 1080px) { main section { height: 8vh; } }
+@media screen and (min-width: 1080px) { main section { height: 8vh; }
+  header .categories button { float: none; clear: none; } }
 @media screen and (min-width: 1200px) { main section { height: 10vh; } }
