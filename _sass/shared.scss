@@ -35,7 +35,7 @@ header {
       border: none;
       background-color: rgba(0,0,0,0);
       color: white;
-      @include responsive-font(3vw, $small, $regular, $small);
+      @include responsive-font(2vw, $small, $regular, $small);
       display: inline-block;
       font-family: 'Inter';
       text-align: right;
