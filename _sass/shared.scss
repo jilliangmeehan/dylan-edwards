@@ -41,7 +41,7 @@ nav {
 
       li {
         &.category { display: none; }
-        &.show { display: block; }
+        &.show {display: block;}
 
         a {
           font-family: $project-font;
@@ -73,11 +73,11 @@ nav {
     button {
       margin: .3rem;
       border: none;
-      background-color: black;
+      background-color: rgba(0,0,0,0);
       color: white;
       font-size: 0.8rem;
-      display: block;
-      font-family: $sans-serif;
+      display: inline-block;
+      font-family: 'Inter';
       &.active { font-style: italic; }
       &:hover {
         cursor: pointer;

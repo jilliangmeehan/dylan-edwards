@@ -19,7 +19,7 @@ nav ul li a.current { opacity: 1.0; }
 nav ul li a:hover { cursor: default; }
 
 .categories { position: fixed; top: 0; left: 0; z-index: 200; margin: 2rem; pointer-events: all; }
-.categories button { margin: .3rem; border: none; background-color: black; color: white; font-size: 0.8rem; display: block; font-family: sans-serif; }
+.categories button { margin: .3rem; border: none; background-color: rgba(0, 0, 0, 0); color: white; font-size: 0.8rem; display: inline-block; font-family: 'Inter'; }
 .categories button.active { font-style: italic; }
 .categories button:hover { cursor: pointer; font-style: italic; }
 

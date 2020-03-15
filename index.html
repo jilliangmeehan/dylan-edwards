@@ -4,11 +4,11 @@ title: dylan edwards
 ---
 
 <header>
-  <h1>Dylan Edwards</h1>
+  <h1 class="animated fadeIn">Dylan Edwards</h1>
 </header>
 
     <nav>
-      <div class="categories" id="categories-btns">
+      <div class="categories animated fadeIn" id="categories-btns">
         <button class="btn active" onclick="filterSelection('some')">Some</button>
         <button class="btn" onclick="filterSelection('narrative')">Narrative</button>
         <button class="btn" onclick="filterSelection('commercial')">Commercial</button>
@@ -18,7 +18,7 @@ title: dylan edwards
 
       <ul>
         {% for item in site.data.work %}
-          <li class="category {{ item.categories | downcase }}"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a></li>
+          <li class="category {{ item.categories | downcase }} animated fadeInUp"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a></li>
         {% endfor %}
       </ul>
     </nav>
