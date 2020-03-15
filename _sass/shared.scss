@@ -54,9 +54,13 @@ nav {
           text-decoration: none;
           margin: 0;
           transition: all 0.2s linear;
-          @include responsive-font(3.8vw, $regular, $extra-large, $large);
+          @include responsive-font(4.2vw, $regular, $extra-large, $large);
           &.current { opacity: 1.0; }
           &:hover { cursor: default; }
+          .subtitle {
+            font-family: 'Inter';
+            @include responsive-font(3vw, $small, $large, $regular);
+          }
         }
       }
     }
@@ -76,7 +80,7 @@ nav {
       background-color: rgba(0,0,0,0);
       color: white;
       font-size: 0.8rem;
-      display: inline-block;
+      display: block;
       font-family: 'Inter';
       &.active { font-style: italic; }
       &:hover {

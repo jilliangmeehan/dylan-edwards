@@ -18,7 +18,7 @@ title: dylan edwards
 
       <ul>
         {% for item in site.data.work %}
-          <li class="category {{ item.categories | downcase }} animated fadeInUp"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a></li>
+          <li class="category {{ item.categories | downcase }} animated fadeInUp"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}<span class="subtitle">{{ item.subtitle }}</span>{% endif %}</a></li>
         {% endfor %}
       </ul>
     </nav>
