@@ -1,4 +1,4 @@
-filterSelection("all")
+filterSelection("some")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("category");

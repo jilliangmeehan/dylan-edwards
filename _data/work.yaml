@@ -1,6 +1,6 @@
 - title: When Rivers Rise
   subtitle: Google
-  categories: Narrative Commercial
+  categories: Some Narrative Commercial
   thumbnail: assets/images/thumbnails/whenriversrise_main.jpg
   video: https://vimeo.com/314050880
   credits: Directed by Tucker Bliss
@@ -8,7 +8,7 @@
   gif: https://player.vimeo.com/video/395501569
 
 - title: Pilgrims
-  categories: Narrative
+  categories: Some Narrative
   thumbnail: assets/images/thumbnails/pilgrims_main.png
   video: https://vimeo.com/375281295
   credits: Directed and Cinematography by Jeremy Snell
@@ -16,7 +16,7 @@
 
 - title: Insect
   subtitle: Isaac Dunbar
-  categories: MV
+  categories: Some MV
   thumbnail: assets/images/thumbnails/insect_main.png
   video: https://vimeo.com/375281295
   credits: Directed by Brendan Vaughan
@@ -31,7 +31,7 @@
 
 - title: Million x Pacman
   subtitle: Paco Rabanne
-  categories: Commercial
+  categories: Some Commercial
   thumbnail: assets/images/thumbnails/paco_main.jpg
   video: https://vimeo.com/342753487
   credits: Directed by Matvey Fiks
@@ -45,14 +45,14 @@
 
 - title: Get Action
   subtitle: Rapala
-  categories: Commercial
+  categories: Some Commercial
   thumbnail: assets/images/thumbnails/rapala_main.jpg
   video: https://vimeo.com/318273319
   credits: Directed by John Merizalde
 
 - title: Memories in Shanghai
   subtitle: Louis Vuitton
-  categories: Commercial
+  categories: Some Commercial
   thumbnail: assets/images/thumbnails/lv_main.png
   video: https://vimeo.com/368307636
   credits: Directed by Matvey Fiks
@@ -65,7 +65,7 @@
   credits: Directed by India Sleem
 
 - title: Forever Ferg
-  categories: Narrative Commercial
+  categories: Some Narrative Commercial
   thumbnail: assets/images/thumbnails/foreverferg_main.png
   video: https://vimeo.com/276967332
   credits: Directed by Alfred Marroquin
