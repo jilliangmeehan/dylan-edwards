@@ -12,7 +12,7 @@ nav { white-space: nowrap; margin: 0; padding: 0; max-width: 100vw; pointer-even
 nav ul { list-style: none; position: sticky; top: 50vh; z-index: 100; margin: 0; padding: 0; margin-top: 50vh; margin-bottom: 50vh; scroll-behavior: smooth; }
 nav ul li.category { display: none; }
 nav ul li.show { display: block; }
-nav ul li a { font-family: "Agrandir Grand Bold", monospace; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transition: all 0.5s ease-in-out; font-size: 48px; font-size: 3.8vw; }
+nav ul li a { font-family: "Agrandir Grand Bold", monospace; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 3.8vw; }
 @media (max-width: 473.6842105263px) { nav ul li a { font-size: 18px; } }
 @media (min-width: 1894.7368421053px) { nav ul li a { font-size: 72px; } }
 nav ul li a.current { opacity: 1.0; }
