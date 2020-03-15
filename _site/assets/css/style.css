@@ -8,7 +8,7 @@ header h1 { font-size: 24px; font-size: 5vw; margin: 0; text-align: right; }
 @media (max-width: 480px) { header h1 { font-size: 24px; } }
 @media (min-width: 960px) { header h1 { font-size: 48px; } }
 header .categories { pointer-events: all; float: right; }
-header .categories button { margin: .3rem; border: none; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 2vw; display: inline-block; font-family: 'Inter'; text-align: right; }
+header .categories button { margin: .3rem; border: none; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 2vw; display: block; font-family: 'Inter'; text-align: right; float: right; }
 @media (max-width: 700px) { header .categories button { font-size: 14px; } }
 @media (min-width: 900px) { header .categories button { font-size: 18px; } }
 header .categories button.active { font-style: italic; }
