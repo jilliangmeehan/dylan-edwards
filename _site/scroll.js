@@ -6,20 +6,24 @@ window.addEventListener("scroll", event => {
 
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
-    let video = section.querySelector("a");
-    let animatedImage = section.querySelector("img, iframe");
+    let videoLink = section.querySelector("a");
+    let thumbnail = section.querySelector("img");
+    let iframe = section.querySelector("iframe");
+    let player = new Vimeo.Player(iframe);
 
     if (
       section.offsetTop <= fromTop &&
       section.offsetTop + section.offsetHeight > fromTop
     ) {
       link.classList.add("current");
-      animatedImage.classList.add("visible");
-      video.classList.add("visible");
+      iframe.classList.add("visible");
+      videoLink.classList.add("visible");
+      player.play();
     } else {
       link.classList.remove("current");
-      animatedImage.classList.remove("visible");
-      video.classList.remove("visible");
+      iframe.classList.remove("visible");
+      videoLink.classList.remove("visible");
+      player.pause();
     }
   });
 });
