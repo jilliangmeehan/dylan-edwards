@@ -28,7 +28,7 @@ title: dylan edwards
       <section id="{{ item.title | slugify }}" class="category {{ item.categories | downcase }}">
         {% if item.gif %}
           <a class="ifGif" data-fancybox href="{{ item.video }}"></a>
-          <iframe src="{{ item.gif }}?background=1&autoplay=0" width="100%" maxwidth="750px" height="100%" maxheight="750px" frameborder="0" allowfullscreen="false"></iframe>
+          <iframe src="{{ item.gif }}?background=1" width="100%" maxwidth="750px" height="100%" maxheight="750px" frameborder="0" allowfullscreen="false"></iframe>
         {% else %}
           <a data-fancybox href="{{ item.video }}"><img src="{{ item.thumbnail }}"></a>
         {% endif %}

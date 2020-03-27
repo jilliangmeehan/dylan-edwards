@@ -18,12 +18,12 @@ window.addEventListener("scroll", event => {
       link.classList.add("current");
       iframe.classList.add("visible");
       videoLink.classList.add("visible");
-      player.play();
+      //player.play();
     } else {
       link.classList.remove("current");
       iframe.classList.remove("visible");
       videoLink.classList.remove("visible");
-      player.pause();
+      //player.pause();
     }
   });
 });
