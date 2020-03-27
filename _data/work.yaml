@@ -206,22 +206,6 @@
   credits: Directed by Brendan Hall
   gif: https://player.vimeo.com/video/397833697
 
-- title: Bambi
-  subtitle: Hippo Campus
-  categories: MV
-  thumbnail: assets/images/thumbnails/bambi_main.jpg
-  video: https://vimeo.com/288094705
-  credits: Directed by Kyle Sauer
-  gif: https://player.vimeo.com/video/397833773
-
-- title: Moving Day
-  subtitle: Amazon Ring
-  categories: Commercial
-  thumbnail: assets/images/thumbnails/amazonring_main.jpg
-  video: https://vimeo.com/329691417
-  credits: Directed by Tucker Bliss
-  gif: https://player.vimeo.com/video/397833785
-
 - title: Paddle People
   subtitle: Nissan
   categories: Commercial
