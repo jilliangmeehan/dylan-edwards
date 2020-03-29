@@ -1,3 +1,34 @@
+// Nav scrolling
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
+    let videoLink = section.querySelector("a");
+    let thumbnail = section.querySelector("img");
+    let iframe = section.querySelector("iframe");
+    let player = new Vimeo.Player(iframe);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      player.play();
+      link.classList.add("current");
+      iframe.classList.add("visible", "animated", "fadeIn");
+      videoLink.classList.add("visible");
+    } else {
+      player.pause();
+      link.classList.remove("current");
+      iframe.classList.remove("visible", "animated", "fadeIn");
+      videoLink.classList.remove("visible");
+    }
+  });
+});
+
+// Filter
 filterSelection("some")
 
 function filterSelection(c) {
