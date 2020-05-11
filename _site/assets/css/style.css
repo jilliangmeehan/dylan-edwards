@@ -14,30 +14,25 @@ header .categories button { float: right; clear: both; margin: .3rem; border: no
 header .categories button.active { font-style: italic; }
 header .categories button:hover { cursor: pointer; font-style: italic; }
 
-nav { border: 2px solid blue; width: 100%; height: 100%; white-space: nowrap; margin: 0; padding: 0; max-width: 100vw; pointer-events: none; }
-nav ul { position: relative; top: 50vh; overflow-y: scroll; border: 2px solid red; list-style: none; margin: 0; padding: 0; }
-nav ul li { border: 2px solid lavender; }
-nav ul li.category { display: none; }
-nav ul li.show { display: block; }
-nav ul li a { font-family: "Agrandir Grand Bold", monospace; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 5vw; }
-@media (max-width: 360px) { nav ul li a { font-size: 18px; } }
-@media (min-width: 1440px) { nav ul li a { font-size: 72px; } }
-nav ul li a.current { opacity: 1.0; }
-nav ul li a:hover { cursor: default; }
-nav ul li a .subtitle { font-family: 'Inter'; font-size: 18px; font-size: 3vw; }
-@media (max-width: 466.6666666667px) { nav ul li a .subtitle { font-size: 14px; } }
-@media (min-width: 1600px) { nav ul li a .subtitle { font-size: 48px; } }
-
 main { padding-bottom: 100vh; overflow: hidden; }
-main section { border: 2px solid orange; min-height: 100vh; padding: 0; margin: 0; }
+main section { min-height: 10vh; padding: 0; margin: 0; }
 main section.category { display: none; }
 main section.show { display: block; }
 main section img, main section iframe, main section .ifGif { width: 50vw; max-width: 750px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
 main section img.visible, main section iframe.visible, main section .ifGif.visible { opacity: 1; }
 main section a { pointer-events: none; }
 main section a.visible { pointer-events: all; }
-main section img { z-index: 1; }
-main section iframe { z-index: -100; }
-main section .ifGif { display: block; width: 100%; height: 50%; z-index: 1; }
+main section h2 { width: 100vw; position: relative; top: 50vh; z-index: 1000; padding: 0; margin: 0; }
+main section h2 a { font-family: "Agrandir Grand Bold", monospace; font-size: 72px; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 5vw; }
+@media (max-width: 360px) { main section h2 a { font-size: 18px; } }
+@media (min-width: 1440px) { main section h2 a { font-size: 72px; } }
+main section h2 a.current { opacity: 1.0; }
+main section h2 a:hover { cursor: default; }
+main section h2 a .subtitle { font-family: 'Inter'; font-weight: 400; font-size: 18px; font-size: 3vw; }
+@media (max-width: 466.6666666667px) { main section h2 a .subtitle { font-size: 14px; } }
+@media (min-width: 1600px) { main section h2 a .subtitle { font-size: 48px; } }
+main section h2 img { z-index: 1; }
+main section h2 iframe { z-index: -100; }
+main section h2 .ifGif { display: block; width: 100%; height: 50%; z-index: 1; }
 
 @media screen and (min-width: 1080px) { header .categories button { float: none; clear: none; } }

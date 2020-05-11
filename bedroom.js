@@ -1,5 +1,5 @@
 // Nav scrolling
-let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainNavLinks = document.querySelectorAll("main section h2 a");
 
 window.addEventListener("scroll", event => {
   let fromTop = window.scrollY;

@@ -15,23 +15,16 @@ title: dylan edwards
   </div>
 </header>
 
-<nav>
-  <ul>
-    {% for item in site.data.work %}
-    <li class="category {{ item.categories | downcase }} animated fadeInUp"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}<span class="subtitle">{{ item.subtitle }}</span>{% endif %}</a></li>
-    {% endfor %}
-  </ul>
-</nav>
-
 <main>
   {% for item in site.data.work %}
   <section id="{{ item.title | slugify }}" class="category {{ item.categories | downcase }}">
-    {% if item.gif %}
+
+    <h2 class="category {{ item.categories | downcase }} animated fadeInUp"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}<span class="subtitle">{{ item.subtitle }}</span>{% endif %}</a></h2>
+
     <a class="ifGif" data-fancybox href="{{ item.video }}"></a>
+
     <iframe src="{{ item.gif }}?loop=1&controls=0&muted=1" width="100%" maxwidth="750px" height="100%" maxheight="750px" frameborder="0" allowfullscreen="false"></iframe>
-    {% else %}
-    <a data-fancybox href="{{ item.video }}"><img src="{{ item.thumbnail }}"></a>
-    {% endif %}
+
   </section>
   {% endfor %}
 </main>
