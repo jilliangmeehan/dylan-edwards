@@ -54,8 +54,7 @@ main {
   overflow: hidden;
 
   section {
-    //border: 2px solid orange;
-    min-height: 10vh;
+    min-height: 3vh;
     padding: 0;
     margin: 0;
     &.category { display: none; }

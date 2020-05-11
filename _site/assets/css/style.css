@@ -15,7 +15,7 @@ header .categories button.active { font-style: italic; }
 header .categories button:hover { cursor: pointer; font-style: italic; }
 
 main { padding-bottom: 100vh; overflow: hidden; }
-main section { min-height: 10vh; padding: 0; margin: 0; }
+main section { min-height: 3vh; padding: 0; margin: 0; }
 main section.category { display: none; }
 main section.show { display: block; }
 main section img, main section iframe, main section .ifGif { width: 50vw; max-width: 750px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
