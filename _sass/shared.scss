@@ -94,7 +94,7 @@ main {
         text-decoration: none;
         margin: 0;
         transition: all 0.2s linear;
-        @include responsive-font(5vw, $regular, $extra-large, $large);
+        @include responsive-font(4vw, $small, $extra-large, $large);
 
         &.current { opacity: 1.0; }
         &:hover { cursor: default; }
