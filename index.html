@@ -15,11 +15,17 @@ title: dylan edwards
   </div>
 </header>
 
+<nav>
+   <ul>
+     {% for item in site.data.work %}
+     <li class="category {{ item.categories | downcase }} animated fadeInUp"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a></li>
+     {% endfor %}
+   </ul>
+ </nav>
+
 <main>
   {% for item in site.data.work %}
   <section id="{{ item.title | slugify }}" class="category {{ item.categories | downcase }}">
-
-    <h2 class="category {{ item.categories | downcase }} animated fadeInUp"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a></h2>
 
     <a class="ifGif" data-fancybox href="{{ item.video }}"></a>
 
@@ -27,7 +33,8 @@ title: dylan edwards
 
   </section>
   {% endfor %}
-  <section class="contact">
-    <h2><a href="mailto:edwardsjdylan@gmail.com">contact</a></h2>
-  </section>
 </main>
+
+<section class="contact">
+  <a href="mailto:edwardsjdylan@gmail.com">contact</a>
+</section>

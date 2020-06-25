@@ -11,33 +11,32 @@ header .categories { pointer-events: all; float: right; }
 header .categories button { float: right; clear: both; margin: 0; border: none; padding: .2rem; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 5vw; display: inline-block; font-family: 'Inter'; text-transform: lowercase; }
 @media (max-width: 280px) { header .categories button { font-size: 14px; } }
 @media (min-width: 360px) { header .categories button { font-size: 18px; } }
-header .categories button.active { font-style: italic; }
+header .categories button.active { text-decoration: line-through; }
 header .categories button:hover { cursor: pointer; text-decoration: line-through; }
 
-main { padding-bottom: 100vh; overflow: hidden; }
+nav { width: 100%; height: 100%; white-space: nowrap; margin: 0; padding: 0; max-width: 100vw; pointer-events: none; }
+nav ul { position: relative; top: 50vh; list-style: none; padding: 0; margin: 0; }
+nav ul li.category { display: none; }
+nav ul li.show { display: block; }
+nav ul li a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 0.5rem; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 4vw; }
+@media (max-width: 350px) { nav ul li a { font-size: 14px; } }
+@media (min-width: 1800px) { nav ul li a { font-size: 72px; } }
+nav ul li a.current { opacity: 1.0; }
+nav ul li a:hover { cursor: default; }
+
+main { padding-bottom: 120vh; overflow: hidden; }
 main section { min-height: 7vh; padding: 0; margin: 0; }
-main section img, main section iframe, main section .ifGif { width: 50vw; max-width: 750px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
-main section img.visible, main section iframe.visible, main section .ifGif.visible { opacity: 1; }
-main section a { pointer-events: none; }
-main section a.visible { pointer-events: all; }
-main section h2 { width: 100vw; position: relative; top: 50vh; z-index: 1000; padding: 0; margin: 0; }
-main section h2 a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 0.5rem; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 4vw; }
-@media (max-width: 350px) { main section h2 a { font-size: 14px; } }
-@media (min-width: 1800px) { main section h2 a { font-size: 72px; } }
-main section h2 a.current { opacity: 1.0; }
-main section h2 a:hover { cursor: default; }
-main section h2 a .subtitle { font-family: 'Inter'; font-weight: 400; font-size: 18px; font-size: 3vw; }
-@media (max-width: 466.6666666667px) { main section h2 a .subtitle { font-size: 14px; } }
-@media (min-width: 1600px) { main section h2 a .subtitle { font-size: 48px; } }
-main section h2 img { z-index: 1; }
-main section h2 iframe { z-index: -100; }
-main section h2 .ifGif { display: block; width: 100%; height: 50%; z-index: 1; }
+main section iframe, main section .ifGif { width: 50vw; max-width: 750px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
+main section iframe.visible, main section .ifGif.visible { opacity: 1; }
+main section iframe { z-index: -100; }
+main section .ifGif { pointer-events: none; display: block; width: 100%; height: 50%; z-index: 2000; }
+main section .ifGif.visible { pointer-events: all; }
 main section.category { display: none; }
 main section.show { display: block; }
-main section.contact { margin-top: 120vh; }
-main section.contact h2 { text-align: center; font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; color: white; }
-main section.contact h2 a { font-size: 18px; font-size: 3vw; opacity: 1; text-decoration: none; pointer-events: all; cursor: pointer; }
-@media (max-width: 466.6666666667px) { main section.contact h2 a { font-size: 14px; } }
-@media (min-width: 800px) { main section.contact h2 a { font-size: 24px; } }
+
+.contact { position: relative; width: 100vw; padding: 50vh 0; margin: 0; text-align: center; }
+.contact a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; font-size: 18px; font-size: 3vw; opacity: 1; color: white; text-decoration: none; pointer-events: all; cursor: pointer; }
+@media (max-width: 466.6666666667px) { .contact a { font-size: 14px; } }
+@media (min-width: 800px) { .contact a { font-size: 24px; } }
 
 @media screen and (min-width: 1080px) { header .categories button { float: none; clear: none; } }

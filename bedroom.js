@@ -1,5 +1,5 @@
 // Nav scrolling
-let mainNavLinks = document.querySelectorAll("main section h2 a");
+let mainNavLinks = document.querySelectorAll("nav ul li a");
 
 window.addEventListener("scroll", event => {
   let fromTop = window.scrollY;
@@ -7,7 +7,6 @@ window.addEventListener("scroll", event => {
   mainNavLinks.forEach(link => {
     let section = document.querySelector(link.hash);
     let videoLink = section.querySelector("a");
-    let thumbnail = section.querySelector("img");
     let iframe = section.querySelector("iframe");
     let player = new Vimeo.Player(iframe);
 
