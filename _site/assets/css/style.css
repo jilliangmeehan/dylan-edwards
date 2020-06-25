@@ -26,7 +26,7 @@ nav ul li a:hover { cursor: default; }
 
 main { padding-bottom: 120vh; overflow: hidden; }
 main section { min-height: 7vh; padding: 0; margin: 0; }
-main section iframe, main section .ifGif { width: 60vw; max-width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
+main section iframe, main section .ifGif { width: 70vw; max-width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
 main section iframe.visible, main section .ifGif.visible { opacity: 1; }
 main section iframe { z-index: -100; }
 main section .ifGif { pointer-events: none; display: block; width: 100%; height: 50%; z-index: 2000; }
