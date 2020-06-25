@@ -1,18 +1,18 @@
 @font-face { font-family: 'Agrandir Grand Bold'; src: url("../fonts/AgrandirGrandBold.woff2") format("woff2"), url("../fonts/AgrandirGrandBold.woff") format("woff"), url("../fonts/AgrandirGrandBold.otf") format("otf"); }
 @font-face { font-family: 'Agrandir Grand Black'; src: url("../fonts/AgrandirGrandBlack.woff2") format("woff2"), url("../fonts/AgrandirGrandBlack.woff") format("woff"), url("../fonts/AgrandirGrandBlack.otf") format("otf"); }
-body { font-family: monospace; scroll-behavior: smooth; overflow-y: scroll; overflow-x: hidden; display: grid; grid-template-columns: min-content 1fr; margin: 0; background-color: black; }
+body { font-family: monospace; scroll-behavior: smooth; overflow-y: scroll; overflow-x: hidden; display: grid; grid-template-columns: min-content 1fr; margin: 0; background-color: black; text-transform: lowercase; }
 body::-webkit-scrollbar { display: none; }
 
-header { font-family: "Agrandir Grand Black", monospace; text-transform: uppercase; position: fixed; top: 0; right: 0; color: white; z-index: 200; width: 100%; padding: 4%; }
+header { font-family: "Agrandir Grand Bold", monospace; position: fixed; top: 0; right: 0; color: white; z-index: 200; width: 100%; padding: 4rem 0.5rem; }
 header h1 { font-size: 24px; font-size: 3vw; margin: 0; text-align: right; }
 @media (max-width: 600px) { header h1 { font-size: 18px; } }
 @media (min-width: 800px) { header h1 { font-size: 24px; } }
 header .categories { pointer-events: all; float: right; }
-header .categories button { float: right; clear: both; margin: .3rem; border: none; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 5vw; display: inline-block; font-family: 'Inter'; }
+header .categories button { float: right; clear: both; margin: 0; border: none; padding: .2rem; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 5vw; display: inline-block; font-family: 'Inter'; text-transform: lowercase; }
 @media (max-width: 280px) { header .categories button { font-size: 14px; } }
 @media (min-width: 360px) { header .categories button { font-size: 18px; } }
 header .categories button.active { font-style: italic; }
-header .categories button:hover { cursor: pointer; font-style: italic; }
+header .categories button:hover { cursor: pointer; text-decoration: line-through; }
 
 main { padding-bottom: 100vh; overflow: hidden; }
 main section { min-height: 7vh; padding: 0; margin: 0; }
@@ -21,7 +21,7 @@ main section img.visible, main section iframe.visible, main section .ifGif.visib
 main section a { pointer-events: none; }
 main section a.visible { pointer-events: all; }
 main section h2 { width: 100vw; position: relative; top: 50vh; z-index: 1000; padding: 0; margin: 0; }
-main section h2 a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 1rem 2rem; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 5vw; }
+main section h2 a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 0.5rem; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 5vw; }
 @media (max-width: 360px) { main section h2 a { font-size: 18px; } }
 @media (min-width: 1440px) { main section h2 a { font-size: 72px; } }
 main section h2 a.current { opacity: 1.0; }
@@ -34,10 +34,10 @@ main section h2 iframe { z-index: -100; }
 main section h2 .ifGif { display: block; width: 100%; height: 50%; z-index: 1; }
 main section.category { display: none; }
 main section.show { display: block; }
-main section.contact { margin-top: 50vh; }
-main section.contact h2 { text-align: center; font-family: "Agrandir Grand Bold", monospace; font-size: 48px; font-size: 5vw; text-transform: lowercase; color: white; }
-@media (max-width: 360px) { main section.contact h2 { font-size: 18px; } }
-@media (min-width: 1440px) { main section.contact h2 { font-size: 72px; } }
-main section.contact h2 a { opacity: 1; text-decoration: underline; pointer-events: all; cursor: pointer; }
+main section.contact { margin-top: 120vh; }
+main section.contact h2 { text-align: center; font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; color: white; }
+main section.contact h2 a { font-size: 18px; font-size: 3vw; opacity: 1; text-decoration: none; pointer-events: all; cursor: pointer; }
+@media (max-width: 466.6666666667px) { main section.contact h2 a { font-size: 14px; } }
+@media (min-width: 800px) { main section.contact h2 a { font-size: 24px; } }
 
 @media screen and (min-width: 1080px) { header .categories button { float: none; clear: none; } }

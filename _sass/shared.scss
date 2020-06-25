@@ -7,19 +7,19 @@ body {
   grid-template-columns: min-content 1fr;
   margin: 0;
   background-color: black;
+  text-transform: lowercase;
   &::-webkit-scrollbar { display: none; }
 }
 
 header {
-  font-family: $title-font;
-  text-transform: uppercase;
+  font-family: $project-font;
   position: fixed;
   top: 0;
   right: 0;
   color: white;
   z-index: 200;
   width: 100%;
-  padding: 4%;
+  padding: 4rem 0.5rem;
   h1 {
     @include responsive-font(3vw, $regular, $medium, $medium);
     margin: 0;
@@ -33,17 +33,19 @@ header {
     button {
       float: right;
       clear: both;
-      margin: .3rem;
+      margin: 0;
       border: none;
+      padding: .2rem;
       background-color: rgba(0,0,0,0);
       color: white;
       @include responsive-font(5vw, $small, $regular, $small);
       display: inline-block;
       font-family: 'Inter';
+      text-transform: lowercase;
       &.active { font-style: italic; }
       &:hover {
         cursor: pointer;
-        font-style: italic;
+        text-decoration: line-through;
       }
     }
   }
@@ -88,7 +90,7 @@ main {
         color: white;
         opacity: 0.1;
         display: block;
-        padding: 1rem 2rem;
+        padding: 0.5rem;
         text-decoration: none;
         margin: 0;
         transition: all 0.2s linear;
@@ -115,16 +117,16 @@ main {
     &.category { display: none; }
     &.show { display: block; }
     &.contact {
-      margin-top: 50vh;
+      margin-top: 120vh;
       h2 {
         text-align: center;
         font-family: $project-font;
-        @include responsive-font(5vw, $regular, $extra-large, $large);
         text-transform: lowercase;
         color: white;
         a {
+          @include responsive-font(3vw, $small, $medium, $regular);
           opacity: 1;
-          text-decoration: underline;
+          text-decoration: none;
           pointer-events: all;
           cursor: pointer;
         }
