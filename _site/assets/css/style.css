@@ -8,6 +8,7 @@ header h1 { font-size: 24px; font-size: 3vw; margin: 0; text-align: right; }
 @media (max-width: 600px) { header h1 { font-size: 18px; } }
 @media (min-width: 800px) { header h1 { font-size: 24px; } }
 header .categories { pointer-events: all; float: right; }
+header .categories i { float: right; clear: both; }
 header .categories button { float: right; clear: both; margin: 0; border: none; padding: .2rem; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 5vw; display: inline-block; font-family: 'Inter'; text-transform: lowercase; }
 @media (max-width: 280px) { header .categories button { font-size: 14px; } }
 @media (min-width: 360px) { header .categories button { font-size: 18px; } }
@@ -51,5 +52,3 @@ main section.show { display: block; }
 
 i { color: white; transition: opacity 0.1s linear; }
 i:hover { opacity: .8; }
-
-@media screen and (min-width: 1080px) { header .categories button { float: none; clear: none; } }

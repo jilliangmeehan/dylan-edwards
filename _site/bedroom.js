@@ -73,6 +73,16 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// Toggle categories
+function toggleCategories() {
+  var x = document.getElementById("toggleCategories");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 // Smooth scroll to project
 $(document).ready(function(){
 $("a").on('click', function(event) {

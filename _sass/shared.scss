@@ -30,6 +30,10 @@ header {
     pointer-events: all;
     float: right;
 
+    i {
+      float: right;
+      clear: both;
+    }
     button {
       float: right;
       clear: both;
@@ -180,8 +184,8 @@ i {
 @media screen and (min-width: 1080px) {
   //main section { height: 8vh; }
   header .categories button {
-    float: none;
-    clear: none;
+    //float: none;
+    //clear: none;
   }
 }
 
