@@ -33,6 +33,7 @@ header {
     i {
       float: right;
       clear: both;
+      display: block;
     }
     button {
       float: right;
@@ -43,7 +44,6 @@ header {
       background-color: rgba(0,0,0,0);
       color: white;
       @include responsive-font(5vw, $small, $regular, $small);
-      display: inline-block;
       font-family: 'Inter';
       text-transform: lowercase;
       &.active { text-decoration: line-through; }
@@ -52,6 +52,7 @@ header {
         text-decoration: line-through;
       }
     }
+    #toggleCategories { display: none; }
   }
 }
 

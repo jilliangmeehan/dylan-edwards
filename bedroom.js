@@ -76,12 +76,10 @@ for (var i = 0; i < btns.length; i++) {
 // Toggle categories
 function toggleCategories() {
   var x = document.getElementById("toggleCategories");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    x.classList.add('animated', 'fadeInUp');
-  } else {
+  if (x.style.display === "block") {
     x.style.display = "none";
-    x.classList.remove('animated', 'fadeInUp');
+  } else {
+    x.style.display = "block";
   }
 }
 
