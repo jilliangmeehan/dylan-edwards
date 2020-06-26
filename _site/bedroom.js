@@ -72,3 +72,23 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// Smooth scroll to project
+$(document).ready(function(){
+$("a").on('click', function(event) {
+
+if (this.hash !== "") {
+  event.preventDefault();
+
+  var hash = this.hash;
+
+
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 500, function(){
+
+    window.location.hash = hash;
+  });
+}
+});
+});
