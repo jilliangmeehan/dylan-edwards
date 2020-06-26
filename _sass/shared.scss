@@ -19,7 +19,7 @@ header {
   color: white;
   z-index: 200;
   width: 100%;
-  padding: 4rem 0.5rem;
+  padding: 1rem 0.5rem;
   h1 {
     @include responsive-font(3vw, $regular, $medium, $medium);
     margin: 0;
@@ -126,7 +126,25 @@ main {
   }
 }
 
-.contact {
+.social {
+  position: fixed;
+  right: 1rem;
+  bottom: 0;
+  text-align: center;
+  @include responsive-font(2vw, $regular, $medium, $regular);
+  a { text-decoration: none; }
+  i {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  img {
+    width: 2rem;
+    padding-left: 0.4rem;
+    padding-bottom: 1rem;
+  }
+}
+
+#contact {
   position: relative;
   width: 100vw;
   padding: 50vh 0;
@@ -141,7 +159,15 @@ main {
     text-decoration: none;
     pointer-events: all;
     cursor: pointer;
+    transition: opacity 0.1s linear;
+    &:hover { opacity: .8; }
   }
+}
+
+i {
+  color: white;
+  transition: opacity 0.1s linear;
+  &:hover { opacity: .8; }
 }
 
 @media screen and (min-width: 1080px) {
