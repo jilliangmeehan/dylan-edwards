@@ -3,6 +3,8 @@
   categories: Some Narrative Commercial
   thumbnail: assets/images/thumbnails/whenriversrise_main.jpg
   video: https://vimeo.com/314050880
+  width: 640px
+  height: 268px
   credits: Directed by Tucker Bliss
   additional: Vimeo Staff Pick
   gif: https://player.vimeo.com/video/397806414
@@ -11,39 +13,44 @@
   categories: Some Narrative
   thumbnail: assets/images/thumbnails/pilgrims_main.jpg
   video: https://vimeo.com/375281295
+  width: 640px
+  height: 360px
   credits: Directed and Cinematography by Jeremy Snell
   additional: Vimeo Staff Pick / The Atlantic Selects
   gif: https://player.vimeo.com/video/397808180
   
 - title: Dyed In The Wool
   categories: Some Narrative Commercial
-  thumbnail:
   video: https://vimeo.com/418725685/60e4dc260e
+  width: 640px
+  height: 445px
   credits: Directed by Tucker Bliss
-  additional:
   gif: https://player.vimeo.com/video/436569407
   
 - title: Pink Dust
   subtitle: A.Chal
   categories: Some MV
-  thumbnail: 
   video: https://vimeo.com/410641919
+  width: 640px
+  height: 480px
   credits: Directed by rubberband
   gif: https://player.vimeo.com/video/436322188
   
 - title: Pixel Buds 2
   subtitle: Google
   categories: Some Commercial
-  thumbnail: 
   video: https://vimeo.com/384901344
+  width: 640px
+  height: 445px
   credits: Directed by Tucker Bliss
   gif: https://player.vimeo.com/video/436569309
   
 - title: Forever And A Day
   subtitle: Drama
   categories: Some MV
-  thumbnail: 
   video: https://vimeo.com/412055245
+  width: 640px
+  height: 480px
   credits: Directed by justfriends
   additional: Vimeo Staff Pick
   gif: https://player.vimeo.com/video/436529381
@@ -51,8 +58,12 @@
 - title: Happy To Be Here
   subtitle: Lehigh Valley
   categories: Some Commercial
-  thumbnail: 
   video: https://vimeo.com/415593115
+  video2: https://vimeo.com/415534863
+  video3: https://vimeo.com/415487568
+  video4: https://vimeo.com/415517089
+  width: 640px
+  height: 360px
   credits: Directed by Tucker Bliss
   gif: https://player.vimeo.com/video/436569378
   
@@ -60,15 +71,19 @@
   subtitle: Isaac Dunbar
   categories: Some MV
   thumbnail: assets/images/thumbnails/insect_main.jpg
-  video: https://vimeo.com/375281295
+  video: https://vimeo.com/386521918
+  width: 640px
+  height: 384px
   credits: Directed by Brendan Vaughan
   gif: https://player.vimeo.com/video/397823587
 
-- title: Beethoven
+- title: Always There
   subtitle: Boehringer Ingelheim
   categories: Commercial
   thumbnail: assets/images/thumbnails/beethoven_main.jpg
-  video: https://vimeo.com/375281295
+  video: https://vimeo.com/318864037
+  width: 640px
+  height: 360px
   credits: Directed by Tucker Bliss
   additional: Cannes Lion Shortlist
   gif: https://player.vimeo.com/video/397833753
@@ -78,6 +93,8 @@
   categories: Some Commercial
   thumbnail: assets/images/thumbnails/paco_main.jpg
   video: https://vimeo.com/342753487
+  width: 640px
+  height: 360px
   credits: Directed by Matvey Fiks
   gif: https://player.vimeo.com/video/397823813
 
@@ -86,6 +103,8 @@
   categories: MV
   thumbnail: assets/images/thumbnails/deadcelebs_main.jpg
   video: https://vimeo.com/385136654
+  width: 640px
+  height: 268px
   credits: Directed by Matthew Dillon Cohen
   gif: https://player.vimeo.com/video/397833723
 
@@ -94,6 +113,8 @@
   categories: Some Commercial
   thumbnail: assets/images/thumbnails/rapala_main.jpg
   video: https://vimeo.com/318273319
+  width: 640px
+  height: 384px
   credits: Directed by John Merizalde
   gif: https://player.vimeo.com/video/397823877
 
@@ -102,14 +123,17 @@
   categories: Some Commercial
   thumbnail: assets/images/thumbnails/lv_main.jpg
   video: https://vimeo.com/368307636
+  width: 640px
+  height: 360px
   credits: Directed by Matvey Fiks
   gif: https://player.vimeo.com/video/397823698
   
 - title: Planet Hunter
   subtitle: Google
   categories: Some Narrative Commercial
-  thumbnail: 
   video: https://vimeo.com/419873718
+  width: 640px
+  height: 268px
   credits: Directed by Daniel Soares
   additional: Vimeo Staff Pick
   gif: https://player.vimeo.com/video/436569397
@@ -119,13 +143,16 @@
   categories: MV
   thumbnail: assets/images/thumbnails/newhouse_main.jpg
   video: https://vimeo.com/383568410
+  width: 640px
+  height: 360px
   credits: Directed by India Sleem
   gif: https://player.vimeo.com/video/397827362
 
 - title: Your Highness Grandmother Pageant
   categories: Some Narrative
-  thumbnail: 
   video: https://vimeo.com/433123905
+  width: 640px
+  height: 360px
   credits: Directed by Hailey Gates
   additional: Vimeo Staff Pick
   gif: https://player.vimeo.com/video/436569363
@@ -134,6 +161,8 @@
   categories: Some Narrative Commercial
   thumbnail: assets/images/thumbnails/foreverferg_main.jpg
   video: https://vimeo.com/276967332
+  width: 640px
+  height: 360px
   credits: Directed by Alfred Marroquin
   gif: https://player.vimeo.com/video/397823469
 
@@ -142,6 +171,8 @@
   categories: Commercial
   thumbnail: assets/images/thumbnails/lakings_main.jpg
   video: https://vimeo.com/366290137
+  width: 640px
+  height: 268px
   credits: Directed by John Merizalde
   gif: https://player.vimeo.com/video/397827330
 
@@ -151,6 +182,8 @@
   thumbnail: assets/images/thumbnails/nav_main.jpg
   video: https://vimeo.com/295081160
   video2: https://vimeo.com/310667191
+  width: 640px
+  height: 268px
   credits: Directed by Alfred Marroquin
   gif: https://player.vimeo.com/video/397827344
 
@@ -159,6 +192,8 @@
   categories: MV
   thumbnail: assets/images/thumbnails/kickback_main.jpg
   video: https://vimeo.com/382687713
+  width: 640px
+  height: 360px
   credits: Directed by Matthew Dillon Cohen
   gif: https://player.vimeo.com/video/397833681
 
@@ -167,6 +202,8 @@
   categories: Commercial
   thumbnail: assets/images/thumbnails/chaz_main.jpg
   video: https://vimeo.com/353221482
+  width: 640px
+  height: 360px
   credits: Directed by India Sleem
   gif: https://player.vimeo.com/video/397827299
 
@@ -174,6 +211,8 @@
   categories: Narrative
   thumbnail: assets/images/thumbnails/dayd_main.jpg
   video: https://vimeo.com/270229028
+  width: 640px
+  height: 232px
   credits: Directed by Sam Sneed
   additional: Featured on HBO
   gif: https://player.vimeo.com/video/397833736
@@ -183,6 +222,8 @@
   categories: Commercial
   thumbnail: assets/images/thumbnails/vodafone_main.jpg
   video: https://vimeo.com/353798323
+  width: 640px
+  height: 268px
   credits: Directed by Tobias Nathan
   gif: https://player.vimeo.com/video/397827375
 
@@ -191,13 +232,17 @@
   categories: Commercial
   thumbnail: assets/images/thumbnails/adidas_main.jpg
   video: https://vimeo.com/363959707
+  width: 640px
+  height: 360px
   credits: Directed by John Merizalde
   gif: https://player.vimeo.com/video/397827284
 
 - title: Homegrown
   categories: Narrative
   thumbnail: assets/images/thumbnails/homegrown_main.jpg
-  video: https://vimeo.com/310676918
+  video: https://vimeo.com/333018949
+  width: 640px
+  height: 268px
   credits: Directed by Scott Perry
   gif: https://player.vimeo.com/video/397827323
 
@@ -206,14 +251,18 @@
   categories: Commercial
   thumbnail: assets/images/thumbnails/pantene_main.jpg
   video: https://vimeo.com/310676918
+  width: 640px
+  height: 360px
   credits: Directed by Jochaim Zunke
   gif: https://player.vimeo.com/video/397827349
 
 - title: Academy Sports
   categories: Commercial
   thumbnail: assets/images/thumbnails/academy_main.jpg
-  video: https://player.vimeo.com/video/329682424
-  video2: https://player.vimeo.com/video/329684938
+  video: https://vimeo.com/436160896/113b00c710
+  video2: https://vimeo.com/436160896/113b00c710
+  width: 640px
+  height: 268px
   credits: Directed by Tucker Bliss
   gif: https://player.vimeo.com/video/397827264
 
@@ -221,6 +270,8 @@
   categories: Narrative Commercial
   thumbnail: assets/images/thumbnails/whatyouneed_main.jpg
   video: https://vimeo.com/372632186
+  width: 640px
+  height: 480px
   credits: Directed by Alfred Marroquin
   gif: https://player.vimeo.com/video/397827384
 
@@ -231,6 +282,8 @@
   video: https://vimeo.com/269559198
   video2: https://vimeo.com/269559620
   video3: https://vimeo.com/269560170
+  width: 640px
+  height: 360px
   credits: Directed by Matvey Fiks
   gif: https://player.vimeo.com/video/397833708
 
@@ -239,6 +292,8 @@
   categories: Narrative Commercial
   thumbnail: assets/images/thumbnails/forwards_main.jpg
   video: https://vimeo.com/315297981
+  width: 640px
+  height: 240px
   credits: Directed by John Merizalde
   gif: https://player.vimeo.com/video/397827316
 
@@ -246,6 +301,8 @@
   categories: Narrative
   thumbnail: assets/images/thumbnails/sushi_main.jpg
   video: https://vimeo.com/357913708
+  width: 640px
+  height: 360px
   credits: Directed by Brendan Vaughan
   gif: https://player.vimeo.com/video/397833660
 
@@ -254,6 +311,8 @@
   categories: MV
   thumbnail: assets/images/thumbnails/worntin_main.jpg
   video: https://vimeo.com/252799230
+  width: 640px
+  height: 480px
   credits: Directed and Cinematography by Patrick Golan
   gif: https://player.vimeo.com/video/397833644
 
@@ -261,6 +320,8 @@
   categories: Commercial
   thumbnail: assets/images/thumbnails/hepconnect_main.jpg
   video: https://vimeo.com/334958619
+  width: 640px
+  height: 268px
   credits: Directed by Brendan Hall
   gif: https://player.vimeo.com/video/397833697
 
@@ -269,5 +330,7 @@
   categories: Commercial
   thumbnail: assets/images/thumbnails/nissan_main.jpg
   video: https://vimeo.com/267479556
+  width: 640px
+  height: 360px
   credits: Directed by Marcus Tortorici
   gif: https://player.vimeo.com/video/397833671
