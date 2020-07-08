@@ -15,6 +15,14 @@
   additional: Vimeo Staff Pick / The Atlantic Selects
   gif: https://player.vimeo.com/video/397808180
   
+  - title: Dyed In The Wool
+  categories: Some Narrative Commercial
+  thumbnail:
+  video: https://vimeo.com/418725685/60e4dc260e
+  credits: Directed by Tucker Bliss
+  additional:
+  gif: https://player.vimeo.com/video/436569407
+  
 - title: Pink Dust
   subtitle: A.Chal
   categories: Some MV
@@ -22,7 +30,32 @@
   video: https://vimeo.com/410641919
   credits: Directed by rubberband
   gif: https://player.vimeo.com/video/436322188
+  
+  - title: Pixel Buds 2
+  subtitle: Google
+  categories: Some Commercial
+  thumbnail: 
+  video: https://vimeo.com/384901344
+  credits: Directed by Tucker Bliss
+  gif: https://player.vimeo.com/video/436569309
+  
+  - title: Forever And A Day
+  subtitle: Drama
+  categories: Some MV
+  thumbnail: 
+  video: https://vimeo.com/412055245
+  credits: Directed by justfriends
+  additional: Vimeo Staff Pick
+  gif: https://player.vimeo.com/video/436529381
 
+  - title: Happy To Be Here
+  subtitle: Lehigh Valley
+  categories: Some Commercial
+  thumbnail: 
+  video: https://vimeo.com/415593115
+  credits: Directed by Tucker Bliss
+  gif: https://player.vimeo.com/video/436569378
+  
 - title: Insect
   subtitle: Isaac Dunbar
   categories: Some MV
@@ -71,6 +104,15 @@
   video: https://vimeo.com/368307636
   credits: Directed by Matvey Fiks
   gif: https://player.vimeo.com/video/397823698
+  
+  - title: Planet Hunter
+  subtitle: Google
+  categories: Some Narrative Commercial
+  thumbnail: 
+  video: https://vimeo.com/419873718
+  credits: Directed by Daniel Soares
+  additional: Vimeo Staff Pick
+  gif: https://player.vimeo.com/video/436569397
 
 - title: New House
   subtitle: Toro y Moi
@@ -80,6 +122,14 @@
   credits: Directed by India Sleem
   gif: https://player.vimeo.com/video/397827362
 
+- title: Your Highness Grandmother Pageant
+  categories: Some Narrative
+  thumbnail: 
+  video: https://vimeo.com/433123905
+  credits: Directed by Hailey Gates
+  additional: Vimeo Staff Pick
+  gif: https://player.vimeo.com/video/436569363
+  
 - title: Forever Ferg
   categories: Some Narrative Commercial
   thumbnail: assets/images/thumbnails/foreverferg_main.jpg
