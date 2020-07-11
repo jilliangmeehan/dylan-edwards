@@ -27,14 +27,14 @@ nav ul li a { font-family: "Agrandir Grand Bold", monospace; text-transform: low
 @media (max-width: 350px) { nav ul li a { font-size: 14px; } }
 @media (min-width: 1800px) { nav ul li a { font-size: 72px; } }
 nav ul li a.current { opacity: 1.0; pointer-events: none; }
-nav ul li a:hover { cursor: pointer; }
+nav ul li a:hover { cursor: pointer; opacity: 0.1; }
 
 main { padding-bottom: 120vh; overflow: hidden; }
 main section { min-height: 7vh; padding: 0; margin: 0; }
 main section iframe, main section .ifGif { width: 70vw; max-width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
 main section iframe.visible, main section .ifGif.visible { opacity: 1; }
 main section iframe { z-index: -100; }
-main section .ifGif { pointer-events: none; display: block; width: 100%; height: 50%; z-index: 2000; }
+main section .ifGif { height: 50vh; width: 50vw; border: 2px solid red; pointer-events: none; display: block; z-index: 2000; }
 main section .ifGif.visible { pointer-events: all; }
 main section.category { display: none; }
 main section.show { display: block; }
