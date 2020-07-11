@@ -11,6 +11,13 @@ body {
   &::-webkit-scrollbar { display: none; }
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.1s linear;
+  &:hover { opacity: .8; }
+}
+
 header {
   font-family: $project-font;
   position: fixed;

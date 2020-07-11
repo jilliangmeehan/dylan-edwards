@@ -3,6 +3,9 @@
 body { font-family: monospace; scroll-behavior: smooth; overflow-y: scroll; overflow-x: hidden; display: grid; grid-template-columns: min-content 1fr; margin: 0; background-color: black; text-transform: lowercase; }
 body::-webkit-scrollbar { display: none; }
 
+a { color: white; text-decoration: none; transition: opacity 0.1s linear; }
+a:hover { opacity: .8; }
+
 header { font-family: "Agrandir Grand Bold", monospace; position: fixed; top: 0; right: 0; color: white; z-index: 200; width: 100%; padding: 1rem 0.5rem; }
 header h1 { font-size: 24px; font-size: 3vw; margin: 0; text-align: right; }
 @media (max-width: 600px) { header h1 { font-size: 18px; } }
