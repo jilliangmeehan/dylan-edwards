@@ -34,7 +34,7 @@ main section { min-height: 7vh; padding: 0; margin: 0; }
 main section iframe, main section .ifGif { width: 70vw; max-width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
 main section iframe.visible, main section .ifGif.visible { opacity: 1; }
 main section iframe { z-index: -100; }
-main section .ifGif { height: 50vh; width: 50vw; border: 2px solid red; pointer-events: none; display: block; z-index: 2000; }
+main section .ifGif { height: 25vh; width: 50vw; border: 2px solid red; pointer-events: none; display: block; z-index: 2000; }
 main section .ifGif.visible { pointer-events: all; }
 main section.category { display: none; }
 main section.show { display: block; }
