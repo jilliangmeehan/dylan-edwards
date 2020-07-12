@@ -30,7 +30,7 @@ title: dylan edwards
 
 <main>
   {% for item in site.data.work %}
-  <section id="{{ item.title | slugify }}" class="category {{ item.categories | downcase }}">
+  <section id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }}">
 
     <a class="ifGif" data-fancybox href="{{ item.video }}" data-ratio="{{ item.ratio }}" data-width="{{ item.width}}" data-height="{{ item.height }}" data-caption="{{ item.credits }}"></a>
 
