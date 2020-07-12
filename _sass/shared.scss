@@ -77,11 +77,12 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
+    scroll-snap-type: y mandatory;
     li {
+      scroll-snap-align: start;
       &.category { display: none; }
       &.show {display: block;}
       a {
-        border: 2px solid pink;
         font-family: $project-font;
         text-transform: lowercase;
         color: white;
@@ -112,7 +113,7 @@ main {
 
   section {
     border: 2px solid yellow;
-    min-height: 7vh;
+    height: 10vh;
     padding: 0;
     margin: 0;
     iframe, .ifGif {
