@@ -77,18 +77,20 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    -webkit-scroll-snap-type: y mandatory;
+
     li {
-      scroll-snap-align: start;
       &.category { display: none; }
       &.show {display: block;}
+      -webkit-scroll-snap-align: start;
       a {
         font-family: $project-font;
         text-transform: lowercase;
         color: white;
         opacity: 0.1;
         display: block;
-        padding: 1.5rem 0.5rem;
+        padding: 2rem 0.5rem;
         text-decoration: none;
         margin: 0;
         transition: all 0.2s linear;
@@ -109,11 +111,13 @@ nav {
 
 main {
   padding-bottom: 120vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-scroll-snap-type: y mandatory;
 
   section {
-    border: 2px solid yellow;
-    height: 10vh;
+    -webkit-scroll-snap-align: start;
+    height: 15vh;
     padding: 0;
     margin: 0;
     iframe, .ifGif {
