@@ -19,41 +19,40 @@ header .categories button.active { text-decoration: line-through; }
 header .categories button:hover { cursor: pointer; text-decoration: line-through; }
 header .categories #toggleCategories { display: none; }
 
-nav { width: 100%; height: 100%; white-space: nowrap; margin: 0; padding: 0; max-width: 100vw; }
-nav ul { position: relative; top: 50vh; list-style: none; padding: 0; margin: 0; overflow-y: scroll; scroll-snap-type: y mandatory; scroll-snap-destination: 0% 100%; }
+nav { width: 100%; height: 100%; white-space: nowrap; margin: 0; padding: 0; max-width: 100vw; position: absolute; top: 0; }
+nav ul { list-style: none; padding: 0; margin: 0; overflow-y: scroll; scroll-snap-type: y mandatory; scroll-snap-destination: 0% 100%; height: 100vh; width: 100vw; }
 nav ul li { scroll-snap-align: start; vertical-align: top; }
 nav ul li.category { display: none; }
 nav ul li.show { display: block; }
-nav ul li a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 2rem 0.5rem; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 4vw; }
+nav ul li a { position: relative; top: 50vh; font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; color: white; opacity: 0.1; display: block; padding: 0.5rem; padding-top: -90vh; text-decoration: none; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 4vw; }
 @media (max-width: 350px) { nav ul li a { font-size: 14px; } }
 @media (min-width: 1800px) { nav ul li a { font-size: 72px; } }
 nav ul li a.current { opacity: 1.0; pointer-events: none; }
 nav ul li a:hover { cursor: pointer; opacity: 0.1; }
 
-main { padding-bottom: 120vh; overflow-x: hidden; overflow-y: scroll; scroll-snap-type: y mandatory; scroll-snap-destination: 0% 100%; }
-main section { scroll-snap-align: start; height: 15vh; padding: 0; margin: 0; }
-main section iframe, main section .ifGif { width: 70vw; max-width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
-main section iframe.visible, main section .ifGif.visible { opacity: 1; }
-main section iframe { z-index: -100; }
-main section .ifGif { height: 25vh; width: 50vw; pointer-events: none; display: block; z-index: 2000; }
-main section .ifGif.visible { pointer-events: all; }
-main section.category { display: none; }
-main section.show { display: block; }
-
-.social { position: fixed; right: 1rem; bottom: 0; text-align: center; font-size: 18px; font-size: 2vw; }
-@media (max-width: 900px) { .social { font-size: 18px; } }
-@media (min-width: 1200px) { .social { font-size: 24px; } }
-.social a { text-decoration: none; }
-.social i { display: block; margin-bottom: 1rem; }
-
-.extras { width: 100vw; margin: 0; text-align: center; }
-.extras div { padding: 50vh 0; }
-.extras #contact a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; font-size: 18px; font-size: 3vw; opacity: 1; color: white; text-decoration: none; pointer-events: all; cursor: pointer; transition: opacity 0.1s linear; }
-@media (max-width: 466.6666666667px) { .extras #contact a { font-size: 14px; } }
-@media (min-width: 800px) { .extras #contact a { font-size: 24px; } }
-.extras #contact a:hover { opacity: .8; }
-.extras #bedroom img { width: 10vw; min-width: 5rem; transition: opacity 0.1s linear; }
-.extras #bedroom img:hover { opacity: .8; }
+main { padding-bottom: 120vh; overflow-x: hidden; overflow-y: scroll; scroll-snap-type: y mandatory; scroll-snap-destination: 0% 100%; height: 100vh; width: 100vw; }
+main section { scroll-snap-align: start; padding: 0; margin: 0; }
+main section.work { height: 20vh; width: 100vw; }
+main section.work iframe, main section.work .embed { width: 70vw; max-width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
+main section.work iframe.visible, main section.work .embed.visible { opacity: 1; }
+main section.work iframe { z-index: -100; }
+main section.work .embed { height: 25vh; width: 50vw; pointer-events: none; display: block; z-index: 2000; }
+main section.work .embed.visible { pointer-events: all; }
+main section.work.category { display: none; }
+main section.work.show { display: block; }
+main section.social { position: fixed; right: 1rem; bottom: 0; text-align: center; font-size: 18px; font-size: 2vw; }
+@media (max-width: 900px) { main section.social { font-size: 18px; } }
+@media (min-width: 1200px) { main section.social { font-size: 24px; } }
+main section.social a { text-decoration: none; }
+main section.social i { display: block; margin-bottom: 1rem; }
+main section.extras { height: 100vh; width: 100vw; margin: 0; text-align: center; }
+main section.extras div { padding: 50vh 0; }
+main section.extras #contact a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; font-size: 18px; font-size: 3vw; opacity: 1; color: white; text-decoration: none; pointer-events: all; cursor: pointer; transition: opacity 0.1s linear; }
+@media (max-width: 466.6666666667px) { main section.extras #contact a { font-size: 14px; } }
+@media (min-width: 800px) { main section.extras #contact a { font-size: 24px; } }
+main section.extras #contact a:hover { opacity: .8; }
+main section.extras #bedroom img { width: 10vw; min-width: 5rem; transition: opacity 0.1s linear; }
+main section.extras #bedroom img:hover { opacity: .8; }
 
 i { color: white; transition: opacity 0.1s linear; }
 i:hover { opacity: .8; }
