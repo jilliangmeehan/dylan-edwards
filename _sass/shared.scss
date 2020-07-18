@@ -70,18 +70,16 @@ nav {
   margin: 0;
   padding: 0;
   max-width: 100vw;
-  position: absolute;
-  top: 0;
 
   ul {
+    position: relative;
+    top: 50vh;
     list-style: none;
     padding: 0;
     margin: 0;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-snap-destination: 0% 100%;
-    height: 100vh;
-    width: 100vw;
 
     li {
       &.category { display: none; }
@@ -90,15 +88,12 @@ nav {
       vertical-align: top;
 
       a {
-        position: relative;
-        top: 50vh;
         font-family: $project-font;
         text-transform: lowercase;
         color: white;
         opacity: 0.1;
         display: block;
-        padding: 0.5rem;
-        padding-top: -90vh;
+        padding: 2rem 0.5rem;
         text-decoration: none;
         margin: 0;
         transition: all 0.2s linear;
@@ -123,88 +118,83 @@ main {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-snap-destination: 0% 100%;
-  height: 100vh;
-  width: 100vw;
+  //height: 100vh;
 
   section {
     scroll-snap-align: start;
+    height: 15vh;
     padding: 0;
     margin: 0;
 
-    &.work {
-      height: 20vh;
-      width: 100vw;
-      iframe, .embed {
-        width: 70vw;
-        max-width: 800px;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: opacity 0.2s ease-in-out;
-        opacity: 0;
-        &.visible { opacity: 1; }
-      }
-
-      iframe { z-index: -100; }
-
-      .embed {
-        height: 25vh;
-        width: 50vw;
-        pointer-events: none;
-        display: block;
-        z-index: 2000;
-        &.visible { pointer-events: all; }
-      }
-
-      &.category { display: none; }
-      &.show { display: block; }
-    }
-
-    &.social {
+    iframe, .ifGif {
+      width: 70vw;
+      max-width: 800px;
       position: fixed;
-      right: 1rem;
-      bottom: 0;
-      text-align: center;
-      @include responsive-font(2vw, $regular, $medium, $regular);
-      a { text-decoration: none; }
-      i {
-        display: block;
-        margin-bottom: 1rem;
-      }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.2s ease-in-out;
+      opacity: 0;
+      &.visible { opacity: 1; }
     }
 
-    &.extras {
-      height: 100vh;
-      width: 100vw;
-      margin: 0;
-      text-align: center;
+    iframe { z-index: -100; }
 
-      div { padding: 50vh 0; }
+    .ifGif {
+      height: 25vh;
+      width: 50vw;
+      pointer-events: none;
+      display: block;
+      z-index: 2000;
+      &.visible { pointer-events: all; }
+    }
 
-      #contact {
-        a {
-          font-family: $project-font;
-          text-transform: lowercase;
-          @include responsive-font(3vw, $small, $medium, $regular);
-          opacity: 1;
-          color: white;
-          text-decoration: none;
-          pointer-events: all;
-          cursor: pointer;
-          transition: opacity 0.1s linear;
-          &:hover { opacity: .8; }
-        }
-      }
+    &.category { display: none; }
+    &.show { display: block; }
+  }
+}
 
-      #bedroom {
-        img {
-          width: 10vw;
-          min-width: 5rem;
-          transition: opacity 0.1s linear;
-          &:hover { opacity: .8; }
-        }
-      }
+.social {
+  position: fixed;
+  right: 1rem;
+  bottom: 0;
+  text-align: center;
+  @include responsive-font(2vw, $regular, $medium, $regular);
+  a { text-decoration: none; }
+  i {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+.extras {
+  width: 100vw;
+  margin: 0;
+  text-align: center;
+
+  div { padding: 50vh 0; }
+
+  #contact {
+    a {
+      font-family: $project-font;
+      text-transform: lowercase;
+      @include responsive-font(3vw, $small, $medium, $regular);
+      opacity: 1;
+      color: white;
+      text-decoration: none;
+      pointer-events: all;
+      cursor: pointer;
+      transition: opacity 0.1s linear;
+      &:hover { opacity: .8; }
+    }
+  }
+
+  #bedroom {
+    img {
+      width: 10vw;
+      min-width: 5rem;
+      transition: opacity 0.1s linear;
+      &:hover { opacity: .8; }
     }
   }
 }
