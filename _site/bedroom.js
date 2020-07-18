@@ -14,7 +14,7 @@ window.addEventListener("scroll", event => {
       section.offsetTop <= fromTop &&
       section.offsetTop + section.offsetHeight > fromTop
     ) {
-      player.pause();
+      player.play();
       link.classList.add("current");
       iframe.classList.add("visible", "animated", "fadeIn");
       videoLink.classList.add("visible");
