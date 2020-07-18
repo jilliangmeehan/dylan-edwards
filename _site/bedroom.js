@@ -102,3 +102,18 @@ if (this.hash !== "") {
 }
 });
 });
+
+// Set heights
+let text = document.querySelectorAll("nav ul li a");
+let sections = document.getElementsByClassName("work");
+var textHeight = $(text).innerHeight();
+
+function setHeightOfSections() {
+  $(sections).height(textHeight);
+}
+
+setHeightOfSections();
+
+$( window ).resize(function() {
+  setHeightOfSections();
+});
