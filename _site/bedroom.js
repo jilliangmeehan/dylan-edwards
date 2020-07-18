@@ -35,22 +35,24 @@ function filterSelection(c) {
   x = document.getElementsByClassName("category");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) {
+      addClass(x[i], "show");
+    } else {
+      removeClass(x[i], "show");
+    }
   }
 }
 
-function w3AddClass(element, name) {
+function addClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
-  //element.classList.add('animated', 'fadeInUp')
 }
 
-function w3RemoveClass(element, name) {
+function removeClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -60,7 +62,6 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
-  //element.classList.add('animated', 'fadeInUp')
 }
 
 var btnContainer = document.getElementById("categories-btns");
@@ -78,10 +79,10 @@ function toggleCategories() {
   var x = document.getElementById("toggleCategories");
   if (x.style.display === "block") {
     x.style.display = "none";
-    x.classList.remove('animated', 'fadeInUp')
+    x.classList.remove('animated', 'fadeIn')
   } else {
     x.style.display = "block";
-    x.classList.add('animated', 'fadeInUp')
+    x.classList.add('animated', 'fadeIn')
   }
 }
 
@@ -97,10 +98,7 @@ if (this.hash !== "") {
 
   $('html, body').animate({
     scrollTop: $(hash).offset().top
-  }, 500, function(){
-
-    window.location.hash = hash;
-  });
+  }, 'slow');
 }
 });
 });
