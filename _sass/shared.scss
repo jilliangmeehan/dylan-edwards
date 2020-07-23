@@ -77,24 +77,16 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-snap-destination: 0% 100%;
 
     li {
       &.category { display: none; }
       &.show {display: block;}
-      scroll-snap-align: start;
-      vertical-align: top;
 
       a {
         font-family: $project-font;
-        text-transform: lowercase;
-        color: white;
         opacity: 0.1;
         display: block;
         padding: 2rem 0.5rem;
-        text-decoration: none;
         margin: 0;
         transition: all 0.2s linear;
         @include responsive-font(4vw, $small, $extra-large, $large);
@@ -116,12 +108,8 @@ main {
   padding-bottom: 120vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-snap-destination: 0% 100%;
-  //height: 100vh;
 
   section {
-    scroll-snap-align: start;
     height: 15vh;
     padding: 0;
     margin: 0;
@@ -203,16 +191,4 @@ i {
   color: white;
   transition: opacity 0.1s linear;
   &:hover { opacity: .8; }
-}
-
-@media screen and (min-width: 1080px) {
-  //main section { height: 8vh; }
-  header .categories button {
-    //float: none;
-    //clear: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  //main section { height: 10vh; }
 }
