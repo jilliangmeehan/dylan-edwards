@@ -2,7 +2,7 @@
 body { font-family: monospace; scroll-behavior: smooth; overflow-y: scroll; overflow-x: hidden; display: grid; grid-template-columns: min-content 1fr; margin: 0; background-color: black; text-transform: lowercase; }
 body::-webkit-scrollbar { display: none; }
 
-a { color: white; text-decoration: none; transition: opacity 0.1s linear; }
+a { color: white; text-decoration: none; transition: opacity 0.1s linear; outline: 0; }
 a:hover { opacity: .8; }
 
 header { font-family: "Agrandir Grand Bold", monospace; position: fixed; top: 0; right: 0; color: white; z-index: 200; width: 100%; padding: 1rem 0.5rem; }
@@ -10,13 +10,12 @@ header h1 { font-size: 24px; font-size: 3vw; margin: 0; text-align: right; }
 @media (max-width: 600px) { header h1 { font-size: 18px; } }
 @media (min-width: 800px) { header h1 { font-size: 24px; } }
 header .categories { pointer-events: all; float: right; }
-header .categories i { float: right; clear: both; display: block; }
-header .categories button { float: right; clear: both; margin: 0; border: none; padding: .2rem; background-color: rgba(0, 0, 0, 0); color: white; font-size: 14px; font-size: 5vw; font-family: 'Inter'; text-transform: lowercase; }
+header .categories h3 { font-size: 24px; font-family: 'Inter'; font-weight: 400; margin: 0; padding: 0; outline: none; }
+header .categories button { float: right; clear: both; margin: 0; border: none; padding: .2rem; background-color: rgba(0, 0, 0, 0); color: white; outline: none; font-size: 14px; font-size: 5vw; font-family: 'Inter'; text-transform: lowercase; }
 @media (max-width: 280px) { header .categories button { font-size: 14px; } }
 @media (min-width: 360px) { header .categories button { font-size: 18px; } }
 header .categories button.active { text-decoration: line-through; }
 header .categories button:hover { cursor: pointer; text-decoration: line-through; }
-header .categories #toggleCategories { display: none; }
 
 nav { width: 100%; height: 100%; white-space: nowrap; margin: 0; padding: 0; max-width: 100vw; }
 nav ul { position: relative; top: 50vh; list-style: none; padding: 0; margin: 0; }
@@ -55,3 +54,6 @@ main section.show { display: block; }
 
 i { color: white; transition: opacity 0.1s linear; }
 i:hover { opacity: .8; }
+
+.ui-accordion .ui-accordion-header { display: block; cursor: pointer; position: relative; text-align: right; }
+.ui-accordion .ui-accordion-content { overflow: auto; }

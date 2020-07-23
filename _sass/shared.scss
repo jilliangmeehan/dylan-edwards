@@ -15,6 +15,7 @@ a {
   color: white;
   text-decoration: none;
   transition: opacity 0.1s linear;
+  outline: 0;
   &:hover { opacity: .8; }
 }
 
@@ -37,11 +38,15 @@ header {
     pointer-events: all;
     float: right;
 
-    i {
-      float: right;
-      clear: both;
-      display: block;
+    h3 {
+      font-size: $medium;
+      font-family: 'Inter';
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      outline: none;
     }
+
     button {
       float: right;
       clear: both;
@@ -50,6 +55,7 @@ header {
       padding: .2rem;
       background-color: rgba(0,0,0,0);
       color: white;
+      outline: none;
       @include responsive-font(5vw, $small, $regular, $small);
       font-family: 'Inter';
       text-transform: lowercase;
@@ -59,7 +65,6 @@ header {
         text-decoration: line-through;
       }
     }
-    #toggleCategories { display: none; }
   }
 }
 
@@ -191,4 +196,17 @@ i {
   color: white;
   transition: opacity 0.1s linear;
   &:hover { opacity: .8; }
+}
+
+.ui-accordion {
+  .ui-accordion-header {
+    display: block;
+  	cursor: pointer;
+  	position: relative;
+    text-align: right;
+  }
+
+  .ui-accordion-content {
+  	overflow: auto;
+  }
 }
