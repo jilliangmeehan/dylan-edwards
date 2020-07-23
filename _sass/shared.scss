@@ -40,7 +40,7 @@ header {
 
     h3 {
       font-size: $medium;
-      font-family: 'Inter';
+      font-family: $sans-serif;
       font-weight: 400;
       margin: 0;
       padding: 0;
@@ -57,12 +57,14 @@ header {
       color: white;
       outline: none;
       @include responsive-font(5vw, $small, $regular, $small);
-      font-family: 'Inter';
+      font-family: $sans-serif;
       text-transform: lowercase;
-      &.active { text-decoration: line-through; }
+      opacity: 0.4;
+      transition: opacity 0.1s linear;
+      &.active { opacity: 1.0; }
       &:hover {
         cursor: pointer;
-        text-decoration: line-through;
+        opacity: 1.0;
       }
     }
   }
