@@ -70,51 +70,10 @@ header {
   }
 }
 
-nav {
-  width: 100%;
-  height: 100%;
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-  max-width: 100vw;
-
-  ul {
-    position: relative;
-    top: 50vh;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      &.category { display: none; }
-      &.show {display: block;}
-
-      a {
-        font-family: $project-font;
-        opacity: 0.1;
-        display: block;
-        padding: 2rem 0.5rem;
-        margin: 0;
-        transition: all 0.2s linear;
-        @include responsive-font(4vw, $small, $extra-large, $large);
-
-        &.current {
-          opacity: 1.0;
-          pointer-events: none;
-        }
-        &:hover {
-          cursor: pointer;
-          opacity: 0.1;
-        }
-      }
-    }
-  }
-}
-
 main {
   padding-bottom: 120vh;
   overflow-x: hidden;
-  overflow-y: scroll;
+  //overflow-y: scroll;
 
   section {
     height: 15vh;
@@ -146,6 +105,41 @@ main {
 
     &.category { display: none; }
     &.show { display: block; }
+  }
+}
+
+.work {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  position: relative;
+  top: 50vh;
+
+  h3 {
+    &.category { display: none; }
+    &.show {display: block;}
+
+    a {
+      font-family: $project-font;
+      opacity: 0.1;
+      display: block;
+      padding: 2rem 0.5rem;
+      margin: 0;
+      transition: all 0.2s linear;
+      @include responsive-font(4vw, $small, $extra-large, $large);
+
+      &.current {
+        opacity: 1.0;
+        pointer-events: none;
+      }
+      &:hover {
+        cursor: pointer;
+        opacity: 0.1;
+      }
+    }
   }
 }
 
@@ -211,4 +205,14 @@ i {
   .ui-accordion-content {
   	overflow: auto;
   }
+}
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
 }

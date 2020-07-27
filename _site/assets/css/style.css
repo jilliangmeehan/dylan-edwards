@@ -18,17 +18,7 @@ header .categories button { float: right; clear: both; margin: 0; border: none; 
 header .categories button.active { opacity: 1.0; }
 header .categories button:hover { cursor: pointer; opacity: 1.0; }
 
-nav { width: 100%; height: 100%; white-space: nowrap; margin: 0; padding: 0; max-width: 100vw; }
-nav ul { position: relative; top: 50vh; list-style: none; padding: 0; margin: 0; }
-nav ul li.category { display: none; }
-nav ul li.show { display: block; }
-nav ul li a { font-family: "Agrandir Grand Bold", monospace; opacity: 0.1; display: block; padding: 2rem 0.5rem; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 4vw; }
-@media (max-width: 350px) { nav ul li a { font-size: 14px; } }
-@media (min-width: 1800px) { nav ul li a { font-size: 72px; } }
-nav ul li a.current { opacity: 1.0; pointer-events: none; }
-nav ul li a:hover { cursor: pointer; opacity: 0.1; }
-
-main { padding-bottom: 120vh; overflow-x: hidden; overflow-y: scroll; }
+main { padding-bottom: 120vh; overflow-x: hidden; }
 main section { height: 15vh; padding: 0; margin: 0; }
 main section iframe, main section .ifGif { width: 70vw; max-width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; }
 main section iframe.visible, main section .ifGif.visible { opacity: 1; }
@@ -37,6 +27,15 @@ main section .ifGif { height: 25vh; width: 50vw; pointer-events: none; display: 
 main section .ifGif.visible { pointer-events: all; }
 main section.category { display: none; }
 main section.show { display: block; }
+
+.work { width: 100%; height: 100%; white-space: nowrap; margin: 0; padding: 0; max-width: 100vw; position: relative; top: 50vh; }
+.work h3.category { display: none; }
+.work h3.show { display: block; }
+.work h3 a { font-family: "Agrandir Grand Bold", monospace; opacity: 0.1; display: block; padding: 2rem 0.5rem; margin: 0; transition: all 0.2s linear; font-size: 48px; font-size: 4vw; }
+@media (max-width: 350px) { .work h3 a { font-size: 14px; } }
+@media (min-width: 1800px) { .work h3 a { font-size: 72px; } }
+.work h3 a.current { opacity: 1.0; pointer-events: none; }
+.work h3 a:hover { cursor: pointer; opacity: 0.1; }
 
 .social { position: fixed; right: 1rem; bottom: 0; text-align: center; font-size: 18px; font-size: 2vw; }
 @media (max-width: 900px) { .social { font-size: 18px; } }
@@ -58,3 +57,9 @@ i:hover { opacity: .8; }
 
 .ui-accordion .ui-accordion-header { display: block; cursor: pointer; position: relative; text-align: right; }
 .ui-accordion .ui-accordion-content { overflow: auto; }
+
+[data-scroll] { transition: opacity 1s; }
+
+[data-scroll="in"] { opacity: 1; }
+
+[data-scroll="out"] { opacity: 0; }

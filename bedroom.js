@@ -27,7 +27,7 @@ window.addEventListener("scroll", event => {
   });
 });
 
-// Filter
+// Filter project by category
 filterSelection("some")
 
 function filterSelection(c) {
@@ -89,4 +89,26 @@ if (this.hash !== "") {
   }, 'slow');
 }
 });
+});
+
+// Show projects on scroll
+let section = document.getElementsByClassName("work");
+let projectTitle = section.querySelector(h3);
+let thumbnail = section.getElementsByClassName("ifGif");
+let iframe = section.querySelector("iframe");
+let player = new Vimeo.Player(iframe);
+
+ScrollOut({
+  onShown: function(section) {
+    player.play();
+    projectTitle.classList.add("current");
+    iframe.classList.add("visible", "animated", "fadeIn");
+    thumbnail.classList.add("visible");
+  },
+  onHidden: function(section) {
+    player.pause();
+    projectTitle.classList.remove("current");
+    iframe.classList.remove("visible", "animated", "fadeIn");
+    thumbnail.classList.remove("visible");
+  }
 });

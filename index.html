@@ -8,17 +8,11 @@ title: dylan edwards
   {% include categories.html %}
 </header>
 
-<nav>
-   <ul>
-     {% for item in site.data.work %}
-     <li class="category {{ item.categories | downcase }} animated fadeInUp"><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a></li>
-     {% endfor %}
-   </ul>
- </nav>
-
 <main>
   {% for item in site.data.work %}
-  <section id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }}">
+  <section data-scroll id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }} animated fadeInUp">
+
+    <h3><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a></h3>
 
     <a class="ifGif" data-fancybox href="{{ item.video }}" data-ratio="{{ item.ratio }}" data-width="{{ item.width}}" data-height="{{ item.height }}" data-caption="{{ item.credits }}"></a>
 
@@ -26,15 +20,17 @@ title: dylan edwards
 
   </section>
   {% endfor %}
-</main>
 
-<section class="extras">
-  <div id="contact">
-    <a href="mailto:edwardsjdylan@gmail.com">contact</a>
-  </div>
-  <div id="bedroom">
-    <a href="https://bedroomeditorial.com"><img src="assets/icons/bedroom.png" alt=""></a>
-  </div>
-</section>
+  <section class="extras">
+    <div id="contact">
+      <a href="mailto:edwardsjdylan@gmail.com">contact</a>
+    </div>
+  </section>
+  <section class="extras">
+    <div id="bedroom">
+      <a href="https://bedroomeditorial.com"><img src="assets/icons/bedroom.png" alt=""></a>
+    </div>
+  </section>
+</main>
 
 {% include contact.html %}
