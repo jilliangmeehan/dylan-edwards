@@ -73,42 +73,9 @@ header {
 main {
   padding-bottom: 120vh;
   overflow-x: hidden;
-  //overflow-y: scroll;
-
-  section {
-    height: 15vh;
-    padding: 0;
-    margin: 0;
-
-    iframe, .ifGif {
-      width: 70vw;
-      max-width: 800px;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: opacity 0.2s ease-in-out;
-      opacity: 0;
-      &.visible { opacity: 1; }
-    }
-
-    iframe { z-index: -100; }
-
-    .ifGif {
-      height: 25vh;
-      width: 50vw;
-      pointer-events: none;
-      display: block;
-      z-index: 2000;
-      &.visible { pointer-events: all; }
-    }
-
-    &.category { display: none; }
-    &.show { display: block; }
-  }
 }
 
-.work {
+.titles {
   width: 100%;
   height: 100%;
   white-space: nowrap;
@@ -117,29 +84,60 @@ main {
   max-width: 100vw;
   position: relative;
   top: 50vh;
+  z-index: 2;
 
   h3 {
-    &.category { display: none; }
-    &.show {display: block;}
-
-    a {
-      font-family: $project-font;
+    font-family: $project-font;
+    opacity: 0.1;
+    display: block;
+    padding: 2rem 0.5rem;
+    margin: 0;
+    transition: all 0.2s linear;
+    @include responsive-font(4vw, $small, $extra-large, $large);
+    &:hover {
+      cursor: pointer;
       opacity: 0.1;
-      display: block;
-      padding: 2rem 0.5rem;
-      margin: 0;
-      transition: all 0.2s linear;
-      @include responsive-font(4vw, $small, $extra-large, $large);
-
-      &.current {
-        opacity: 1.0;
-        pointer-events: none;
-      }
-      &:hover {
-        cursor: pointer;
-        opacity: 0.1;
-      }
     }
+  }
+}
+
+.videos {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+
+  iframe, &.embed {
+    width: 70vw;
+    max-width: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+  }
+
+  iframe { z-index: -1; }
+
+  &.embed {
+    height: 25vh;
+    width: 50vw;
+    pointer-events: none;
+    display: block;
+    z-index: 300;
+  }
+}
+
+.work {
+  &.category { display: none; }
+  &.show { display: block; }
+  &.current {
+    h3 {
+      opacity: 1.0;
+      pointer-events: none;
+    }
+    iframe, &.embed { opacity: 1; }
+    &.embed { pointer-events: all; }
   }
 }
 
@@ -205,14 +203,4 @@ i {
   .ui-accordion-content {
   	overflow: auto;
   }
-}
-
-[data-scroll] {
-  transition: opacity 1s;
-}
-[data-scroll="in"] {
-  opacity: 1;
-}
-[data-scroll="out"] {
-  opacity: 0;
 }

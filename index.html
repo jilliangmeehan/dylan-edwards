@@ -10,27 +10,30 @@ title: dylan edwards
 
 <main>
   {% for item in site.data.work %}
-  <section data-scroll id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }} animated fadeInUp">
-
+  <section id="{{ item.title | slugify }}" class="titles work category {{ item.categories | downcase }} animated fadeIn">
     <h3><a href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a></h3>
-
-    <a class="ifGif" data-fancybox href="{{ item.video }}" data-ratio="{{ item.ratio }}" data-width="{{ item.width}}" data-height="{{ item.height }}" data-caption="{{ item.credits }}"></a>
-
-    <iframe src="{{ item.gif }}?loop=1&controls=0&muted=1" width="100%" maxwidth="750px" height="100%" maxheight="750px" frameborder="0" allowfullscreen="false"></iframe>
-
   </section>
   {% endfor %}
 
-  <section class="extras">
+  {% for item in site.data.work %}
+  <a id="{{ item.title | slugify }}" class="embed videos work category {{ item.categories | downcase }} animated fadeIn" data-fancybox href="{{ item.video }}" data-ratio="{{ item.ratio }}" data-width="{{ item.width}}" data-height="{{ item.height }}" data-caption="{{ item.credits }}"></a>
+
+  <div id="{{ item.title | slugify }}" class="videos work category {{ item.categories | downcase }} animated fadeIn">
+    <iframe src="{{ item.gif }}?loop=1&controls=0&muted=1" width="100%" maxwidth="750px" height="100%" maxheight="750px" frameborder="0" allowfullscreen="false"></iframe>
+  </div>
+  {% endfor %}
+
+  <!-- <section class="extras">
     <div id="contact">
       <a href="mailto:edwardsjdylan@gmail.com">contact</a>
     </div>
   </section>
+
   <section class="extras">
     <div id="bedroom">
       <a href="https://bedroomeditorial.com"><img src="assets/icons/bedroom.png" alt=""></a>
     </div>
-  </section>
+  </section> -->
 </main>
 
 {% include contact.html %}

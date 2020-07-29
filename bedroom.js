@@ -1,32 +1,3 @@
-// Nav scrolling
-let mainNavLinks = document.querySelectorAll("nav ul li a");
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach(link => {
-    let section = document.querySelector(link.hash);
-    let videoLink = section.querySelector("a");
-    let iframe = section.querySelector("iframe");
-    let player = new Vimeo.Player(iframe);
-
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      player.play();
-      link.classList.add("current");
-      iframe.classList.add("visible", "animated", "fadeIn");
-      videoLink.classList.add("visible");
-    } else {
-      player.pause();
-      link.classList.remove("current");
-      iframe.classList.remove("visible", "animated", "fadeIn");
-      videoLink.classList.remove("visible");
-    }
-  });
-});
-
 // Filter project by category
 filterSelection("some")
 
@@ -91,24 +62,18 @@ if (this.hash !== "") {
 });
 });
 
-// Show projects on scroll
-let section = document.getElementsByClassName("work");
-let projectTitle = section.querySelector(h3);
-let thumbnail = section.getElementsByClassName("ifGif");
-let iframe = section.querySelector("iframe");
-let player = new Vimeo.Player(iframe);
+//Show projects on scroll
+let titles = document.querySelectorAll("main .titles");
+var controller = new ScrollMagic.Controller();
 
-ScrollOut({
-  onShown: function(section) {
-    player.play();
-    projectTitle.classList.add("current");
-    iframe.classList.add("visible", "animated", "fadeIn");
-    thumbnail.classList.add("visible");
-  },
-  onHidden: function(section) {
-    player.pause();
-    projectTitle.classList.remove("current");
-    iframe.classList.remove("visible", "animated", "fadeIn");
-    thumbnail.classList.remove("visible");
-  }
+titles.forEach(project => {
+  let projectTitle = project.querySelector("h3 a");
+
+  new ScrollMagic.Scene({
+    triggerElement: project,
+    duration: 100
+  })
+    .setClassToggle(projectTitle.hash, "current")
+    //.addIndicators()
+    .addTo(controller);
 });
