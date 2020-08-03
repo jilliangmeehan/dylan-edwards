@@ -62,7 +62,7 @@ if (this.hash !== "") {
 });
 });
 
-//Show projects on scroll
+// Show projects on scroll
 let titles = document.querySelectorAll("main .titles");
 var controller = new ScrollMagic.Controller();
 
