@@ -71,23 +71,25 @@ header {
 }
 
 main {
+  height: 100vh;
+  padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-scroll-snap-type: y mandatory;
-  -webkit-scroll-snap-destination: 0% 50%;
-  border: 2px solid pink;
-  padding: 50vh 0 0 0;
-  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-snap-destination: 0% 50%;
+  scroll-padding: 50vh;
 
   section {
-    border: 2px solid lavender;
+    //border: 2px solid lavender;
     padding: 50vh 0;
-    -webkit-scroll-snap-align: center;
-    -webkit-scroll-snap-coordinate: 0% 50%;
+    position: relative;
+    top: 60vh;
+    scroll-snap-align: center;
   }
 }
 
 .titles {
+  height: 10vh;
   width: 100%;
   white-space: nowrap;
   margin: 0;
