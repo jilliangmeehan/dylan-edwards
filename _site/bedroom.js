@@ -1,33 +1,4 @@
-// Nav scrolling
-let mainNavLinks = document.querySelectorAll("nav ul li a");
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach(link => {
-    let section = document.querySelector(link.hash);
-    let videoLink = section.querySelector("a");
-    let iframe = section.querySelector("iframe");
-    let player = new Vimeo.Player(iframe);
-
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      player.play();
-      link.classList.add("current");
-      iframe.classList.add("visible", "animated", "fadeIn");
-      videoLink.classList.add("visible");
-    } else {
-      player.pause();
-      link.classList.remove("current");
-      iframe.classList.remove("visible", "animated", "fadeIn");
-      videoLink.classList.remove("visible");
-    }
-  });
-});
-
-// Filter
+// filter project by category
 filterSelection("some")
 
 function filterSelection(c) {
@@ -74,19 +45,35 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// show projects on scroll
+let titles = document.querySelectorAll("main .titles");
+var controller = new ScrollMagic.Controller();
+
+titles.forEach(project => {
+  let projectTitle = project.querySelector("h3 a");
+
+  new ScrollMagic.Scene({
+    triggerElement: project,
+    duration: 100
+  })
+  .setClassToggle(projectTitle.hash, "current")
+  //.addIndicators()
+  .addTo(controller);
+
+});
+
 // Smooth scroll to project
 $(document).ready(function(){
-$("a").on('click', function(event) {
+  $("main h3 a").on('click', function(e) {
+    var el = $(this);
+    var parentEl = $("main");
+    var elOffset = el.offset().top + parentEl.scrollTop();
+    var elHeight = el.height();
+    var parentHeight = parentEl.height();
 
-if (this.hash !== "") {
-  event.preventDefault();
+    var offset = elOffset - ((parentHeight - elHeight) / 2);
 
-  var hash = this.hash;
-
-
-  $('html, body').animate({
-    scrollTop: $(hash).offset().top
-  }, 'slow');
-}
-});
+    e.preventDefault();
+    parentEl.animate({scrollTop:offset}, 900);
+  });
 });
