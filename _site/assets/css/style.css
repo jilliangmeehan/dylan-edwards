@@ -38,22 +38,24 @@ main section { padding: 50vh 0; position: relative; top: 50vh; scroll-snap-align
 .work.current iframe, .work.current.embed { opacity: 1; }
 .work.current.embed { pointer-events: all; }
 
-.social { position: fixed; right: 1rem; bottom: 0; text-align: center; font-size: 18px; font-size: 2vw; }
+.social { position: fixed; right: 1rem; bottom: 0; text-align: center; z-index: 10; font-size: 18px; font-size: 2vw; }
 @media (max-width: 900px) { .social { font-size: 18px; } }
 @media (min-width: 1200px) { .social { font-size: 24px; } }
 .social a { text-decoration: none; }
 .social i { display: block; margin-bottom: 1rem; }
 
 .extras { width: 100vw; margin: 0; text-align: center; }
-.extras #contact a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; font-size: 18px; font-size: 3vw; opacity: 1; color: white; text-decoration: none; pointer-events: all; cursor: pointer; transition: opacity 0.1s linear; }
-@media (max-width: 466.6666666667px) { .extras #contact a { font-size: 14px; } }
-@media (min-width: 800px) { .extras #contact a { font-size: 24px; } }
-.extras #contact a:hover { opacity: .8; }
-.extras #bedroom img { width: 5vw; min-width: 5rem; transition: opacity 0.1s linear; }
-.extras #bedroom img:hover { opacity: .8; }
+.extras#contact a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; font-size: 18px; font-size: 3vw; opacity: 1; color: white; text-decoration: none; pointer-events: all; cursor: pointer; transition: opacity 0.1s linear; }
+@media (max-width: 466.6666666667px) { .extras#contact a { font-size: 14px; } }
+@media (min-width: 800px) { .extras#contact a { font-size: 24px; } }
+.extras#contact a:hover { opacity: .8; }
+.extras#bedroom img { width: 5vw; min-width: 5rem; transition: opacity 0.1s linear; }
+.extras#bedroom img:hover { opacity: .8; }
 
 i { color: white; transition: opacity 0.1s linear; }
 i:hover { opacity: .8; }
 
 .ui-accordion .ui-accordion-header { display: block; cursor: pointer; position: relative; text-align: right; }
 .ui-accordion .ui-accordion-content { overflow: auto; }
+
+.anchor { border: 2px solid yellow; }

@@ -157,6 +157,7 @@ main {
   right: 1rem;
   bottom: 0;
   text-align: center;
+  z-index: 10;
   @include responsive-font(2vw, $regular, $medium, $regular);
   a { text-decoration: none; }
   i {
@@ -170,7 +171,7 @@ main {
   margin: 0;
   text-align: center;
 
-  #contact {
+  &#contact {
     a {
       font-family: $project-font;
       text-transform: lowercase;
@@ -185,7 +186,7 @@ main {
     }
   }
 
-  #bedroom {
+  &#bedroom {
     img {
       width: 5vw;
       min-width: 5rem;
@@ -212,4 +213,8 @@ i {
   .ui-accordion-content {
   	overflow: auto;
   }
+}
+
+.anchor {
+  border: 2px solid yellow;
 }

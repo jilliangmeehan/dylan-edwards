@@ -1,4 +1,4 @@
-// Filter project by category
+// filter project by category
 filterSelection("some")
 
 function filterSelection(c) {
@@ -45,24 +45,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-// Smooth scroll to project
-$(document).ready(function(){
-$("a").on('click', function(event) {
-
-if (this.hash !== "") {
-  event.preventDefault();
-
-  var hash = this.hash;
-
-
-  $('html, body').animate({
-    scrollTop: $(hash).offset().top
-  }, 'slow');
-}
-});
-});
-
-// Show projects on scroll
+// show projects on scroll
 let titles = document.querySelectorAll("main .titles");
 var controller = new ScrollMagic.Controller();
 
@@ -73,7 +56,24 @@ titles.forEach(project => {
     triggerElement: project,
     duration: 100
   })
-    .setClassToggle(projectTitle.hash, "current")
-    //.addIndicators()
-    .addTo(controller);
+  .setClassToggle(projectTitle.hash, "current")
+  //.addIndicators()
+  .addTo(controller);
+
+});
+
+// Smooth scroll to project
+$(document).ready(function(){
+  $("main h3 a").on('click', function(e) {
+    var el = $(this);
+    var parentEl = $("main");
+    var elOffset = el.offset().top + parentEl.scrollTop();
+    var elHeight = el.height();
+    var parentHeight = parentEl.height();
+
+    var offset = elOffset - ((parentHeight - elHeight) / 2);
+
+    e.preventDefault();
+    parentEl.animate({scrollTop:offset}, 900);
+  });
 });
