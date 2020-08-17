@@ -46,17 +46,18 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 // show projects on scroll
-let titles = document.querySelectorAll("main .titles");
+let titles = document.querySelectorAll("main .work");
 var controller = new ScrollMagic.Controller();
 
 titles.forEach(project => {
-  let projectTitle = project.querySelector("h3 a");
+  let iframe = project.querySelector("iframe");
+  let player = new Vimeo.Player(iframe);
 
   new ScrollMagic.Scene({
     triggerElement: project,
     duration: 100
   })
-  .setClassToggle(projectTitle.hash, "current")
+  .setClassToggle(project, "current")
   //.addIndicators()
   .addTo(controller);
 
@@ -64,7 +65,7 @@ titles.forEach(project => {
 
 // Smooth scroll to project
 $(document).ready(function(){
-  $("main h3 a").on('click', function(e) {
+  $("main .title").on('click', function(e) {
     var el = $(this);
     var parentEl = $("main");
     var elOffset = el.offset().top + parentEl.scrollTop();
