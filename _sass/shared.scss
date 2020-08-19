@@ -1,8 +1,5 @@
 body {
   font-family: monospace;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  overflow-x: hidden;
   margin: 0;
   background-color: black;
   text-transform: lowercase;
@@ -74,8 +71,9 @@ main {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-snap-destination: 0% 50%;
+  -x-scroll-snap-type: y mandatory;
   scroll-padding: 50vh;
+  scroll-behavior: smooth;
 
   section {
     width: 100%;
