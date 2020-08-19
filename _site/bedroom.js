@@ -58,6 +58,9 @@ titles.forEach(project => {
     duration: 100
   })
   .setClassToggle(project, "current")
+  .on("enter", function() {
+    player.play();
+  })
   //.addIndicators()
   .addTo(controller);
 
