@@ -66,7 +66,7 @@ titles.forEach(project => {
 
 });
 
-// Smooth scroll to project
+// smooth scroll to project
 $(document).ready(function(){
   $("main .title").on('click', function(e) {
     var el = $(this);
