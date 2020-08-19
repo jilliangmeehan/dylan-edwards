@@ -24,8 +24,8 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; scro
 .work { height: 10vh; margin: 0; padding: 0; max-width: 100vw; }
 .work.category { display: none; }
 .work.show { display: block; }
-.work.current .title { opacity: 1.0; pointer-events: none; z-index: 99; }
-.work.current .thumbnail { display: block; }
+.work.current .title { opacity: 1.0; pointer-events: none; }
+.work.current iframe { display: block; }
 .work.current .embed { pointer-events: all; }
 
 .title { position: relative; overflow: hidden; font-family: "Agrandir Grand Bold", monospace; opacity: 0.1; display: inline-block; padding: 2rem 0.5rem; margin: 0; z-index: 99; transition: all 0.2s linear; font-size: 48px; font-size: 4vw; }
@@ -33,7 +33,7 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; scro
 @media (min-width: 1800px) { .title { font-size: 72px; } }
 .title:hover { opacity: 0.2; }
 
-.thumbnail { position: fixed; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70vw; max-width: 800px; display: none; }
+iframe { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70vw; max-width: 800px; display: none; z-index: -1; }
 
 .embed { width: 70vw; max-width: 800px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.2s ease-in-out; opacity: 0; height: 25vh; width: 50vw; pointer-events: none; display: block; z-index: 300; }
 

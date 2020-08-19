@@ -98,9 +98,8 @@ main {
     .title {
       opacity: 1.0;
       pointer-events: none;
-      z-index: 99;
     }
-    .thumbnail { display: block; }
+    iframe { display: block; }
     .embed { pointer-events: all; }
   }
 }
@@ -119,15 +118,15 @@ main {
   &:hover { opacity: 0.2; }
 }
 
-.thumbnail {
+iframe {
   position: fixed;
-  z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70vw;
   max-width: 800px;
   display: none;
+  z-index: -1;
 }
 
 .embed {

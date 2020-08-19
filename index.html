@@ -8,16 +8,15 @@ title: dylan edwards
   {% include categories.html %}
 </header>
 
-<main>
+<main class="animated fadeIn">
   {% for item in site.data.work %}
-  <section id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }} animated fadeIn">
+  <section id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }}">
 
     <a class="title" href="#{{ item.title | slugify }}">{{ item.title }} {% if item.subtitle %}• {{ item.subtitle }}{% endif %}</a>
 
     <!-- <a class="embed" data-fancybox href="{{ item.video }}" data-ratio="{{ item.ratio }}" data-width="{{ item.width}}" data-height="{{ item.height }}" data-caption="{{ item.credits }}"></a> -->
 
     <iframe
-      class="thumbnail"
       src="{{ item.gif }}?background=true"
       width="100%"
       maxwidth="750px"
