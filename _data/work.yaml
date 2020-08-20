@@ -6,9 +6,12 @@
   width: 1280
   height: 536
   ratio: 2.39
-  credits: Directed by Tucker Bliss
-  additional: Vimeo Staff Pick
   gif: https://player.vimeo.com/video/397806414
+  awards: Vimeo Staff Pick
+  director: Tucker Bliss
+  client: Google
+  agency: idk
+  production-company: idk
 
 - title: Pilgrims
   categories: Some Narrative
