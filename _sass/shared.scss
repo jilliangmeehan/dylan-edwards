@@ -70,8 +70,6 @@ main {
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  //scroll-snap-type: y mandatory;
-  //-x-scroll-snap-type: y mandatory;
   scroll-padding: 50vh;
   scroll-behavior: smooth;
 
@@ -80,7 +78,6 @@ main {
     padding: 50vh 0;
     position: relative;
     top: 50vh;
-    //scroll-snap-align: center;
   }
 }
 
