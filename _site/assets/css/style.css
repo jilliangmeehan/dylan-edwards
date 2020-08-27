@@ -35,7 +35,7 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 @media (min-width: 1800px) { .title { font-size: 72px; } }
 .title:hover { opacity: 0.2; }
 
-.credits { position: fixed; top: 25%; right: 0.5rem; text-align: right; font-family: Helvetica, sans-serif; font-size: 14px; font-weight: 300; opacity: 0; z-index: 100; transition: all 0.2s linear; }
+.credits { position: fixed; top: 60%; right: 0.5rem; text-align: right; font-family: Helvetica, sans-serif; font-size: 14px; font-weight: 300; opacity: 0; z-index: 100; transition: all 0.2s linear; }
 
 .thumbnail, .embed { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70vw; max-width: 800px; display: none; }
 
