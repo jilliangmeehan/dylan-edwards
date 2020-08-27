@@ -53,6 +53,7 @@ header {
       outline: none;
       @include responsive-font(5vw, $small, $regular, $small);
       font-family: $sans-serif;
+      font-weight: 300;
       text-transform: lowercase;
       opacity: 0.4;
       transition: opacity 0.1s linear;
@@ -120,6 +121,7 @@ main {
   text-align: right;
   font-family: $sans-serif;
   font-size: $small;
+  font-weight: 300;
   opacity: 0;
   z-index: 100;
   transition: all 0.2s linear;

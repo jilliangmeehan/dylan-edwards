@@ -1,5 +1,5 @@
 @font-face { font-family: 'Agrandir Grand Bold'; src: url("../fonts/AgrandirGrandBold.woff2") format("woff2"), url("../fonts/AgrandirGrandBold.woff") format("woff"), url("../fonts/AgrandirGrandBold.otf") format("otf"); }
-@font-face { font-family: 'Agrandir Narrow'; src: url("../fonts/Agrandir-Narrow.otf") format("otf"); }
+@font-face { font-family: 'Agrandir Text Bold'; src: url("../fonts/Agrandir-TextBold.woff2") format("woff2"), url("../fonts/Agrandir-TextBold.woff") format("woff"), url("../fonts/Agrandir-TextBold.otf") format("otf"); }
 body { font-family: monospace; margin: 0; background-color: black; text-transform: lowercase; }
 body::-webkit-scrollbar { display: none; }
 
@@ -13,8 +13,8 @@ header h1 { font-size: 24px; font-size: 3vw; margin: 0; text-align: right; }
 @media (max-width: 600px) { header h1 { font-size: 18px; } }
 @media (min-width: 800px) { header h1 { font-size: 24px; } }
 header .categories { pointer-events: all; float: right; }
-header .categories h3 { font-size: 24px; font-family: "Agrandir Narrow", sans-serif; font-weight: 400; margin: 0; padding: 0; outline: none; }
-header .categories button { float: right; clear: both; margin: 0; border: none; padding: .2rem; background-color: rgba(0, 0, 0, 0); color: white; outline: none; font-size: 14px; font-size: 5vw; font-family: "Agrandir Narrow", sans-serif; text-transform: lowercase; opacity: 0.4; transition: opacity 0.1s linear; }
+header .categories h3 { font-size: 24px; font-family: Helvetica, sans-serif; font-weight: 400; margin: 0; padding: 0; outline: none; }
+header .categories button { float: right; clear: both; margin: 0; border: none; padding: .2rem; background-color: rgba(0, 0, 0, 0); color: white; outline: none; font-size: 14px; font-size: 5vw; font-family: Helvetica, sans-serif; font-weight: 300; text-transform: lowercase; opacity: 0.4; transition: opacity 0.1s linear; }
 @media (max-width: 280px) { header .categories button { font-size: 14px; } }
 @media (min-width: 360px) { header .categories button { font-size: 18px; } }
 header .categories button.active { opacity: 1.0; }
@@ -35,7 +35,7 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 @media (min-width: 1800px) { .title { font-size: 72px; } }
 .title:hover { opacity: 0.2; }
 
-.credits { position: fixed; top: 25%; right: 0.5rem; text-align: right; font-family: "Agrandir Narrow", sans-serif; font-size: 14px; opacity: 0; z-index: 100; transition: all 0.2s linear; }
+.credits { position: fixed; top: 25%; right: 0.5rem; text-align: right; font-family: Helvetica, sans-serif; font-size: 14px; font-weight: 300; opacity: 0; z-index: 100; transition: all 0.2s linear; }
 
 .thumbnail, .embed { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70vw; max-width: 800px; display: none; }
 
