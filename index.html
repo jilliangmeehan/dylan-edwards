@@ -16,6 +16,24 @@ title: dylan edwards
 
     <a class="embed" data-fancybox href="{{ item.video }}" data-ratio="{{ item.ratio }}" data-width="{{ item.width}}" data-height="{{ item.height }}" data-caption="{{ item.credits }}"></a>
 
+    <div class="credits">
+      {% if item.awards %}
+        <p class="awards">{{ item.awards }}</p>
+      {% endif %}
+      {% if item.director %}
+        <p>directed by {{ item.director }}</p>
+      {% endif %}
+      {% if item.client %}
+        <p>for {{ item.client }}</p>
+      {% endif %}
+      {% if item.agency %}
+        <p>{{ item.agency }}</p>
+      {% endif %}
+      {% if item.production-company %}
+        <p>{{ item.production-company }}</p>
+      {% endif %}
+    </div>
+
     <iframe
       class="thumbnail"
       src="{{ item.gif }}?autopause=true&controls=false&loop=true&muted=true"
