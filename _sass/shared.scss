@@ -22,7 +22,7 @@ header {
   right: 0;
   z-index: 200;
   width: 100%;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   h1 {
     @include responsive-font(3vw, $regular, $medium, $medium);
     margin: 0;
@@ -32,6 +32,7 @@ header {
   .categories {
     pointer-events: all;
     float: right;
+    background-color: rgba(0,0,0,1);
 
     h3 {
       font-size: $medium;
@@ -116,12 +117,13 @@ main {
 
 .credits {
   position: fixed;
-  top: 60%;
-  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
   text-align: right;
   font-family: $sans-serif;
   font-size: $small;
-  font-weight: 300;
+  font-weight: 400;
   opacity: 0;
   z-index: 100;
   transition: all 0.2s linear;
