@@ -103,7 +103,7 @@ main {
 .title {
   position: relative;
   overflow: hidden;
-  max-width: 77vw;
+  max-width: 50vw;
   font-family: $project-font;
   opacity: 0.1;
   display: inline-block;
@@ -111,7 +111,7 @@ main {
   margin: 0;
   z-index: 99;
   transition: all 0.2s linear;
-  @include responsive-font(3vw, $small, $extra-large, $medium);
+  @include responsive-font(3vw, $xs, $extra-large, $medium);
   &:hover { opacity: 0.2; }
 }
 

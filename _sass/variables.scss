@@ -20,7 +20,7 @@ $large: 48px;
 $medium: 24px;
 $regular: 18px;
 $small: 14px;
-$xs: 12px;
+$xs: 10px;
 
 // Responsive text mixin
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
