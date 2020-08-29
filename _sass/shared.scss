@@ -87,6 +87,7 @@ main {
   margin: 0;
   padding: 0;
   max-width: 100vw;
+  border: 1px solid yellow;
 
   &.category { display: none; }
   &.show { display: block; }
