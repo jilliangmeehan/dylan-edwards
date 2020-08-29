@@ -64,7 +64,7 @@ titles.forEach(project => {
   .on("leave", function() {
     player.pause();
   })
-  .addIndicators()
+  //.addIndicators()
   .addTo(controller);
 
 });
