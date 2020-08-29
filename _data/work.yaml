@@ -89,7 +89,7 @@
 
 - title: Insect
   subtitle: Isaac Dunbar
-  categories: Some MV
+  categories: MV
   thumbnail: assets/images/thumbnails/insect_main.jpg
   video: https://vimeo.com/386521918
   width: 1280
@@ -156,7 +156,7 @@
   
 - title: Pressure
   subtitle: Gillette Venus
-  categories: Commercial
+  categories: Some Commercial
   video: https://vimeo.com/436494664
   width: 1280
   height: 890
@@ -183,7 +183,7 @@
 
 - title: Planet Hunter
   subtitle: Google
-  categories: Some Branded
+  categories: Branded
   video: https://vimeo.com/419873718
   width: 1280
   height: 536
@@ -207,7 +207,7 @@
   director: India Sleem
 
 - title: Your Highness Grandmother Pageant
-  categories: Some Narrative
+  categories: Narrative
   video: https://vimeo.com/433123905
   width: 1280
   height: 720
@@ -218,7 +218,7 @@
   production-company: Farago Projects
 
 - title: Forever Ferg
-  categories: Some Branded
+  categories: Branded
   thumbnail: assets/images/thumbnails/foreverferg_main.jpg
   video: https://vimeo.com/276967332
   width: 1280
@@ -312,7 +312,7 @@
 
 - title: Always Running
   subtitle: Adidas
-  categories: Commercial
+  categories: Some Commercial
   thumbnail: assets/images/thumbnails/adidas_main.jpg
   video: https://vimeo.com/363959707
   width: 1280
