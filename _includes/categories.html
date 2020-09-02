@@ -1,5 +1,5 @@
 <div class="categories animated fadeIn" id="accordion">
-  <h3>+</h3>
+  <h3 class="categories-header"><span class="toggle-text">+</span></h3>
   <div id="categories-btns">
     <button class="btn active" onclick="filterSelection('some')">Some</button>
     <button class="btn" onclick="filterSelection('all')">All</button>
@@ -11,9 +11,18 @@
 </div>
 
 <script>
+
+$( ".categories-header" ).click(function() {
+  $(this).find(".toggle-text").text(function (i, text) {
+    return text === "+" ? "-" : "+";
+  })
+});
+
 $( "#accordion" ).accordion({
   active: false,
   collapsible: true,
   header: "h3"
 });
+
+
 </script>
