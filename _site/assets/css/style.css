@@ -31,7 +31,7 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 .work.category { display: none; }
 .work.show { display: block; }
 .work.current .title { opacity: 1.0; pointer-events: none; }
-.work.current .credits { opacity: 0.6; }
+.work.current .credits { opacity: 0.5; }
 .work.current .thumbnail, .work.current .embed { display: block; }
 .work.current .embed { pointer-events: all; }
 
