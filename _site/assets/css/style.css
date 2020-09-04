@@ -61,8 +61,8 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 @media (max-width: 466.6666666667px) { .extras#contact a { font-size: 14px; } }
 @media (min-width: 800px) { .extras#contact a { font-size: 24px; } }
 .extras#contact a:hover { opacity: .8; }
-.extras#bedroom img { width: 5vw; min-width: 5rem; transition: opacity 0.1s linear; }
-.extras#bedroom img:hover { opacity: .8; }
+.extras#cabin img { width: 5vw; min-width: 5rem; transition: opacity 0.1s linear; }
+.extras#cabin img:hover { opacity: .8; }
 
 i { color: white; transition: opacity 0.1s linear; }
 i:hover { opacity: .8; }
