@@ -214,3 +214,7 @@ i {
   	overflow: auto;
   }
 }
+
+@media only screen and (min-width: 800px) {
+  .title { max-width: 90vw; }
+}

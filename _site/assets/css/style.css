@@ -68,3 +68,5 @@ i:hover { opacity: .8; }
 
 .ui-accordion .ui-accordion-header { display: block; cursor: pointer; position: relative; text-align: right; }
 .ui-accordion .ui-accordion-content { overflow: auto; }
+
+@media only screen and (min-width: 800px) { .title { max-width: 90vw; } }
