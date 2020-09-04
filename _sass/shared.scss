@@ -85,7 +85,7 @@ main {
 }
 
 .work {
-  height: 150px;
+  height: 130px;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -114,7 +114,7 @@ main {
   margin: 0;
   z-index: 99;
   transition: all 0.2s linear;
-  @include responsive-font(3vw, $xs, $extra-large, $medium);
+  @include responsive-font(2.4vw, $xs, $extra-large, $medium);
   &:hover { opacity: 0.2; }
 }
 

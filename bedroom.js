@@ -57,7 +57,7 @@ titles.forEach(project => {
 
   new ScrollMagic.Scene({
     triggerElement: project,
-    duration: 150
+    duration: 130
   })
   .setClassToggle(project, "current")
   .on("enter", function() {
