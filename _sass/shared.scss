@@ -115,7 +115,7 @@ main {
   margin: 0;
   z-index: 99;
   transition: all 0.2s linear;
-  @include responsive-font(2.4vw, $xs, $extra-large, $medium);
+  @include responsive-font(3vw, $small, $large, $medium);
   &:hover { opacity: 0.2; }
 }
 

@@ -35,9 +35,9 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 .work.current .thumbnail, .work.current .embed { display: block; }
 .work.current .embed { pointer-events: all; }
 
-.title { position: relative; overflow: hidden; max-width: 50vw; font-family: "Agrandir Grand Bold", monospace; opacity: 0.1; display: inline-block; padding: 2rem 0.5rem; margin: 0; z-index: 99; transition: all 0.2s linear; font-size: 24px; font-size: 2.4vw; }
-@media (max-width: 416.6666666667px) { .title { font-size: 10px; } }
-@media (min-width: 3000px) { .title { font-size: 72px; } }
+.title { position: relative; overflow: hidden; max-width: 50vw; font-family: "Agrandir Grand Bold", monospace; opacity: 0.1; display: inline-block; padding: 2rem 0.5rem; margin: 0; z-index: 99; transition: all 0.2s linear; font-size: 24px; font-size: 3vw; }
+@media (max-width: 466.6666666667px) { .title { font-size: 14px; } }
+@media (min-width: 1600px) { .title { font-size: 48px; } }
 .title:hover { opacity: 0.2; }
 
 .credits { position: fixed; top: 50%; transform: translateY(-50%); right: 1rem; text-align: right; font-family: Helvetica, sans-serif; font-size: 14px; font-size: 2vw; font-weight: 300; line-height: 80%; opacity: 0; z-index: 100; transition: all 0.2s linear; }
