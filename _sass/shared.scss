@@ -75,6 +75,7 @@ main {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-padding: 50vh;
+  &::-webkit-scrollbar { display: none; }
 
   section {
     width: 100%;

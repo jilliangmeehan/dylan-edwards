@@ -24,6 +24,7 @@ header .categories button.active { opacity: 1.0; }
 header .categories button:hover { cursor: pointer; opacity: 1.0; }
 
 main { height: 100vh; padding: 0; overflow-x: hidden; overflow-y: scroll; scroll-padding: 50vh; }
+main::-webkit-scrollbar { display: none; }
 main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 
 .work { height: 130px; margin: 0; padding: 0; width: 100vw; }
