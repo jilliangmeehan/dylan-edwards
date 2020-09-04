@@ -93,10 +93,11 @@ main {
   &.category { display: none; }
   &.show { display: block; }
   &.current {
-    .title, .credits {
+    .title {
       opacity: 1.0;
       pointer-events: none;
     }
+    .credits { opacity: 0.6; }
     .thumbnail, .embed { display: block; }
     .embed { pointer-events: all; }
   }
