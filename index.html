@@ -10,7 +10,7 @@ title: dylan edwards
 
 <main class="animated fadeIn">
   {% include contact.html %}
-  
+
   {% for item in site.data.work %}
   <section id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }}">
 
@@ -38,7 +38,7 @@ title: dylan edwards
 
     <iframe
       class="thumbnail"
-      src="{{ item.gif }}?background=true&autopause=true"
+      src="{{ item.gif }}?background=true"
       width="100%"
       maxwidth="750px"
       height="100%"
