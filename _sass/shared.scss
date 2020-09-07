@@ -169,7 +169,8 @@ main {
 
 .extras {
   width: 100vw;
-  margin: 0;
+  margin: 50vh auto;
+  padding: 0;
   text-align: center;
 
   &#contact {
@@ -189,6 +190,7 @@ main {
 
   &#cabin {
     img {
+      margin: 50vh auto;
       width: 5vw;
       min-width: 5rem;
       transition: opacity 0.1s linear;

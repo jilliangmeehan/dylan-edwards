@@ -76,19 +76,12 @@ $(document).ready(function(){
   $("main a").on('click', function(e) {
     var el = $(this.hash);
     var parentEl = $("main");
+    var elOffset = el.offset().top + parentEl.scrollTop();
+    var elHeight = el.height();
+    var parentHeight = parentEl.height();
+    var offset = elOffset - ((parentHeight - elHeight) / 2);
 
-    if (el == "contact") {
-      e.preventDefault();
-      parentEl.animate({scrollTop: $(el).offset().top}, "slow");
-    } else {
-      var parentEl = $("main");
-      var elOffset = el.offset().top + parentEl.scrollTop();
-      var elHeight = el.height();
-      var parentHeight = parentEl.height();
-      var offset = elOffset - ((parentHeight - elHeight) / 2);
-
-      e.preventDefault();
-      parentEl.animate({scrollTop:offset}, "slow");
-    }
+    e.preventDefault();
+    parentEl.animate({scrollTop:offset}, "slow");
   });
 });

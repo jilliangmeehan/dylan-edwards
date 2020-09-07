@@ -56,12 +56,12 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 .social a { text-decoration: none; }
 .social i { display: block; margin-bottom: 1rem; }
 
-.extras { width: 100vw; margin: 0; text-align: center; }
+.extras { width: 100vw; margin: 50vh auto; padding: 0; text-align: center; }
 .extras#contact a { font-family: "Agrandir Grand Bold", monospace; text-transform: lowercase; font-size: 18px; font-size: 3vw; opacity: 1; color: white; text-decoration: none; pointer-events: all; cursor: pointer; transition: opacity 0.1s linear; }
 @media (max-width: 466.6666666667px) { .extras#contact a { font-size: 14px; } }
 @media (min-width: 800px) { .extras#contact a { font-size: 24px; } }
 .extras#contact a:hover { opacity: .8; }
-.extras#cabin img { width: 5vw; min-width: 5rem; transition: opacity 0.1s linear; }
+.extras#cabin img { margin: 50vh auto; width: 5vw; min-width: 5rem; transition: opacity 0.1s linear; }
 .extras#cabin img:hover { opacity: .8; }
 
 i { color: white; transition: opacity 0.1s linear; }

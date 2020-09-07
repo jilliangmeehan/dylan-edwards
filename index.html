@@ -9,6 +9,8 @@ title: dylan edwards
 </header>
 
 <main class="animated fadeIn">
+  {% include contact.html %}
+  
   {% for item in site.data.work %}
   <section id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }}">
 
@@ -56,5 +58,3 @@ title: dylan edwards
     <a href="https://www.cabinedit.com"><img src="assets/icons/cabin.png" alt=""></a>
   </section>
 </main>
-
-{% include contact.html %}
