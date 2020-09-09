@@ -37,9 +37,9 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 @media (min-width: 2400px) { .title { font-size: 72px; } }
 .title:hover { opacity: 0.2; }
 
-.credits { position: fixed; top: 50%; transform: translateY(-50%); right: 1rem; text-align: right; font-family: Helvetica, sans-serif; font-size: 14px; font-size: 2vw; font-weight: 300; line-height: 40%; opacity: 0; z-index: 100; transition: all 0.2s linear; }
-@media (max-width: 500px) { .credits { font-size: 10px; } }
-@media (min-width: 700px) { .credits { font-size: 14px; } }
+.credits { position: fixed; top: 50%; transform: translateY(-50%); right: 1rem; text-align: right; font-family: Helvetica, sans-serif; font-size: 14px; font-size: 1.1vw; font-weight: 300; line-height: 40%; opacity: 0; z-index: 100; transition: all 0.2s linear; }
+@media (max-width: 909.0909090909px) { .credits { font-size: 10px; } }
+@media (min-width: 1636.3636363636px) { .credits { font-size: 18px; } }
 
 .thumbnail, .embed { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70vw; max-width: 800px; display: none; }
 

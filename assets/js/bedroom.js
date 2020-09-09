@@ -4,6 +4,7 @@ filterSelection("some")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("category");
+  window.scrollTo(0, 0);
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     if (x[i].className.indexOf(c) > -1) {
