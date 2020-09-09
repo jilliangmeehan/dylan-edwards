@@ -119,9 +119,9 @@ main {
   right: 1rem;
   text-align: right;
   font-family: $sans-serif;
-  @include responsive-font(2vw, $xs, $regular, $small);
+  @include responsive-font(2vw, $xs, $small, $small);
   font-weight: 300;
-  line-height: 80%;
+  line-height: 40%;
   opacity: 0;
   z-index: 100;
   transition: all 0.2s linear;
