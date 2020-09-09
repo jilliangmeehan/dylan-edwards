@@ -9,7 +9,11 @@ title: dylan edwards
 </header>
 
 <main class="animated fadeIn">
-  {% include contact.html %}
+  <div class="social animated fadeIn">
+    <a href="https://vimeo.com/dylanedwards"><i class="fab fa-vimeo-v"></i></a>
+    <a href="https://instagram.com/dylanj_edwards"><i class="fab fa-instagram"></i></a>
+    <a href="#contact"><i class="far fa-envelope"></i></a>
+  </div>
 
   {% for item in site.data.work %}
   <section id="{{ item.title | slugify }}" class="work category {{ item.categories | downcase }}">

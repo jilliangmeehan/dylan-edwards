@@ -1,17 +1,16 @@
 body {
-  font-family: monospace;
   margin: 0;
+  color: white;
   background-color: black;
   text-transform: lowercase;
   &::-webkit-scrollbar { display: none; }
 }
 
-h1, h2, h3, p, a { color: white; }
-
 a {
+  color: white;
   text-decoration: none;
-  transition: opacity 0.1s linear;
   outline: 0;
+  transition: opacity 0.1s linear;
   &:hover { opacity: .8; }
 }
 
@@ -28,12 +27,10 @@ header {
     margin: 0;
     text-align: right;
   }
-
   .categories {
     pointer-events: all;
     float: right;
     background-color: rgba(0,0,0,1);
-
     h3 {
       @include responsive-font(5vw, $small, $regular, $small);
       font-family: $sans-serif;
@@ -41,10 +38,8 @@ header {
       margin: 0;
       padding: 0;
       outline: none;
-
       .toggle-text { font-family: monospace; }
     }
-
     button {
       float: right;
       clear: both;
@@ -76,7 +71,6 @@ main {
   overflow-y: scroll;
   scroll-padding: 50vh;
   &::-webkit-scrollbar { display: none; }
-
   section {
     width: 100%;
     padding: 50vh 0;
@@ -90,7 +84,6 @@ main {
   margin: 0;
   padding: 0;
   width: 100vw;
-
   &.category { display: none; }
   &.show { display: block; }
   &.current {
@@ -172,7 +165,6 @@ main {
   margin: 50vh auto;
   padding: 0;
   text-align: center;
-
   &#contact {
     a {
       font-family: $project-font;
@@ -212,7 +204,6 @@ i {
   	position: relative;
     text-align: right;
   }
-
   .ui-accordion-content {
   	overflow: auto;
   }

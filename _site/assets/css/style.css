@@ -1,11 +1,9 @@
 @font-face { font-family: 'Agrandir Grand Bold'; src: url("../fonts/AgrandirGrandBold.woff2") format("woff2"), url("../fonts/AgrandirGrandBold.woff") format("woff"), url("../fonts/AgrandirGrandBold.otf") format("otf"); }
 @font-face { font-family: 'Agrandir Text Bold'; src: url("../fonts/Agrandir-TextBold.woff2") format("woff2"), url("../fonts/Agrandir-TextBold.woff") format("woff"), url("../fonts/Agrandir-TextBold.otf") format("otf"); }
-body { font-family: monospace; margin: 0; background-color: black; text-transform: lowercase; }
+body { margin: 0; color: white; background-color: black; text-transform: lowercase; }
 body::-webkit-scrollbar { display: none; }
 
-h1, h2, h3, p, a { color: white; }
-
-a { text-decoration: none; transition: opacity 0.1s linear; outline: 0; }
+a { color: white; text-decoration: none; outline: 0; transition: opacity 0.1s linear; }
 a:hover { opacity: .8; }
 
 header { font-family: "Agrandir Grand Bold", monospace; position: fixed; top: 0; right: 0; z-index: 200; width: 100%; padding: 1rem; }
