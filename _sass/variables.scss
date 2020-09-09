@@ -4,14 +4,8 @@
   src: url('../fonts/AgrandirGrandBold.woff2') format('woff2'), url('../fonts/AgrandirGrandBold.woff') format('woff'), url('../fonts/AgrandirGrandBold.otf') format('otf');
 }
 
-@font-face {
-  font-family: 'Agrandir Text Bold';
-  src: url('../fonts/Agrandir-TextBold.woff2') format('woff2'), url('../fonts/Agrandir-TextBold.woff') format('woff'), url('../fonts/Agrandir-TextBold.otf') format('otf');
-}
-
 $project-font: 'Agrandir Grand Bold', monospace;
 $sans-serif: Helvetica, sans-serif;
-$serif: serif;
 
 // Font sizes
 $xxl: 144px;

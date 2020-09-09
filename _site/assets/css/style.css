@@ -1,5 +1,4 @@
 @font-face { font-family: 'Agrandir Grand Bold'; src: url("../fonts/AgrandirGrandBold.woff2") format("woff2"), url("../fonts/AgrandirGrandBold.woff") format("woff"), url("../fonts/AgrandirGrandBold.otf") format("otf"); }
-@font-face { font-family: 'Agrandir Text Bold'; src: url("../fonts/Agrandir-TextBold.woff2") format("woff2"), url("../fonts/Agrandir-TextBold.woff") format("woff"), url("../fonts/Agrandir-TextBold.otf") format("otf"); }
 body { margin: 0; color: white; background-color: black; text-transform: lowercase; }
 body::-webkit-scrollbar { display: none; }
 
