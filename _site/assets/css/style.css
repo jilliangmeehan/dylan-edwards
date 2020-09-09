@@ -20,7 +20,7 @@ header .categories button { float: right; clear: both; margin: 0; border: none; 
 header .categories button.active { opacity: 1.0; }
 header .categories button:hover { cursor: pointer; opacity: 1.0; }
 
-main { height: 100vh; padding: 0; overflow-x: hidden; overflow-y: scroll; scroll-padding: 50vh; }
+main { height: 100vh; padding: 0; overflow-y: scroll; scroll-padding: 50vh; }
 main::-webkit-scrollbar { display: none; }
 main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 

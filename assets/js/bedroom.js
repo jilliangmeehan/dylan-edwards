@@ -4,11 +4,11 @@ filterSelection("some")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("category");
-  window.scrollTo(0, 0);
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     if (x[i].className.indexOf(c) > -1) {
       addClass(x[i], "show");
+      scrollToTop();
     } else {
       removeClass(x[i], "show");
     }
@@ -34,6 +34,11 @@ function removeClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
+}
+
+function scrollToTop() {
+  let x = document.querySelector("main");
+  x.scrollTop = 0;
 }
 
 var btnContainer = document.getElementById("categories-btns");
