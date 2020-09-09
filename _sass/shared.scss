@@ -152,11 +152,13 @@ main {
   bottom: 0;
   text-align: center;
   z-index: 10;
-  @include responsive-font(2vw, $regular, $medium, $regular);
   a { text-decoration: none; }
-  i {
+  img {
+    width: 18px;
     display: block;
     margin-bottom: 1rem;
+    transition: opacity 0.1s linear;
+    &:hover { opacity: .8; }
   }
 }
 
@@ -189,12 +191,6 @@ main {
       &:hover { opacity: .8; }
     }
   }
-}
-
-i {
-  color: white;
-  transition: opacity 0.1s linear;
-  &:hover { opacity: .8; }
 }
 
 .ui-accordion {
