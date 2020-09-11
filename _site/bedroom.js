@@ -61,26 +61,13 @@ titles.forEach(project => {
   let iframe = project.querySelector("iframe");
   let player = new Vimeo.Player(iframe);
 
-  // only play videos on large screen sizes
-  const mediaQuery = window.matchMedia('(min-width: 960px)')
-  function controlVideo(e) {
-    if (e.matches) {
-      player.play();
-    } else {
-      player.pause();
-    }
-  }
-
-  mediaQuery.addListener(controlVideo);
-  controlVideo(mediaQuery);
-
   new ScrollMagic.Scene({
     triggerElement: project,
     duration: 130
   })
   .setClassToggle(project, "current")
   .on("enter", function() {
-    controlVideo(mediaQuery);
+    player.play();
   })
   .on("leave", function() {
     player.pause();
