@@ -1,4 +1,4 @@
-@font-face { font-family: 'Agrandir Grand Bold'; src: url("../fonts/AgrandirGrandBold.woff2") format("woff2"), url("../fonts/AgrandirGrandBold.woff") format("woff"), url("../fonts/AgrandirGrandBold.otf") format("otf"); }
+@font-face { font-family: 'Agrandir Grand Bold'; src: url("../fonts/AgrandirGrandBold.woff2") format("woff2"), url("../fonts/AgrandirGrandBold.woff") format("woff"), url("../fonts/AgrandirGrandBold.otf") format("otf"); font-display: swap; }
 body { margin: 0; color: white; background-color: black; text-transform: lowercase; }
 body::-webkit-scrollbar { display: none; }
 
@@ -38,7 +38,7 @@ main section { width: 100%; padding: 50vh 0; position: relative; top: 50vh; }
 .title:hover { opacity: 0.2; }
 
 .credits { position: fixed; top: 50%; transform: translateY(-50%); right: 1rem; text-align: right; font-family: Helvetica, sans-serif; font-size: 14px; font-size: 1.1vw; font-weight: 300; line-height: 40%; opacity: 0; z-index: 100; transition: all 0.2s linear; }
-@media (max-width: 909.0909090909px) { .credits { font-size: 10px; } }
+@media (max-width: 1090.9090909091px) { .credits { font-size: 12px; } }
 @media (min-width: 1636.3636363636px) { .credits { font-size: 18px; } }
 
 .thumbnail, .embed { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70vw; max-width: 800px; display: none; }
