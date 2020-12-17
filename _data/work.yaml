@@ -52,7 +52,7 @@
   width: 1280
   height: 960
   ratio: 1.33
-  gif: https://vimeo.com/492276086/b837d26024
+  gif: https://player.vimeo.com/video/492276086
   director: bardia zeinali
 
 - title: Pixel Buds 2
@@ -139,7 +139,7 @@
   width: 1280
   height: 960
   ratio: 1.33
-  gif: https://vimeo.com/492276179/8e87b4b15a
+  gif: https://player.vimeo.com/video/492276179
   director: Tucker Bliss
   production-company: 1st Ave Machine
 
@@ -195,12 +195,12 @@
   
 - title: One in Three
   subtitle: Danish Cancer Society
-  categories: Commercial
+  categories: Some Commercial
   video: https://vimeo.com/491769349
   width: 1280
   height: 960
   ratio: 1.33
-  gif: https://vimeo.com/492276118/3e0cf90504
+  gif: https://player.vimeo.com/video/492276118
   director: Tore Frandsen
   client: Danish Cancer Society
   production-company: Newland
@@ -212,7 +212,7 @@
   width: 1280
   height: 536
   ratio: 2.39
-  gif: https://vimeo.com/492276117/2c6316c840
+  gif: https://player.vimeo.com/video/492276117
   director: Brendan Vaughan
   production-company: Huffman
   
@@ -223,7 +223,7 @@
   width: 1280
   height: 960
   ratio: 1.33
-  gif: https://vimeo.com/492276178/bccfe85191
+  gif: https://player.vimeo.com/video/492276178
   director: Jon E Price
   production-company: Riff Raff Films
 
