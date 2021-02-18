@@ -24,7 +24,7 @@
 
 - title: Dyed In The Wool
   categories: Some Branded
-  video: https://vimeo.com/418725685/60e4dc260e
+  video: https://vimeo.com/439455295
   width: 1280
   height: 890
   ratio: 1.44
@@ -44,11 +44,21 @@
   gif: https://player.vimeo.com/video/436322188
   director: rubberband
   production-company: Smuggler
+  
+- title: Easy
+  subtitle: Troye Sivan
+  categories: Some MV
+  video: https://vimeo.com/492161070
+  width: 1280
+  height: 960
+  ratio: 1.33
+  gif: https://player.vimeo.com/video/492276086
+  director: bardia zeinali
 
 - title: Pixel Buds 2
   subtitle: Google
   categories: Some Commercial
-  video: https://vimeo.com/451165366
+  video: https://vimeo.com/464324875
   width: 1280
   height: 890
   ratio: 1.44
@@ -122,6 +132,18 @@
   client: Paco Rabanne
   agency: Paco Rabanne
   production-company: Pinery Films + Gorilla Films
+  
+- title: Vogue x Neiman Marcus
+  categories: Some Branded
+  video: https://vimeo.com/447850248
+  width: 1280
+  height: 960
+  ratio: 1.33
+  gif: https://player.vimeo.com/video/492276179
+  director: Tucker Bliss
+  client: Neiman Marcus
+  agency: Vogue
+  production-company: 1st Ave Machine
 
 - title: Dead Celebrities
   subtitle: Easy Life
@@ -172,6 +194,40 @@
   client: Louis Vuitton
   agency: Wednesday
   production-company: And Production
+  
+- title: One in Three
+  subtitle: Danish Cancer Society
+  categories: Some Commercial
+  video: https://vimeo.com/491769349
+  width: 1280
+  height: 960
+  ratio: 1.33
+  gif: https://player.vimeo.com/video/492276118
+  director: Tore Frandsen
+  client: Danish Cancer Society
+  production-company: Newland
+  
+- title: Hate Me
+  subtitle: MASN
+  categories: MV
+  video: https://vimeo.com/438615874
+  width: 1280
+  height: 536
+  ratio: 2.39
+  gif: https://player.vimeo.com/video/492276117
+  director: Brendan Vaughan
+  production-company: Huffman
+  
+- title: Current Blues
+  subtitle: Joe Hertz
+  categories: MV
+  video: https://vimeo.com/463764650
+  width: 1280
+  height: 960
+  ratio: 1.33
+  gif: https://player.vimeo.com/video/492276178
+  director: Jon E Price
+  production-company: Riff Raff Films
 
 - title: Planet Hunter
   subtitle: Google
@@ -382,15 +438,6 @@
   client: Invisalign
   agency: Colle McVoy
   production-company: Whitelist
-
-- title: Itadakimasu
-  categories: Branded
-  video: https://vimeo.com/357913708
-  width: 1280
-  height: 720
-  ratio: 1.78
-  gif: https://player.vimeo.com/video/397833660
-  director: Brendan Vaughan
 
 - title: Cycles
   subtitle: Worn-Tin
