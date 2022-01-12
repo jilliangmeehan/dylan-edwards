@@ -80,6 +80,19 @@
   awards: Vimeo Staff Pick
   director: Jeremy Snell
   
+- title: Million x Pacman
+  subtitle: Paco Rabanne
+  categories: Some Commercial
+  video: https://vimeo.com/342753487
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/397823813
+  director: Matvey Fiks
+  client: Paco Rabanne
+  agency: Paco Rabanne
+  production-company: Pinery Films + Gorilla Films
+  
 - title: Easy
   subtitle: Troye Sivan
   categories: Some MV
@@ -194,19 +207,6 @@
   client: Boehringer Ingelheim
   agency: Cohn & Wolfe
   production-company: 1st Ave Machine
-
-- title: Million x Pacman
-  subtitle: Paco Rabanne
-  categories: Some Commercial
-  video: https://vimeo.com/342753487
-  width: 1280
-  height: 720
-  ratio: 1.78
-  gif: https://player.vimeo.com/video/397823813
-  director: Matvey Fiks
-  client: Paco Rabanne
-  agency: Paco Rabanne
-  production-company: Pinery Films + Gorilla Films
   
 - title: Vogue x Neiman Marcus
   categories: Branded
