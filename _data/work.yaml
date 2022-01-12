@@ -33,16 +33,6 @@
   client: Cotton
   agency: DDB
   production-company: 1st Ave Machine
-  
-- title: Pilgrims
-  categories: Some Narrative
-  video: https://vimeo.com/375281295
-  width: 1280
-  height: 720
-  ratio: 1.78
-  gif: https://player.vimeo.com/video/397808180
-  awards: Vimeo Staff Pick
-  director: Jeremy Snell
 
 - title: Deaf Hoops
   subtitle: Facebook
@@ -79,6 +69,16 @@
   gif: https://player.vimeo.com/video/436322188
   director: rubberband
   production-company: Smuggler
+  
+- title: Pilgrims
+  categories: Some Narrative
+  video: https://vimeo.com/375281295
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/397808180
+  awards: Vimeo Staff Pick
+  director: Jeremy Snell
   
 - title: Easy
   subtitle: Troye Sivan
@@ -209,7 +209,7 @@
   production-company: Pinery Films + Gorilla Films
   
 - title: Vogue x Neiman Marcus
-  categories: Some Branded
+  categories: Branded
   video: https://vimeo.com/447850248
   width: 1280
   height: 960
