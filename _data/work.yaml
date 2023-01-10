@@ -11,15 +11,37 @@
   agency: Mojo Supermarket
   production-company: Somesuch
   
+- title: NWA
+  subtitle: Lucky Daye
+  categories: Some MV
+  video: https://vimeo.com/782637169
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787790423
+  director: rubberband
+  production-company: Smuggler
+  
+- title: Don't Miss It
+  subtitle: Pfizer
+  categories: Some Commercial
+  video: https://vimeo.com/758867372
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787790513
+  director: Tucker Bliss
+  client: Pfizer
+  production-company: Reset Content
+  
 - title: Millennium
   subtitle: Teef
   categories: Some MV
-  video: 
+  video: https://vimeo.com/685090186
   width: 1280
   height: 720
   ratio: 1.78
   gif: https://player.vimeo.com/video/665068101
-  awards: coming soon
   director: Ian Pons Jewell + Lee Hardcastle
   
 - title: Dyed In The Wool
@@ -33,6 +55,41 @@
   client: Cotton
   agency: DDB
   production-company: 1st Ave Machine
+  
+- title: DELIRIO DE GRANDEZA
+  subtitle: ROSALÍA
+  categories: Some MV
+  video: https://vimeo.com/709178534
+  width: 1280
+  height: 960
+  ratio: 1.33
+  gif: https://player.vimeo.com/video/787792124
+  director: Mitch Ryan
+  
+- title: Elevator
+  subtitle: Estee Lauder
+  categories: Some Commercial
+  video: https://vimeo.com/738369829
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787790406
+  director: Johan Renck
+  client: Estee Lauder
+  production-company: Reset Content
+  
+- title: Piggy Bank
+  subtitle: IKEA
+  categories: Some Commercial
+  video: https://vimeo.com/709093486
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787790418
+  director: Madeline Clayton
+  client: Ikea
+  agency: Ogilvy
+  production-company: Curfew
 
 - title: Deaf Hoops
   subtitle: Facebook
@@ -47,9 +104,33 @@
   agency: Wieden Kennedy
   production-company: Anonymous Content
   
+- title: Gemini Rights (Mercury/Sunshine)
+  subtitle: Steve Lacy
+  categories: Some MV
+  video: https://vimeo.com/735822098
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787790520
+  director: rubberband
+  production-company: Smuggler
+  
+- title: Seize The Awkward
+  subtitle: Ad Council
+  categories: Some Commercial
+  video: https://vimeo.com/786412305/97f724b0c1
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787790526
+  director: Haya Waseem
+  client: Ad Council
+  agency: Droga5
+  production-company: Object + Animal
+  
 - title: star-crossed
   subtitle: Kacey Musgraves
-  categories: Some MV
+  categories: MV
   video: https://vimeo.com/665336057
   width: 1280
   height: 720
@@ -61,7 +142,7 @@
 
 - title: Pink Dust
   subtitle: A.Chal
-  categories: Some MV
+  categories: MV
   video: https://vimeo.com/410641919
   width: 1280
   height: 960
@@ -80,9 +161,56 @@
   awards: Vimeo Staff Pick
   director: Jeremy Snell
   
+- title: Contrast
+  subtitle: Louis Vuitton
+  categories: Some Commercial
+  video: https://vimeo.com/787700574
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787790431
+  director: Bardia Zeinali
+  client: Louis Vuitton
+  production-company: Anonymous Content
+    
+- title: In With The New
+  subtitle: Sky Express
+  categories: Some Commercial
+  video: https://vimeo.com/722680647
+  width: 1280
+  height: 960
+  ratio: 1.33
+  gif: https://player.vimeo.com/video/787790394
+  director: Matthew Dillon Cohen
+  client: Sky Express
+  agency: Soho Sqaure
+  production-company: Filmiki
+  
+- title: Body Language
+  subtitle: Calvin Klein
+  categories: Some Commercial
+  video: https://vimeo.com/704398182
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787793627
+  director: Stef Mitchell
+  client: Calvin Klein
+  
+- title: Pre Spring 2022
+  subtitle: Ralph Lauren
+  categories: Commercial
+  video: https://vimeo.com/688070446
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/787793120
+  director: Bon Duke
+  client: Ralph Lauren
+  
 - title: Million x Pacman
   subtitle: Paco Rabanne
-  categories: Some Commercial
+  categories: Commercial
   video: https://vimeo.com/342753487
   width: 1280
   height: 720
@@ -95,7 +223,7 @@
   
 - title: Easy
   subtitle: Troye Sivan
-  categories: Some MV
+  categories: MV
   video: https://vimeo.com/492161070
   width: 1280
   height: 960
@@ -105,7 +233,7 @@
 
 - title: Pixel Buds 2
   subtitle: Google
-  categories: Some Commercial
+  categories: Commercial
   video: https://vimeo.com/464324875
   width: 1280
   height: 890
@@ -259,7 +387,7 @@
 
 - title: Memories in Shanghai
   subtitle: Louis Vuitton
-  categories: Some Commercial
+  categories: Commercial
   video: https://vimeo.com/368307636
   width: 1280
   height: 720
