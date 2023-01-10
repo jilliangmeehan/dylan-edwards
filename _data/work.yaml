@@ -665,16 +665,16 @@
   agency: Precision
   production-company: Prom Creative
 
-- title: Paddle People
-  subtitle: Nissan
-  categories: Branded
-  video: https://vimeo.com/267479556
-  width: 1280
-  height: 720
-  ratio: 1.78
-  credits: Directed by Marcus Tortorici
-  gif: https://player.vimeo.com/video/397833671
-  director: Marcus Tortorici
-  client: Nissan
-  agency: Allied
-  production-company: Tongal
+# - title: Paddle People
+#  subtitle: Nissan
+#  categories: Branded
+#  video: https://vimeo.com/267479556
+#  width: 1280
+#  height: 720
+#  ratio: 1.78
+#  credits: Directed by Marcus Tortorici
+#  gif: https://player.vimeo.com/video/397833671
+#  director: Marcus Tortorici
+#  client: Nissan
+#  agency: Allied
+#  production-company: Tongal
