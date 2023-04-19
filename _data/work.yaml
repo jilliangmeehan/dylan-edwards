@@ -1,3 +1,14 @@
+- title: Every Four Years
+  subtitle: Kia
+  categories: Some Commercial
+  video: https://vimeo.com/818923609
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/818970280
+  director: Salomon Ligthelm
+  production-company: Stink Germany
+  
 - title: Adults Date Better
   subtitle: Match
   categories: Some Commercial
@@ -44,8 +55,21 @@
   gif: https://player.vimeo.com/video/665068101
   director: Ian Pons Jewell + Lee Hardcastle
   
+- title: Deaf Hoops
+  subtitle: Facebook
+  categories: Some Commercial
+  video: https://vimeo.com/548915948
+  width: 1280
+  height: 640
+  ratio: 2
+  gif: https://player.vimeo.com/video/665387006
+  director: Matthew Dillon Cohen
+  client: Facebook
+  agency: Wieden Kennedy
+  production-company: Anonymous Content
+  
 - title: Dyed In The Wool
-  categories: Some Branded
+  categories: Branded
   video: https://vimeo.com/439455295
   width: 1280
   height: 890
@@ -90,19 +114,6 @@
   client: Ikea
   agency: Ogilvy
   production-company: Curfew
-
-- title: Deaf Hoops
-  subtitle: Facebook
-  categories: Some Commercial
-  video: https://vimeo.com/548915948
-  width: 1280
-  height: 640
-  ratio: 2
-  gif: https://player.vimeo.com/video/665387006
-  director: Matthew Dillon Cohen
-  client: Facebook
-  agency: Wieden Kennedy
-  production-company: Anonymous Content
   
 - title: Gemini Rights
   subtitle: Steve Lacy
@@ -175,7 +186,7 @@
     
 - title: In With The New
   subtitle: Sky Express
-  categories: Some Commercial
+  categories: Commercial
   video: https://vimeo.com/722680647
   width: 1280
   height: 960
@@ -188,7 +199,7 @@
   
 - title: Body Language
   subtitle: Calvin Klein
-  categories: Some Commercial
+  categories: Commercial
   video: https://vimeo.com/704398182
   width: 1280
   height: 720
