@@ -35,6 +35,18 @@
   director: rubberband
   production-company: Smuggler
   
+ - title: All Star
+  subtitle: Converse
+  categories: Some Commercial
+  video: https://vimeo.com/824855126
+  width: 1280
+  height: 960
+  ratio: 1.33
+  gif: https://player.vimeo.com/video/824903385
+  director: Matthew Dillon Cohen
+  client: Converse
+  production-company: Anonymous Content
+  
 - title: Don't Miss It
   subtitle: Pfizer
   categories: Some Commercial
@@ -46,6 +58,17 @@
   director: Tucker Bliss
   client: Pfizer
   production-company: Reset Content
+  
+ - title: Oklahoma Smokeshow
+  subtitle: Zach Bryan
+  categories: Some MV
+  video: https://vimeo.com/822616646
+  width: 1280
+  height: 536
+  ratio: 2.39
+  gif: https://player.vimeo.com/video/824903399
+  director: Matthew Dillon Cohen
+  production-company: Side Label
   
 - title: Millennium
   subtitle: Teef
@@ -140,6 +163,29 @@
   client: Ad Council
   agency: Droga5
   production-company: Object + Animal
+
+- title: Good News
+  subtitle: Bakar
+  categories: MV
+  video: https://vimeo.com/806003779
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/824905618
+  director: Machine Operated
+  production-company: Pulse Films
+  
+ - title: All By Myself
+  subtitle: Netflix
+  categories: Commercial
+  video: https://vimeo.com/815451889
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/824903371
+  director: Tucker Bliss
+  client: Netflix
+  production-company: Movie Magic
   
 - title: star-crossed
   subtitle: Kacey Musgraves
