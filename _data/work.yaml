@@ -58,6 +58,19 @@
   client: Match.com
   agency: Mojo Supermarket
   production-company: Somesuch
+
+- title: Deaf Hoops
+  subtitle: Facebook
+  categories: Some Commercial
+  video: https://vimeo.com/548915948
+  width: 1280
+  height: 640
+  ratio: 2
+  gif: https://player.vimeo.com/video/665387006
+  director: Matthew Dillon Cohen
+  client: Facebook
+  agency: Wieden Kennedy
+  production-company: Anonymous Content
   
 - title: NWA
   subtitle: Lucky Daye
@@ -162,19 +175,6 @@
   gif: https://player.vimeo.com/video/824903399
   director: Matthew Dillon Cohen
   production-company: Side Label
-  
-- title: Deaf Hoops
-  subtitle: Facebook
-  categories: Some Commercial
-  video: https://vimeo.com/548915948
-  width: 1280
-  height: 640
-  ratio: 2
-  gif: https://player.vimeo.com/video/665387006
-  director: Matthew Dillon Cohen
-  client: Facebook
-  agency: Wieden Kennedy
-  production-company: Anonymous Content
 
 - title: Don't Walk Away
   subtitle: Oppo Reno 10
