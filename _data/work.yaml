@@ -226,7 +226,7 @@
   production-company: Cadence Films
   
 - title: Dyed In The Wool
-  categories: Branded
+  categories: Narrative
   video: https://vimeo.com/439455295
   width: 1280
   height: 890
@@ -512,7 +512,7 @@
 
 - title: When Rivers Rise
   subtitle: Google
-  categories: Branded
+  categories: Narrative
   video: https://vimeo.com/314050880
   width: 1280
   height: 536
@@ -524,22 +524,22 @@
   agency: Google Brand Studio
   production-company: 1st Ave Machine
   
-- title: Always There
-  subtitle: Boehringer Ingelheim
-  categories: Branded
-  video: https://vimeo.com/318864037
-  width: 1280
-  height: 720
-  ratio: 1.78
-  gif: https://player.vimeo.com/video/397833753
+#  title: Always There
+#  subtitle: Boehringer Ingelheim
+#  categories: Branded
+#  video: https://vimeo.com/318864037
+#  width: 1280
+#  height: 720
+#  ratio: 1.78
+#  gif: https://player.vimeo.com/video/397833753
 # awards: Cannes Lion Shortlist
-  director: Tucker Bliss
-  client: Boehringer Ingelheim
-  agency: Cohn & Wolfe
-  production-company: 1st Ave Machine
+#  director: Tucker Bliss
+#  client: Boehringer Ingelheim
+#  agency: Cohn & Wolfe
+#  production-company: 1st Ave Machine
   
 - title: Vogue x Neiman Marcus
-  categories: Branded
+  categories: Commercial
   video: https://vimeo.com/447850248
   width: 1280
   height: 960
@@ -670,7 +670,7 @@
   production-company: Farago Projects
 
 - title: Forever Ferg
-  categories: Branded
+  categories: Narrative
   video: https://vimeo.com/276967332
   width: 1280
   height: 720
