@@ -106,6 +106,19 @@
   client: Facebook
   agency: Wieden Kennedy
   production-company: Anonymous Content
+
+- title: More Human
+  subtitle: Amica
+  categories: Some Commercial
+  video: https://vimeo.com/953199218
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/952519522
+  director: Diego Contreras
+  client: Amica
+  agency: Mother NY
+  production-company: Lovesong
   
 - title: NWA
   subtitle: Lucky Daye
@@ -179,6 +192,17 @@
   director: Tucker Bliss
   client: Pfizer
   production-company: Reset Content
+
+- title: Obsessed
+  subtitle: Olivia Rodrigo
+  categories: Some MV
+  video: https://vimeo.com/953201521
+  width: 1280
+  height: 960
+  ratio: 1.33
+  gif: https://player.vimeo.com/video/952519553
+  director: Mitch Ryan
+  production-company: Cadence Films
 
 - title: Boys of Faith
   subtitle: Zach Bryan
