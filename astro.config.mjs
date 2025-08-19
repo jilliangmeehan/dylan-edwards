@@ -3,6 +3,7 @@ import yaml from "@rollup/plugin-yaml";
 import svelte from "@astrojs/svelte";
 
 export default defineConfig({
+  site: "https://dylanjedwards.com",
   integrations: [svelte()],
   vite: {
     plugins: [yaml()],
