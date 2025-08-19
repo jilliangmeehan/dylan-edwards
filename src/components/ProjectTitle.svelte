@@ -27,6 +27,7 @@
             &.active {
                 opacity: map-get($project-title, active-opacity);
                 transform: scale(map-get($project-title, active-scale));
+                transform-origin: center;
             }
 
             @include focus-visible;

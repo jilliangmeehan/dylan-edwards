@@ -25,7 +25,7 @@ $breakpoints: (
 );
 
 $project-title: (
-    desktop-size: $spacing-md,
+    desktop-size: $spacing-md * 1.4,
     tablet-size: $spacing-md * 0.8,
     mobile-size: $spacing-sm * 1.2,
     number-size: $spacing-sm,
