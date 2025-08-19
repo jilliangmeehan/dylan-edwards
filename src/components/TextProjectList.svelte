@@ -1,10 +1,11 @@
 <script>
     import { onMount, onDestroy } from "svelte";
     import VideoLightbox from "./VideoLightbox.svelte";
+    import { filterProjects } from "../utils/categoryUtils";
 
-    const { projects = [] } = $props();
+    const { projects = [], initialCategory = "all" } = $props();
 
-    let displayedProjects = $state(projects);
+    let displayedProjects = $state(filterProjects(initialCategory, projects));
     let isLightboxOpen = $state(false);
     let selectedProject = $state(null);
     let hoveredIndex = $state(-1);

@@ -10,11 +10,6 @@ export const CATEGORIES = {
 
 export type Category = keyof typeof CATEGORIES;
 
-interface Project {
-  categories?: string;
-  [key: string]: any;
-}
-
 export function filterProjects(category: Category, projects: Project[]) {
   console.log("Filtering for category:", category);
   console.log("Available projects:", projects);

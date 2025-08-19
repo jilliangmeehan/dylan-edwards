@@ -28,6 +28,7 @@ import { CATEGORIES } from "../utils/categoryUtils";
             projects={work}
             scrollTriggerOffset={45}
             thumbnailHeight="60vh"
+            initialCategory="some"
         />
 
         <footer class="logo-section">
@@ -102,6 +103,23 @@ import { CATEGORIES } from "../utils/categoryUtils";
             }),
         );
     };
+
+    // Trigger initial filtering on page load
+    function triggerInitialFilter() {
+        if (window.handleCategoryChange) {
+            window.handleCategoryChange("some");
+        } else {
+            // Retry if the function isn't ready yet
+            setTimeout(triggerInitialFilter, 50);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", triggerInitialFilter);
+    } else {
+        // Document is already loaded, trigger after a short delay to ensure components are ready
+        setTimeout(triggerInitialFilter, 100);
+    }
 </script>
 
 <style lang="scss">

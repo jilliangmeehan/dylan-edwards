@@ -4,17 +4,19 @@
     import ProjectTitle from "./ProjectTitle.svelte";
     import ProjectThumbnail from "./ProjectThumbnail.svelte";
     import ProjectCredits from "./ProjectCredits.svelte";
+    import { filterProjects } from "../utils/categoryUtils";
 
     const {
         projects = [],
         scrollTriggerOffset = 45,
         thumbnailHeight = "60vh",
+        initialCategory = "all",
     } = $props();
 
     let isMobile = $state(false);
     let responsiveScrollOffset = $state(scrollTriggerOffset);
 
-    let displayedProjects = $state(projects);
+    let displayedProjects = $state(filterProjects(initialCategory, projects));
     let activeProjectIndex = $state(0);
     let isLightboxOpen = $state(false);
     const observers = [];

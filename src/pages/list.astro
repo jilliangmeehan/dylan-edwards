@@ -24,7 +24,7 @@ import { CATEGORIES } from "../utils/categoryUtils";
     </main>
 
     <div class="content-wrapper">
-        <TextProjectList client:load projects={work} />
+        <TextProjectList client:load projects={work} initialCategory="all" />
 
         <footer class="logo-section">
             <a
@@ -98,6 +98,23 @@ import { CATEGORIES } from "../utils/categoryUtils";
             }),
         );
     };
+
+    // Trigger initial filtering on page load
+    function triggerInitialFilter() {
+        if (window.handleCategoryChange) {
+            window.handleCategoryChange("all");
+        } else {
+            // Retry if the function isn't ready yet
+            setTimeout(triggerInitialFilter, 50);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", triggerInitialFilter);
+    } else {
+        // Document is already loaded, trigger after a short delay to ensure components are ready
+        setTimeout(triggerInitialFilter, 100);
+    }
 </script>
 
 <style lang="scss">
