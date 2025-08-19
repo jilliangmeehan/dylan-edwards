@@ -198,7 +198,7 @@
 
     .project {
         &-list {
-            padding: 50vh $spacing-md $spacing-md $spacing-md;
+            padding: 50vh $spacing-sm $spacing-sm $spacing-sm;
             pointer-events: none;
             display: flex;
             flex-direction: column;
