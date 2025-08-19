@@ -88,7 +88,7 @@
             color: white;
             font-size: 1rem;
             cursor: pointer;
-            padding: $spacing-xxs;
+            padding: 0;
             text-transform: lowercase;
             display: flex;
             align-items: center;

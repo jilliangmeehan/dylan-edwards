@@ -18,7 +18,7 @@
     .dropdown-item {
         display: block;
         width: 100%;
-        padding: $spacing-xxs;
+        padding: 0;
         text-align: right;
         background: none;
         border: none;
