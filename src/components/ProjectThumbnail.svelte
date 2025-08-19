@@ -60,7 +60,7 @@
             transition: opacity map-get($thumbnail, transition-duration) ease;
 
             &:hover {
-                opacity: 0.9;
+                // opacity: 0.9;
                 cursor: url("../assets/icons/play_cursor.png"), pointer;
             }
             @include focus-visible;

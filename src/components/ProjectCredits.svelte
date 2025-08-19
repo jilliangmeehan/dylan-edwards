@@ -62,7 +62,7 @@
         &-label {
             opacity: 0.4; // More subtle label
             margin-right: $spacing-xs;
-            font-size: 0.75rem; // Even smaller labels
+            // font-size: 0.75rem; // Even smaller labels
         }
 
         &-value {
