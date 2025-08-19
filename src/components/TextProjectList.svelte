@@ -73,13 +73,14 @@
     .text-project-list {
         border-collapse: collapse;
         padding: $spacing-lg;
-        margin: 0;
+        margin: $spacing-xs;
         min-height: 100vh;
         padding-top: 8rem;
         width: 70%;
 
         @media (max-width: map-get($breakpoints, mobile)) {
             padding: 6rem $spacing-md $spacing-lg $spacing-md;
+            margin-top: 4rem;
         }
     }
 
