@@ -1,0 +1,219 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.svelte";
+import SocialIcons from "../components/SocialIcons.astro";
+import TextProjectList from "../components/TextProjectList.svelte";
+import CabinLogo from "../assets/icons/cabin.png";
+import CabinHouse from "../assets/icons/cabin_house.svg";
+import work from "../data/work.yaml";
+import { CATEGORIES } from "../utils/categoryUtils";
+---
+
+<Layout>
+    <main class="main-content">
+        <Header
+            client:load
+            siteTitle="dylan edwards"
+            categories={Object.keys(CATEGORIES)}
+            categoryMap={CATEGORIES}
+            selectedCategory="all"
+            currentPage="list"
+            showCategoryDropdown={false}
+        />
+        <SocialIcons />
+    </main>
+
+    <div class="content-wrapper">
+        <TextProjectList client:load projects={work} />
+
+        <footer class="logo-section">
+            <a
+                href="https://cabinedit.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Cabin Edit"
+                class="logo-link hover-opacity"
+            >
+                <div class="logo-container">
+                    <img
+                        src={CabinLogo.src}
+                        alt="Cabin Edit Logo"
+                        class="logo logo-png"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                    />
+                    <img
+                        src={CabinHouse.src}
+                        alt="Cabin Edit Logo"
+                        class="logo logo-svg"
+                        width="100"
+                        height="100"
+                        loading="lazy"
+                    />
+                </div>
+            </a>
+        </footer>
+    </div>
+</Layout>
+
+<script define:vars={{ work }}>
+    // Make work data available globally
+    window.work = work;
+</script>
+
+<script>
+    window.handleCategoryChange = function (category) {
+        // Notify about category change
+        document.dispatchEvent(
+            new CustomEvent("categoryChanged", {
+                detail: { category },
+            }),
+        );
+
+        // Filter projects
+        const allProjects = window.work;
+        let filteredProjects;
+
+        if (category === "all") {
+            filteredProjects = allProjects;
+        } else {
+            filteredProjects = allProjects.filter((project) => {
+                const projectCategories =
+                    project.categories?.toLowerCase().split(" ") || [];
+                if (category === "some") {
+                    return projectCategories.some((cat) => cat === "some");
+                }
+                return (
+                    projectCategories.includes(category) ||
+                    projectCategories.includes(`some ${category}`)
+                );
+            });
+        }
+
+        // Notify about filtered projects
+        document.dispatchEvent(
+            new CustomEvent("projectsFiltered", {
+                detail: { projects: filteredProjects },
+            }),
+        );
+    };
+</script>
+
+<style lang="scss">
+    @import "../styles/variables";
+
+    // Override global styles for white theme
+    :global(html),
+    :global(body) {
+        background: white;
+        color: black;
+    }
+
+    // Override header and dropdown styles for dark text
+    :global(header .site-title),
+    :global(header .text-mode-link),
+    :global(header .dropdown-toggle),
+    :global(header .dropdown-item) {
+        color: black !important;
+    }
+
+    :global(.dropdown-menu) {
+        background: white !important;
+        border: 1px solid #ccc;
+    }
+
+    // Invert social icons for white background
+    :global(.social-link img) {
+        filter: invert(1);
+    }
+
+    // Ensure PNG is black on white background
+    :global(.logo-png) {
+        filter: invert(1);
+    }
+
+    // Ensure SVG is black on white background
+    :global(.logo-svg) {
+        filter: invert(1);
+    }
+
+    :global(.project-title) {
+        font-family: "Tuffy";
+        text-transform: uppercase !important;
+    }
+
+    .content {
+        &-wrapper {
+            position: relative;
+            z-index: map-get($z-index, base);
+        }
+    }
+
+    .logo {
+        &-section {
+            position: relative;
+            z-index: map-get($z-index, content);
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-link {
+            @include focus-visible-outer;
+
+            transition: opacity map-get($logo, transition-duration) ease;
+        }
+
+        &-container {
+            position: relative;
+            width: map-get($logo, desktop-size);
+            height: map-get($logo, desktop-size);
+
+            @media (max-width: map-get($breakpoints, mobile)) {
+                width: map-get($logo, mobile-size);
+                height: map-get($logo, mobile-size);
+            }
+        }
+
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+        &-png {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        &-svg {
+            position: absolute;
+            top: -8%;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    }
+
+    .logo-link:hover {
+        opacity: 1;
+
+        .logo-png {
+            opacity: 0;
+        }
+
+        .logo-svg {
+            opacity: 1;
+            fill-opacity: 1;
+        }
+    }
+
+    .main-content {
+        position: relative;
+        z-index: map-get($z-index, content);
+    }
+</style>

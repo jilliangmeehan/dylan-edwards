@@ -1,0 +1,20 @@
+---
+const { title } = Astro.props;
+import "../styles/global.scss";
+import work from "../data/work.yaml";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title}</title>
+
+        <script define:vars={{ work }}>
+            window.work = work;
+        </script>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

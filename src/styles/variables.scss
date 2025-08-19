@@ -1,0 +1,144 @@
+$color-background: black;
+$color-text: white;
+$color-overlay: rgba(30, 30, 30, 0.9);
+
+$spacing-xxs: 0.2rem;
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+
+$focus-color: white;
+$focus-background: rgba(255, 255, 255, 0.1);
+
+$z-index: (
+    base: 1,
+    content: 10,
+    header: 100,
+    lightbox: 99999,
+);
+
+$breakpoints: (
+    mobile: 768px,
+    tablet: 1024px,
+    desktop: 1600px,
+);
+
+$project-title: (
+    desktop-size: $spacing-md,
+    tablet-size: $spacing-md * 0.8,
+    mobile-size: $spacing-sm * 1.2,
+    number-size: $spacing-sm,
+    number-mobile-size: $spacing-xs * 1.5,
+    transition-duration: 0.3s,
+    border-radius: 0.5rem,
+    inactive-opacity: 0.5,
+    hover-opacity: 0.8,
+    active-opacity: 1,
+    active-scale: 1.05,
+);
+
+$thumbnail: (
+    border-radius: 8px,
+    aspect-ratio: 1.7778,
+    // 16/9
+    desktop-width: 65vw,
+    tablet-width: 80vw,
+    mobile-width: 90vw,
+    desktop-height: 75vh,
+    tablet-height: 45vh,
+    mobile-height: 35vh,
+    transition-duration: 0.2s,
+);
+
+$social-icons: (
+    spacing: $spacing-xs,
+    icon-size: 18px,
+    gap: $spacing-xs,
+    transition-duration: 0.2s,
+);
+
+$social-positions: (
+    bottom-right: (
+        bottom: map-get($social-icons, spacing),
+        right: map-get($social-icons, spacing),
+    ),
+    bottom-left: (
+        bottom: map-get($social-icons, spacing),
+        left: map-get($social-icons, spacing),
+    ),
+    top-right: (
+        top: map-get($social-icons, spacing),
+        right: map-get($social-icons, spacing),
+    ),
+    top-left: (
+        top: map-get($social-icons, spacing),
+        left: map-get($social-icons, spacing),
+    ),
+);
+
+$lightbox: (
+    background: rgba(30, 30, 30, 0.9),
+    close-button: (
+        size: 44px,
+        font-size: 28px,
+        border-radius: 4px,
+        hover-bg: rgba(255, 255, 255, 0.1),
+    ),
+    video: (
+        width: 90vw,
+        height: 90vh,
+        max-width: 1600px,
+        mobile-width: 100vw,
+        mobile-height: 56.25vw,
+        border-radius: 4px,
+    ),
+    transition-duration: 0.2s,
+);
+
+$logo: (
+    desktop-size: 100px,
+    mobile-size: 80px,
+    transition-duration: 0.3s,
+);
+
+// Mixins
+@mixin hover-opacity {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+@mixin fixed-position($top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: fixed;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin focus-visible($color: $focus-color, $bg: $focus-background) {
+    &:focus-visible {
+        outline: 2px solid $color;
+        outline-offset: -2px;
+        background-color: $bg;
+    }
+}
+
+// Optional: Different variations for different contexts
+@mixin focus-visible-outer($color: $focus-color) {
+    &:focus-visible {
+        outline: 2px solid $color;
+        outline-offset: 2px; // Positive offset for outer focus ring
+    }
+}
+
+@mixin focus-visible-subtle {
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px $focus-background;
+    }
+}
