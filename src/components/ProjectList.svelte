@@ -185,7 +185,6 @@
         display: grid;
         grid-template-columns: 1.5fr 0.5fr;
         gap: $spacing-md;
-        max-width: 1600px; // Increased from 1200px
         margin: 0 auto;
         min-height: 100vh;
         position: relative;
