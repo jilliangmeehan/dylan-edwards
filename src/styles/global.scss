@@ -1,0 +1,54 @@
+@import "variables";
+
+@font-face {
+    font-family: "Agrandir Grand Bold";
+    src:
+        url("../assets/fonts/AgrandirGrandBold.woff2") format("woff2"),
+        url("../assets/fonts/AgrandirGrandBold.woff") format("woff"),
+        url("../assets/fonts/AgrandirGrandBold.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tuffy";
+    src: url("../assets/fonts/TuffyRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tuffy";
+    src: url("../assets/fonts/TuffyBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    background: $color-background;
+    color: $color-text;
+    text-transform: lowercase;
+    font-family: "Agrandir Grand Bold", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hover-opacity {
+    @include hover-opacity;
+}
+
+// Lightbox states
+body.lightbox-active {
+    overflow: hidden;
+
+    .main-content {
+        opacity: 0.8;
+        z-index: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+    }
+}

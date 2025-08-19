@@ -1,0 +1,112 @@
+---
+interface SocialLink {
+    icon: ImageMetadata;
+    url: string;
+    platform: string;
+}
+
+interface Props {
+    links?: SocialLink[];
+    position?: "bottom-right" | "bottom-left" | "top-right" | "top-left";
+    gap?: string;
+    iconSize?: string;
+}
+
+import IgIcon from "../assets/icons/ig.svg";
+import VimeoIcon from "../assets/icons/vimeo.svg";
+import MailIcon from "../assets/icons/mail.svg";
+
+const defaultLinks: SocialLink[] = [
+    {
+        icon: VimeoIcon,
+        url: "https://vimeo.com/dylanedwards",
+        platform: "Vimeo",
+    },
+    {
+        icon: IgIcon,
+        url: "https://instagram.com/dylanj_edwards",
+        platform: "Instagram",
+    },
+    {
+        icon: MailIcon,
+        url: "mailto:edwardsjdylan@gmail.com",
+        platform: "Email",
+    },
+];
+
+const {
+    links = defaultLinks,
+    position = "bottom-right",
+    gap = "1rem",
+    iconSize = "18px",
+} = Astro.props;
+
+const positionStyles = {
+    "bottom-right": "bottom: 2rem; right: 2rem;",
+    "bottom-left": "bottom: 2rem; left: 2rem;",
+    "top-right": "top: 2rem; right: 2rem;",
+    "top-left": "top: 2rem; left: 2rem;",
+};
+---
+
+<div class="social-icons" style={positionStyles[position]}>
+    {
+        links.map(({ icon, url, platform }) => (
+            <a
+                class="social-link hover-opacity"
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit ${platform}`}
+            >
+                <img
+                    src={icon.src}
+                    alt={platform}
+                    width={iconSize}
+                    height={iconSize}
+                    loading="lazy"
+                />
+            </a>
+        ))
+    }
+</div>
+
+<style lang="scss">
+    @import "../styles/variables";
+
+    .social {
+        &-icons {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-sm;
+            z-index: map-get($z-index, header);
+
+            :global(.lightbox-active) & {
+                pointer-events: none;
+            }
+
+            @media (max-width: map-get($breakpoints, mobile)) {
+                gap: $spacing-xs;
+            }
+        }
+
+        &-link {
+            display: block;
+            line-height: 0;
+            transition: opacity 0.2s ease;
+
+            @include focus-visible-outer($color-text);
+
+            img {
+                width: var(--iconSize);
+                height: auto;
+                transition: filter 0.3s ease;
+
+                @media (max-width: map-get($breakpoints, mobile)) {
+                    width: calc(var(--iconSize) * 0.8);
+                }
+            }
+        }
+    }
+</style>
