@@ -166,14 +166,14 @@
                 height={thumbnailHeight}
                 onClick={openLightbox}
             />
-            <ProjectCredits project={projects[activeProjectIndex]} />
+            <ProjectCredits project={displayedProjects[activeProjectIndex]} />
         {/if}
     </div>
 </div>
 
 {#if isLightboxOpen && activeProjectIndex >= 0}
     <VideoLightbox
-        videoUrl={projects[activeProjectIndex].video}
+        videoUrl={displayedProjects[activeProjectIndex].video}
         onClose={closeLightbox}
     />
 {/if}
