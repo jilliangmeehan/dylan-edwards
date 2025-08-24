@@ -68,6 +68,17 @@
   director: Mitch Ryan
   production-company: Cadence Films
 
+- title: What Was That
+  subtitle: Lorde
+  categories: Some MV
+  video: https://vimeo.com/1112163662
+  width: 1280
+  height: 720
+  ratio: 1.78
+  gif: https://player.vimeo.com/video/1112595808
+  director: Terrence O'Connor
+  production-company: Big Kid
+
 - title: Every Four Years
   subtitle: Kia
   categories: Some Commercial
@@ -80,18 +91,7 @@
   client: Kia
   agency: Innocean Berlin
   production-company: Stink Germany
-
-- title: What Was That
-  subtitle: Lorde
-  categories: Some MV
-  video: https://vimeo.com/1112163662
-  width: 1280
-  height: 720
-  ratio: 1.78
-  gif: https://player.vimeo.com/video/1112595808
-  director: Terrence O'Connor
-  production-company: Big Kid
-
+  
 - title: It Takes More
   subtitle: Powerade
   categories: Some Commercial
